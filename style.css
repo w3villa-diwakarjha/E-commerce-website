@@ -58,7 +58,7 @@ i{
 /* ############################################ Logo-Section #################### */
 
 .logo-section1{
-    background-color: lightgrey;
+    background-color: #f8f8f8;
 }
 
 .sub-logo{
@@ -103,7 +103,7 @@ i{
     width: 40%;
 }
 h5{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .search-main input{
@@ -135,13 +135,14 @@ h5{
 }
 
 .delivery-txt i{
-    font-size: 20px;
-    background: blue;
+    font-size: 25px;
+    background: #4300da;
     color: #fff;
-    padding: 5px;
+    padding: 10px;
 }
 .item{
     padding: 0px 10px;
+    box-shadow: 1px 1px 1px 1px gray;
 }
 
 /* ########################### Detail section ############################ */
@@ -167,7 +168,7 @@ h5{
     padding: 0px 20px;
 }
 .detail-section1{
-    background-color: #0000ff;
+    background-color: #4300da;
     color: aliceblue;
 }
 
@@ -228,7 +229,7 @@ h5{
     height: 56vh;
     overflow: hidden;
     /* border: 1px solid red; */
-    background-color: lightgray;
+    background-color: #f8f8f8;
     position: relative;
     margin: 5px 0px;
     border-radius: 20px;
@@ -251,12 +252,10 @@ h5{
     object-fit: contain;
     object-position: right;
 }
-/* .image-part{
+.row-container{
     width: 100%;
-    height: 56vh;
-    margin: 5px 0px;
-    border-radius: 20px;
-} */
+    margin: auto;
+}
 .image-part1, .image-part2{
     width: 100%;
     height: 56vh;
@@ -264,13 +263,14 @@ h5{
 
 .carousel-image-section{
     height: 56vh;
+    padding-right: 0px;
 }
 .image-part,.image-part2{
     height: 28vh;
     width: 100%;
     margin: 5px 0px;
     border-radius: 20px;
-    background-color: lightgrey;
+    background-color: #f8f8f8;
 }
 .image-part1{
     height: 28vh;
@@ -337,7 +337,7 @@ h5{
 
 .main-shipping{
     padding: 30px 0px;
-    background-color: rgb(71, 78, 85);
+    background-color: #3b4556;
 }
 .sub-main-shipping{
     width: 90%;
@@ -355,7 +355,7 @@ h5{
 }
 .sub-main-shipping i{
     font-size: 20px;
-    color: lightcoral;
+    color: #de5e08;
 }
 .main-font{
     border: 2px solid blue;
@@ -386,13 +386,17 @@ h5{
     background-color: orangered;
 }
 .required-txt{
-    margin-top: 20px;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0px;
 }
 .required-txt a{
     color: #0000ff;
 }
 .demand-section1{
     padding-top: 30px;
+    width: 90%;
+    margin: auto;
 }
 .sub-demand-section{
     text-align: center;
@@ -404,6 +408,7 @@ h5{
     background-color: blue;
     border: none;
 }
+
 .btn-black{
     background-color: grey;
     border: none;
@@ -431,7 +436,7 @@ h5{
 /* ################################## Feature Section ########################### */
 
 .Featured{
-    background: rgba(211, 211, 211, 0.87);
+    background: #f8f8f8;
 }
 .dollar{
     display: flex;
@@ -451,10 +456,11 @@ h5{
 .input-box input{
     width: 100%;
     text-align: center;
-    border: 2px solid;
+    border: 1px solid gainsboro;
 }
 .input-box{
     width: 15%;
+    padding: 2px;
 }
 input[type=text]::-webkit-inner-spin-button,
 input[type=text]::-webkit-outer-spin-button {
@@ -473,8 +479,18 @@ input[type=text]::-webkit-outer-spin-button {
 }
 .quantity-icons{
     width: 26%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+.inc-dec-btn{
+    display: flex;
+    flex-direction: column;
+    margin: 12px 9px;
+}
+.inc-dec-btn i{
+    border: 1px solid #e6dddd;
+}
 .all-product-btn{
     color: #fff;
     padding: 5px;
@@ -482,11 +498,13 @@ input[type=text]::-webkit-outer-spin-button {
 }
 .item1{
     background-color: #fff;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 1px gray;
 }
 /* ################################ Featured Category ############################# */
 
 .Category{
-    background-color: rgba(128, 128, 128, 0.178);
+    background-color: #eeeeee;
 }
 .owl-carousel-main{
     background-color: #fff;
@@ -511,6 +529,8 @@ input[type=text]::-webkit-outer-spin-button {
     color: #fff;
     border: none;
     outline: none;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 /* ########################## Improved Gallery ############################## */
@@ -519,7 +539,7 @@ input[type=text]::-webkit-outer-spin-button {
 }
 
 .Improved{
-    color: #fff;
+    color: #e6e6e6;
 }
 .improve-txt{
     color: rgb(206, 206, 206);
@@ -549,7 +569,15 @@ input[type=text]::-webkit-outer-spin-button {
 .box img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+}
+.gallery-box1, .gallery-box3{
+    display: flex;
+    justify-content: space-around;
+}
+.gallery-box2{
+    display: flex;
+    justify-content: space-around;
 }
 /* ######################################## From Our Blog ###################### */
 .Blog{
@@ -558,7 +586,7 @@ input[type=text]::-webkit-outer-spin-button {
     padding: 30px 0px;
 }
 .Blog-section{
-    background-color: aliceblue;
+    background-color: #eeeeee;
 }
 .card{
     height: fit-content;
@@ -640,7 +668,7 @@ input[type=text]::-webkit-outer-spin-button {
 /* ########################## Social-media ############################ */
 
 .social-media{
-    background-color: rgba(228, 240, 252, 0.452);
+    background-color: #eeeeee;
 }
 .sub-social-media{
     display: flex;
@@ -662,7 +690,7 @@ input[type=text]::-webkit-outer-spin-button {
 /* ############################ Contact Section ############################### */
 
 .contact-section{
-    background-color: rgba(59, 204, 204, 0.288);
+    background-color: #f8f8f8;
 }
 .main-contact1{
     font-size: 18px;
@@ -674,7 +702,7 @@ input[type=text]::-webkit-outer-spin-button {
     width: 30px;
     padding: 0.5px 0px;
     background-color: orangered;
-    margin: revert;
+    /* margin: revert; */
 }
 .main-contact{
     color: #0000ff;
@@ -687,13 +715,16 @@ input[type=text]::-webkit-outer-spin-button {
 }
 .contact-category{
     display: flex;
-    /* justify-content: space-between; */
 }
 
 .contact-category1{
     width: 25%;
-    text-align: center;
+    /* text-align: center; */
+    margin-left: 75px;
     border-right: 1px solid lightgrey;
+}
+.input-contact{
+    margin-left: 60px;
 }
 .privacy{
     display: inline;
@@ -705,8 +736,8 @@ input[type=text]::-webkit-outer-spin-button {
     cursor: pointer;
 }
 .contact-categoryies{
-    width: 60%;
-    margin: auto;
+    width: 90%;
+    /* margin: auto; */
 }
 .main-input-contact-para{
     color: lightslategrey;
@@ -728,7 +759,9 @@ input[type=text]::-webkit-outer-spin-button {
 /* ###################################### Copyright #################### */
 .sub-copy-right{
     display: flex;
-    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
     padding: 10px 0px;
 }
 .copyright{
@@ -777,6 +810,10 @@ input[type=text]::-webkit-outer-spin-button {
     .main-div{
         background-color: #0000ff;
     }
+    .sub-logo{
+        padding: 5px;
+        margin-top: 10px;
+    }
     .sub-div i,a,.selected{
         color: #fff;
     }
@@ -807,6 +844,18 @@ input[type=text]::-webkit-outer-spin-button {
     .ships{
         justify-content: initial;
     }
+
+    /* ########################## Most-view Section ################### */
+
+    .pic-tag1{
+        flex-direction: column;
+    }
+    .pic-dollar{
+        text-align: left;
+    }
+    .pic{
+        width: 30%;
+    }
     
 }
 @media  screen and (max-width: 767px) {
@@ -828,6 +877,21 @@ input[type=text]::-webkit-outer-spin-button {
     .div1-icons1,.div1-icons2{
         display: flex;
         align-items: center;
+    }
+    /* ############################ Demand-Section ######################### */
+    .fashion{
+        top: 250px;
+        left: 75px;
+        font-size: 20px;
+        padding: 2px;
+        border-radius: 2px;
+    }
+    .fashion-bag{
+        top: 250px;
+        left: 100px;
+        font-size: 20px;
+        padding: 2px;
+        border-radius: 2px;
     }
 
     /* ######################## Contact-section ######################### */
@@ -851,12 +915,99 @@ input[type=text]::-webkit-outer-spin-button {
     .main-input-contact input[type="text"] {
         width: 50%;
     }
+    .contact-input{
+        text-align: left;
+    }
+    .contact-input hr{
+        margin-top: 10px;
+    }
+    /* ################################ .Improved-Gallery ############################ */
+    .image-gallery{
+        flex-direction: column;
+    }
+    .box {
+        width: 15%;
+        margin: 10px;
+        box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
+    }
+
+    .box img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* ################################# Most View Section ############################ */
+    .pic{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 598px) {
+    .fashion{
+        top: 575px;
+        left: 220px;
+        font-size: 20px;
+        padding: 0px 20px;
+        border-radius: 2px;
+    }
 }
 
 @media screen and (max-width: 576px) {
+    /* ################################## Logo-section ########################### */
+    .logo h1{
+        font-size: 1.5rem;
+    }
+    .logo-icons i,.logo-icons1 i{
+        font-size: 20px;
+    }
+    /* ########################### Contact- section ########################## */
+    .contact-input{
+        text-align: left;
+    }
+    .contact-input hr{
+        margin: unset;
+        margin-top: 15px;
+        
+    }
     /* ################# copyright ##########################    */
     .sub-copy-right{
         flex-direction: column;
         align-items: center;
     }
+    .sub-demand-section{
+        text-align: left;
+    }
+    .sub-demand-section hr{
+        margin: 0px;
+    }
+    .contact-category{
+        align-items: flex-start;
+    }
+    /* ########################### Demand-Section ######################### */
+    .btn-group{
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    /* ########################## Category-section ######################## */
+    .required-txt{
+        width: 100%;
+    }
+    /* .demand-section1{
+        width: 100%;
+    } */
+    /* ############################ Shipping-section ##################### */
+    .ships{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /* ############################# Header-txt ####################### */
+    .menus{
+        display: none;
+    }
+    .selected{
+        font-size: 14px;
+    }
+    
 }
