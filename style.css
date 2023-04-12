@@ -832,6 +832,7 @@ input[type=text]::-webkit-outer-spin-button {
     border-radius: 50%;
     left: 95%;
     cursor: pointer;
+    display: none;
 }
 /* .last-icons:hover{
     background-color: #3b4556;
