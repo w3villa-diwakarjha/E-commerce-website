@@ -1127,15 +1127,20 @@ input[type=text]::-webkit-outer-spin-button {
         left: 80%;
     }
 }
-/* @media screen and (max-width: 598px) {
+@media screen and (max-width: 598px) {
     /* .fashion{
         top: 575px;
         left: 220px;
         font-size: 20px;
         padding: 0px 20px;
         border-radius: 2px;
+    } */
+    /* ###################### Category-section ########################### */
+    .crausel-section-main{
+        flex-direction: column;
     }
-} */
+
+}
 
 @media screen and (max-width: 576px) {
     /* ################################## Logo-section ########################### */
