@@ -1211,5 +1211,9 @@ input[type=text]::-webkit-outer-spin-button {
     .selected{
         font-size: 14px;
     }
+    /* ############################ Contact-section ######################### */
+    .main-contact1{
+        font-size: 16px;
+    }
     
 }
