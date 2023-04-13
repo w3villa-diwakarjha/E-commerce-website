@@ -1,11 +1,24 @@
-html{
-    scroll-behavior: smooth;
-}
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --maincolorwhite: #fff;
+    --coloraliceblue: aliceblue;
+    --colorgray: gray;
+    --colorcode80: #808080;
+    --colorcodef8: #f8f8f8;
+    --colorblack: #000;
+    --colorcode43: #4300da;
+    --colorRed: red;
+    --colorcode00ff: #0000ff;
+    --colorcodede5: #de5e08;
+    --colorgrey: grey;
+    --colorblue: blue;
+
 }
 /* ################################ Header-css ################################ */
 .sub-div{
@@ -17,10 +30,10 @@ html{
     padding: 10px 0px;
 }
 .header-login i{
-    color: aliceblue;
+    color: var(--coloraliceblue);
 }
 .header-login-txt{
-    color: #fff;
+    color: var(--maincolorwhite);
 }
 .sub-div1{
     display: none;
@@ -31,7 +44,7 @@ html{
 }
 a{
     text-decoration: none;
-    color: gray;
+    color: var(--colorgray);
 }
 .nav-ul .list-item{
     padding: 0px 5px;
@@ -40,7 +53,7 @@ a{
     outline: none;
     border: none;
     background-color: transparent;
-    color: #808080;
+    color: var(--colorcode80);
     cursor: pointer;
 }
 .menus{
@@ -49,19 +62,19 @@ a{
 }
 i{
     font-size: 12px;
-    color: #808080;
+    color: var(--colorcode80);
     padding: 0px 5px;
 }
 .icons2{
     flex-direction: column;
 }
 .icons2 i{
-    color: #fff;
+    color: var(--maincolorwhite);
 }
 /* ############################################ Logo-Section #################### */
 
 .logo-section1{
-    background-color: #f8f8f8;
+    background-color: var(--colorcodef8);
 }
 
 .sub-logo{
@@ -84,11 +97,11 @@ i{
 }
 .logo-icons i{
     font-size: 30px;
-    color: #000;
+    color: var(--colorblack);
 }
 .logo-icons1 i{
     font-size: 30px;
-    color: #000;
+    color: var(--colorblack);
 }
 
 .logo{
@@ -118,8 +131,8 @@ h5{
 
 .all{
     padding: 8px;
-    background: #4300da;
-    color: aliceblue;
+    background: var(--colorcode43);
+    color: var(--coloraliceblue);
     outline: none;
     border: none;
 }
@@ -142,14 +155,14 @@ h5{
 
 .delivery-txt i{
     font-size: 25px;
-    background: #4300da;
-    color: #fff;
+    background: var(--colorcode43);
+    color: var(--maincolorwhite);
     padding: 10px;
 }
 .item{
     padding: 0px 10px;
-    border-right: 1px solid gray;
-    border-bottom: 1px solid gray;
+    border-right: 1px solid var(--colorgray);
+    border-bottom: 1px solid var(--colorgray);
 }
 
 /* ########################### Detail section ############################ */
@@ -175,13 +188,13 @@ h5{
     padding: 0px 20px;
 }
 .detail-section1{
-    background-color: #4300da;
-    color: aliceblue;
+    background-color: var(--colorcode43);
+    color: var(--coloraliceblue);
 }
 
 .all-department, .blog{
     padding: 15px;
-    color: #000;
+    color: var(--colorblack);
     background-color: yellow;
 }
 
@@ -191,17 +204,17 @@ h5{
 
 .sub-detail-section1 i{
     font-size: 16px;
-    color: #000;
+    color: var(--colorblack);
 }
 
 .fa-phone-volume{
-    color: aliceblue;
+    color: var(--coloraliceblue);
     font-size: 16px;
 }
 
 .fa-message{
     font-size: 16px;
-    color: #000;
+    color: var(--colorblack);
 }
 .all-department{
     position: relative;
@@ -212,8 +225,8 @@ h5{
     font-size: 12px;
     top: -8px;
     right: 5px;
-    color: aliceblue;
-    background: red;
+    color: var(--coloraliceblue);
+    background: var(--colorRed);
     padding: 0px 5px;
 }
 
@@ -226,7 +239,7 @@ h5{
     font-size: 12px;
     top: -8px;
     right: 5px;
-    color: #000;
+    color: var(--colorblack);
     background: yellow;
     padding: 0px 5px;
 }
@@ -235,16 +248,13 @@ h5{
 .carousel-section{
     height: 56vh;
     overflow: hidden;
-    /* border: 1px solid red; */
-    background-color: #f8f8f8;
+    background-color: var(--colorcodef8);
     position: relative;
     margin: 5px 0px;
     border-radius: 20px;
 }
 .main-owl-crausel{
     padding: 30px 0px;
-    /* display: flex;
-    flex-wrap: wrap; */
 }
 
 .carousel-item-section{
@@ -282,7 +292,7 @@ h5{
     width: 100%;
     margin: 5px 0px;
     border-radius: 20px;
-    background-color: #f8f8f8;
+    background-color: var(--colorcodef8);
 }
 .image-part1{
     height: 28vh;
@@ -294,18 +304,14 @@ h5{
     width: 90%;
     margin: auto;
 }
-/* .image-part2{
-    height: 28vh;
-    width: 100%;
-} */
 .carousel-image-txt{
     position: absolute;
     top: 30%;
     left: 12%;
 }
 .mobile-btn button{
-    background: blue;
-    color: #fff;
+    background: var(--colorblue);
+    color: var(--maincolorwhite);
     border: none;
     padding: 5px;
     border-radius: 20px;
@@ -317,7 +323,7 @@ h5{
 }
 .learn-txt button{
     background: transparent;
-    border: 1px solid black;
+    border: 1px solid var(--colorblack);
     padding: 5px;
 }
 .image-part1{
@@ -334,7 +340,7 @@ h5{
     font-weight: 600;
 }
 .link-tag a,.link-tag1 a{
-    color: #0000ff;
+    color: var(--colorcode00ff);
 }
 .link-desc1{
     width: 120px;
@@ -356,7 +362,7 @@ h5{
     margin: auto;
     display: flex;
     /* justify-content: space-between; */
-    color: #fff;
+    color: var(--maincolorwhite);
 }
 .sub-main-shipping1, .sub-main-shipping2{
     display: flex;
@@ -367,10 +373,10 @@ h5{
 }
 .sub-main-shipping i{
     font-size: 20px;
-    color: #de5e08;
+    color: var(--colorcodede5);
 }
 .main-font{
-    border: 2px solid blue;
+    border: 2px solid var(--colorblue);
     border-radius: 50%;
     height: 60px;
     width: 70px;
@@ -405,7 +411,7 @@ h5{
     padding: 20px 0px;
 }
 .required-txt a{
-    color: #0000ff;
+    color: var(--colorcode00ff);
 }
 .demand-section1{
     padding-top: 30px;
@@ -419,19 +425,19 @@ h5{
     text-align: center;
 }
 .btn-blue{
-    background-color: blue;
+    background-color: var(--colorblue);
     border: none;
     position: relative;
 }
 
 .btn-black{
-    background-color: grey;
+    background-color: var(--colorgrey);
     border: none;
 }
 
 .category-crausel{
     padding: 30px 0px;
-    border: 2px solid red;
+    border: 2px solid var(--colorRed);
 }
 .demand-items{
     position: relative;
@@ -442,7 +448,7 @@ h5{
     position: absolute;
     top: 88%;
     left: 35%;
-    background: 1px solid red;
+    background: 1px solid var(--colorRed);
     background: #eef1f5;
     padding: 5px;
     border-radius: 5px;
@@ -457,7 +463,7 @@ h5{
 /* ################################## Feature Section ########################### */
 
 .Featured{
-    background: #f8f8f8;
+    background: var(--colorcodef8);
 }
 .dollar{
     display: flex;
@@ -501,8 +507,8 @@ input[type=text]::-webkit-outer-spin-button {
 }
 .quantity-btn button{
     width: 100%;
-    background-color: #0000ff;
-    color: #fff;
+    background-color: var(--colorcode00ff);
+    color: var(--maincolorwhite);
     border: none;
     outline: none;
 }
@@ -521,14 +527,14 @@ input[type=text]::-webkit-outer-spin-button {
     border: 1px solid #e6dddd;
 }
 .all-product-btn{
-    color: #fff;
+    color: var(--maincolorwhite);
     padding: 5px;
     border-radius: 5px;
 }
 .item1{
-    background-color: #fff;
-    border: 1px solid gray;
-    box-shadow: 1px 1px 1px gray;
+    background-color: var(--maincolorwhite);
+    border: 1px solid var(--colorgray);
+    box-shadow: 1px 1px 1px var(--colorgray);
 }
 .buy-now{
     margin-left: 10px;
@@ -539,9 +545,9 @@ input[type=text]::-webkit-outer-spin-button {
 .curve{
     height: 15px;
     width: 15px;
-    color: #0000ff;
+    color: var(--colorcode00ff);
     position: absolute;
-    background: blue;
+    background: var(--colorblue);
     top: 80%;
     left: 50%;
     transform: rotate(45deg);
@@ -553,7 +559,7 @@ input[type=text]::-webkit-outer-spin-button {
     background-color: #eef1f5;
 }
 .owl-carousel-main{
-    background-color: #fff;
+    background-color: var(--maincolorwhite);
     padding: 10px 5px;
 }
 /* .owl-carousel-main hr{
@@ -571,11 +577,11 @@ input[type=text]::-webkit-outer-spin-button {
 }
 .Bodycorn{
     font-size: 14px;
-    color: #0000ff;
+    color: var(--colorcode00ff);
 }
 .btn-category{
-    background-color: #0000ff;
-    color: #fff;
+    background-color: var(--colorcode00ff);
+    color: var(--maincolorwhite);
     border: none;
     outline: none;
     padding: 5px;
@@ -589,7 +595,6 @@ input[type=text]::-webkit-outer-spin-button {
 .category-fashion{
     width: 200px;
     background-color: #f3f2f0;
-    /* border: 2px solid red; */
     margin: 10px 15px;
 }
 .new-Fashion{
@@ -611,9 +616,8 @@ input[type=text]::-webkit-outer-spin-button {
 .new{
     position: absolute;
     top: 5%;
-    /* left: -8%; */
     left: 80%;
-    background: blue;
+    background: var(--colorblue);
     color: white;
     padding: 0px 10px;
     font-size: 12px;
@@ -632,8 +636,8 @@ input[type=text]::-webkit-outer-spin-button {
     left: -3%;
     padding: 0px 12px;
     transform: rotate(-45deg);
-    background: red;
-    color: #fff;
+    background: var(--colorRed);
+    color: var(--maincolorwhite);
 }
 
 .carousel-imagesss img{
@@ -674,7 +678,7 @@ input[type=text]::-webkit-outer-spin-button {
 }
 .see-all a{
     text-decoration: revert;
-    color: #0000ff;
+    color: var(--colorcode00ff);
 }
 
 /* ########################## Improved Gallery ############################## */
@@ -775,7 +779,7 @@ input[type=text]::-webkit-outer-spin-button {
 }
 .blog-image-txt i{
     font-size: 10px;
-    color: #000;
+    color: var(--colorblack);
 }
 
 /* ############################ Pic Section ################################ */
@@ -813,7 +817,7 @@ input[type=text]::-webkit-outer-spin-button {
 
 }
 .pic-icons i{
-    color: red;
+    color: var(--colorRed);
 }
 .pic{
     width: 20%;
@@ -823,7 +827,7 @@ input[type=text]::-webkit-outer-spin-button {
 
 .pic-tag1{
     display: flex;
-    background-color: #fff;
+    background-color: var(--maincolorwhite);
     width: 80%;
     align-items: center;
     justify-content: space-around;
@@ -851,14 +855,14 @@ input[type=text]::-webkit-outer-spin-button {
 }
 .social-media-icons1 i{
     font-size: 40px;
-    color: #0000ff;
+    color: var(--colorcode00ff);
     cursor: pointer;
 }
 
 /* ############################ Contact Section ############################### */
 
 .contact-section{
-    background-color: #f8f8f8;
+    background-color: var(--colorcodef8);
 }
 .main-contact1{
     font-size: 18px;
@@ -873,7 +877,7 @@ input[type=text]::-webkit-outer-spin-button {
     /* margin: revert; */
 }
 .main-contact{
-    color: #0000ff;
+    color: var(--colorcode00ff);
     cursor: pointer;
 }
 .sub-contact-section{
@@ -901,7 +905,7 @@ input[type=text]::-webkit-outer-spin-button {
 }
 .privacy a{
     text-decoration-line: revert;
-    color: #0000ff;
+    color: var(--colorcode00ff);
     cursor: pointer;
 }
 .contact-categoryies{
@@ -918,7 +922,7 @@ input[type=text]::-webkit-outer-spin-button {
     padding: 2px;
 }
 .send i{
-    color: #fff;
+    color: var(--maincolorwhite);
 }
 .contact-section-1{
     width: 90%;
@@ -937,14 +941,14 @@ input[type=text]::-webkit-outer-spin-button {
     background-color: rgb(71, 78, 85);
 }
 .main-copyright{
-    color: #808080;
+    color: var(--colorcode80);
 }
 .copyright-icons i{
     font-size: 30px;
 }
 .last-icons{
-    color: #fff;
-    background-color: #0000ff;
+    color: var(--maincolorwhite);
+    background-color: var(--colorcode00ff);
     position: fixed;
     top: 50%;
     padding: 20px;
@@ -983,17 +987,17 @@ input[type=text]::-webkit-outer-spin-button {
 @media screen and (max-width: 992px) {
     /* ##################### Logo Section ######################### */
     .logo-section1{
-        background-color: #fff;
+        background-color: var(--maincolorwhite);
     }
     .main-div{
-        background-color: #0000ff;
+        background-color: var(--colorcode00ff);
     }
     .sub-logo{
         padding: 5px;
         margin-top: 10px;
     }
     .sub-div i,a,.selected{
-        color: #fff;
+        color: var(--maincolorwhite);
     }
     .sub-logo-section{
         display: none;  
@@ -1202,6 +1206,10 @@ input[type=text]::-webkit-outer-spin-button {
     .fashion-hr{
         width: 10% !important;
     }
+    /* ############################ Contact-section ######################### */
+    .main-contact1{
+        font-size: 16px;
+    }
 }
 @media screen and (max-width: 320px) {
     /* ############################# Header-txt ####################### */
@@ -1211,9 +1219,6 @@ input[type=text]::-webkit-outer-spin-button {
     .selected{
         font-size: 14px;
     }
-    /* ############################ Contact-section ######################### */
-    .main-contact1{
-        font-size: 16px;
-    }
+    
     
 }
