@@ -259,6 +259,8 @@ h5{
     padding: 30px 0px;
 }
 
+
+
 .carousel-item-section{
     height:56vh;
     width:100%
@@ -288,6 +290,7 @@ h5{
 .carousel-image-section{
     height: 56vh;
     padding-right: 0px;
+    overflow: hidden;
 }
 .image-part,.image-part2{
     height: 28vh;
@@ -426,10 +429,52 @@ h5{
 .main-btn{
     text-align: center;
 }
+.fashion{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0.1s;
+    background: 1px solid var(--colorRed);
+    background: #eef1f5;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* opacity: 0; */
+}
+.demand-items:hover .fashion{
+    opacity: 1;
+    top: 40%;
+    color: var(--maincolorwhite);
+    background-color: #117964;
+}
+
 .btn-blue{
     background-color: var(--colorblue);
     border: none;
     position: relative;
+}
+.demand-items::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.603);
+    z-index: 1;
+    /* opacity: 0; */
+    transform: scaleY(0);
+    transform-origin: 100%,100%;
+    transition: all 0.3 ease-in-out ;
+}
+
+.demand-items:hover::after{
+    opacity: 1;
+    transform: scaleY(1);
 }
 
 .btn-black{
@@ -444,7 +489,7 @@ h5{
 .demand-items{
     position: relative;
 }
-.fashion{
+/* .fashion{
     position: absolute;
     text-align: center;
     position: absolute;
@@ -454,7 +499,7 @@ h5{
     background: #eef1f5;
     padding: 5px;
     border-radius: 5px;
-}
+} */
 .main-item-txt{
     display: flex;
     justify-content: space-between;
@@ -739,6 +784,16 @@ input[type=text]::-webkit-outer-spin-button {
     width: 90%;
     margin: auto;
     padding: 30px 0px;
+}
+.Blog-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.quote i{
+    font-size: 40px;
+    color: var(--colorcodede5);
 }
 .Blog-section{
     background-color: #eeeeee;
@@ -1188,12 +1243,19 @@ input[type=text]::-webkit-outer-spin-button {
         width: 80%;
     }
     /* ########################## Category-section ######################## */
-    /* .required-txt{
+    .required-txt{
         width: 100%;
-    } */
+    }
     /* ############################ Shipping-section ##################### */
     .ships{
         flex-direction: column;
+    }
+    /* ############################ From our Blog ####################### */
+    .most-view-pic{
+        flex-direction: column;
+    }
+    .pic-tag{
+        margin-bottom: 15px;
     }
 }
 
