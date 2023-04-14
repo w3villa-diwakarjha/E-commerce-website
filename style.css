@@ -488,6 +488,10 @@ h5{
 }
 .demand-items{
     position: relative;
+    height: 433px;
+}
+.demand-items img{
+    height: 100%;
 }
 /* .fashion{
     position: absolute;
