@@ -415,7 +415,7 @@ h5{
     width: 60px;
     margin: auto;
     padding: 1px 0px;
-    background-color: orangered;
+    background-color: orangered;    
 }
 .required-txt{
     width: 80%;
@@ -737,6 +737,15 @@ input[type=text]::-webkit-outer-spin-button {
 .see-all a{
     text-decoration: revert;
     color: var(--colorcode00ff);
+}
+
+/* ################################ Shops By Brands ########################### */
+.items2{
+    height: 150px;
+}
+.items2 img{
+    width: 100%;
+    height: 100%;
 }
 
 /* ########################## Improved Gallery ############################## */
