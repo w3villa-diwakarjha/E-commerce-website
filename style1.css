@@ -178,6 +178,84 @@ h5{
     border-bottom: 1px solid var(--colorgray);
 }
 
+.sub-detail-section{
+    display: flex;
+    justify-content: space-between;
+    /* width: 90%;
+    margin: auto; */
+    height: 50px;
+}
+
+.sub-detail-section1{
+    display: flex;
+}
+.sub-detail-section1-padd{
+    padding: 0px 8px;
+}
+.sub-detail-section2{
+    display: flex;
+}
+.sub-detail-section2-padd{
+    padding: 0px 20px;
+}
+.detail-section1{
+    background-color: var(--colorcode43);
+    color: var(--coloraliceblue);
+}
+
+.all-department, .blog{
+    padding: 15px;
+    color: var(--colorblack);
+    background-color: yellow;
+}
+
+.multilevel,.megamenu,.fullwidth,.contact{
+    padding: 15px;
+}
+
+.sub-detail-section1 i{
+    font-size: 16px;
+    color: var(--colorblack);
+}
+
+.fa-phone-volume{
+    color: var(--coloraliceblue);
+    font-size: 16px;
+}
+
+.fa-message{
+    font-size: 16px;
+    color: var(--colorblack);
+}
+.all-department{
+    position: relative;
+}
+
+.all-departments-class{
+    position: absolute;
+    font-size: 12px;
+    top: -8px;
+    right: 5px;
+    color: var(--coloraliceblue);
+    background: var(--colorRed);
+    padding: 0px 5px;
+}
+
+.megamenu{
+    position: relative;
+}
+
+.megamenu span{
+    position: absolute;
+    font-size: 12px;
+    top: -8px;
+    right: 5px;
+    color: var(--colorblack);
+    background: yellow;
+    padding: 0px 5px;
+}
+
+
 /* ########################### Media-query ##################### */
 
 @media screen and (max-width: 992px) {
