@@ -104,6 +104,9 @@ i{
     width: 50%;
     justify-content: space-between;
 }
+.sub-logo-section1{
+    display: none;
+}
 .logo-icons i{
     font-size: 30px;
     color: var(--colorblack);
@@ -967,8 +970,7 @@ input[type=text]::-webkit-outer-spin-button {
 }
 
 .contact-category1{
-    width: 25%;
-    /* text-align: center; */
+    width: 30%;
     margin-left: 20px;
     border-right: 1px solid lightgrey;
 }
@@ -1044,9 +1046,9 @@ input[type=text]::-webkit-outer-spin-button {
 
 
 
-.sub-logo-section1{
+/* .sub-logo-section1{
     display: none;
-}
+} */
 
 @media screen and (min-width: 2560px) {
     /* ################### Carousel-section ############################ */
@@ -1233,6 +1235,10 @@ input[type=text]::-webkit-outer-spin-button {
     } */
 }
 @media  screen and (max-width: 767px) {
+    /* ######################## Header-txt ################# */
+    .menus i{
+        display: none;
+    }
     .carousel-image-section{
         display: flex;
         height: 40vh;
@@ -1382,6 +1388,9 @@ input[type=text]::-webkit-outer-spin-button {
     .required-txt{
         width: 100%;
     }
+    .require-txt{
+        font-size: 25px;
+    }
     /* ############################ Shipping-section ##################### */
     .ships{
         flex-direction: column;
@@ -1406,6 +1415,9 @@ input[type=text]::-webkit-outer-spin-button {
     .fashion-hr{
         width: 10% !important;
     }
+    .require-txt{
+        font-size: 18px;
+    }
     /* ############################ Contact-section ######################### */
     .main-contact1{
         font-size: 16px;
@@ -1416,6 +1428,12 @@ input[type=text]::-webkit-outer-spin-button {
     }
     .link-desc1{
         width: 118px;
+    }
+
+}
+@media screen and (max-width: 350px){
+    .require-txt{
+        font-size: 16px;
     }
 }
 @media screen and (max-width: 320px) {
