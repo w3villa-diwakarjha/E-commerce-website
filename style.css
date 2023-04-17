@@ -104,6 +104,9 @@ i{
     width: 50%;
     justify-content: space-between;
 }
+.sub-logo-section1{
+    display: none;
+}
 .logo-icons i{
     font-size: 30px;
     color: var(--colorblack);
@@ -238,7 +241,6 @@ h5{
     background: var(--colorRed);
     padding: 0px 5px;
 }
-
 .megamenu{
     position: relative;
 }
@@ -967,7 +969,7 @@ input[type=text]::-webkit-outer-spin-button {
 }
 
 .contact-category1{
-    width: 25%;
+    width: 30%;
     /* text-align: center; */
     margin-left: 20px;
     border-right: 1px solid lightgrey;
@@ -1041,12 +1043,6 @@ input[type=text]::-webkit-outer-spin-button {
 
 /* ############################### Media Query ################################ */
 
-
-
-
-.sub-logo-section1{
-    display: none;
-}
 
 @media screen and (min-width: 2560px) {
     /* ################### Carousel-section ############################ */
@@ -1382,6 +1378,9 @@ input[type=text]::-webkit-outer-spin-button {
     .required-txt{
         width: 100%;
     }
+    .require-txt{
+        font-size: 20px;
+    }
     /* ############################ Shipping-section ##################### */
     .ships{
         flex-direction: column;
@@ -1416,6 +1415,11 @@ input[type=text]::-webkit-outer-spin-button {
     }
     .link-desc1{
         width: 118px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .require-txt{
+        font-size: 17px;
     }
 }
 @media screen and (max-width: 320px) {
