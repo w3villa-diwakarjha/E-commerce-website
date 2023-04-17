@@ -632,7 +632,7 @@ input[type=text]::-webkit-outer-spin-button {
 }   
 .btn-main{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 5px 0px;
 }
 .Bodycorn{
@@ -703,7 +703,8 @@ input[type=text]::-webkit-outer-spin-button {
 .carousel-imagesss img{
     height: 100%;
     width: 100%;
-    object-fit: revert;
+    object-fit: cover;
+    object-position: top;
 }
 
 
