@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,6 +23,7 @@
     <link rel="stylesheet" href="style1.css">
     <title>Search</title>
 </head>
+
 <body>
     <!-- ###################### Header Text ############################ -->
     <header>
@@ -167,5 +169,258 @@
             </div>
         </div>
     </section>
+
+    <!-- ################################ Home-search ########################### -->
+    <section class="Home-search">
+        <div class="home-search">
+            <div class="sub-home-search container1">
+                <div class="home-search-icons">
+                    <div class="home-search-icon"><i class="fa-solid fa-house"></i></div>
+                    <div class="home-search-icon"><i class="fa-solid fa-arrow-right-long"></i></div>
+                    <div class="home-search-icon icon-search">Search</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ############################# Search-element ###################### -->
+    <section class="search-element">
+        <div class="search-elements">
+            <div class="sub-search-element container1">
+                <div class="search-element-txt">Search Camera
+                    <div class="border-color"></div>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <div class="searching container1 row">
+                    <div class="search-filter col-md-2">
+                        <div class="filter-clear filters">
+                            <div class="filter">Filter</div>
+                            <div class="clear"><i class="fa-sharp fa-regular fa-circle-xmark"></i>Clear</div>
+                        </div>
+                        <div class="searching-cover">
+                            <div class="category-searchs">
+                                <div class="category-search filters">
+                                    <div class="price search-color">PRICE</div>
+                                    <div class="toggle-btn-icon search-color">
+                                        <div class="plus-icon icons-font"><i class="fa-solid fa-plus search-color"></i></div>
+                                        <div class="minus-icon icons-font"><i class="fa-solid fa-minus search-color"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-range">
+                                <div class="price-icons" id="toggle-btn">
+                                    <div class="range">
+                                        <div class="range-slider">
+                                            <span class="range-selected"></span>
+                                        </div>
+                                        <div class="range-input">
+                                            <input type="range" class="min" min="0" max="1000" value="300" step="10">
+                                            <input type="range" class="max" min="0" max="1000" value="700" step="10">
+                                        </div>
+                                        <div class="range-price">
+                                            <label for="min">Min</label>
+                                            <input type="number" name="min" value="300">
+                                            <label for="max">Max</label>
+                                            <input type="number" name="max" value="700">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="input-price">
+                                    <input type="text" value="70" class="input-1">
+                                    <input type="text" value="250" class="input-1">
+                                </div> -->
+                            </div>
+                        </div>
+
+                        <div class="category-searching">
+                            <div class="category-search filters">
+                                <div class="price search-color">AVAILABILITY</div>
+                                <div class="toggle-btn-icon">
+                                    <div class="plus-icon icons-font"><i class="fa-solid fa-plus search-color"></i></div>
+                                    <div class="minus-icon icons-font"><i class="fa-solid fa-minus search-color"></i></div>
+                                </div>
+                            </div>
+                            <div class="available-items searching-cover" id="toggle-btn">
+                                <div class="stock-checkbox1">
+                                    <input type="checkbox">
+                                    <div class="in-stock">In-stock</div>
+                                </div>
+                                <div class="stock-checkbox1">
+                                    <input type="checkbox">
+                                    <div class="in-stock">Out of Stock</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="category-searching">
+                            <div class="category-search filters">
+                                <div class="price search-color">SUBCATEGORIES</div>
+                                <div class="toggle-btn-icon">
+                                    <div class="plus-icon icons-font"><i class="fa-solid fa-plus search-color"></i></div>
+                                    <div class="minus-icon icons-font"><i class="fa-solid fa-minus search-color"></i></div>
+                                </div>
+                            </div>
+                            <div class="images-subcategories searching-cover" id="toggle-btn">
+                                <div class="image-sub-category">
+                                    <img src="./Assets/img/140-1404058_electronic-goods-images-png-transparent-png.png"
+                                        alt="">
+                                </div>
+                                <div class="image-txt">Electronics</div>
+                            </div>
+                        </div>
+
+                        <div class="category-searching">
+                            <div class="category-search filters">
+                                <div class="price search-color">BRANDS</div>
+                                <div class="toggle-btn-icon">
+                                    <div class="plus-icon icons-font"><i class="fa-solid fa-plus search-color"></i></div>
+                                    <div class="minus-icon icons-font"><i class="fa-solid fa-minus search-color"></i></div>
+                                </div>
+                            </div>
+                            <div class="images-brands searching-cover" id="toggle-btn" >
+                                <div class="image-sub-brands">
+                                    <img src="./Assets/img/knowledge_graph_logo.png" alt="">
+                                </div>
+                                <div class="image-sub-brands">
+                                    <img src="./Assets/img/360_F_425721220_JwkkraXElXZUqAQZrpkKeTzDi1ywmRsv.jpg" alt="">
+                                </div>
+                                <div class="image-sub-brands">
+                                    <img src="./Assets/img/Ericsson-logo.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-searching">
+                            <div class="category-search filters">
+                                <div class="price search-color">SELECT</div>
+                                <div class="toggle-btn-icon">
+                                    <div class="plus-icon icons-font"><i class="fa-solid fa-plus search-color"></i></div>
+                                    <div class="minus-icon icons-font"><i class="fa-solid fa-minus search-color"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-searching">
+                            <div class="category-search filters">
+                                <div class="price search-color">RADIO</div>
+                                <div class="toggle-btn-icon">
+                                    <div class="plus-icon icons-font"><i class="fa-solid fa-plus search-color"></i></div>
+                                    <div class="minus-icon icons-font"><i class="fa-solid fa-minus search-color"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-searching">
+                            <div class="category-search filters">
+                                <div class="price search-color">COLOR</div>
+                                <div class="toggle-btn-icon search-color">
+                                    <div class="plus-icon icons-font"><i class="fa-solid fa-plus search-color"></i></div>
+                                    <div class="minus-icon icons-font"><i class="fa-solid fa-minus search-color"></i></div>
+                                </div>
+                            </div>
+                            <div class="color-picker searching-cover" id="toggle-btn">
+                                <div class="color-pick1 pick-red"></div>
+                                <div class="color-pick1 pick-blue"></div>
+                                <div class="color-pick1 pick-aqua"></div>
+                                <div class="color-pick1 pick-orange"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="category-searching">
+                            <div class="category-search filters">
+                                <div class="price search-color">CLOCKSPEED</div>
+                                <div class="toggle-btn-icon">
+                                    <div class="plus-icon icons-font"><i class="fa-solid fa-plus search-color"></i></div>
+                                    <div class="minus-icon icons-font"><i class="fa-solid fa-minus search-color"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-searching">
+                            <div class="category-search filters">
+                                <div class="price search-color">TEST 1</div>
+                                <div class="toggle-btn-icon">
+                                    <div class="plus-icon icons-font"><i class="fa-solid fa-plus search-color"></i></div>
+                                    <div class="minus-icon icons-font"><i class="fa-solid fa-minus search-color"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-searching">
+                            <div class="category-search filters">
+                                <div class="price search-color">NO. OF CORES</div>
+                                <div class="toggle-btn-icon">
+                                    <div class="plus-icon icons-font"><i class="fa-solid fa-plus search-color"></i></div>
+                                    <div class="minus-icon icons-font"><i class="fa-solid fa-minus search-color"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-searching">
+                            <div class="category-search filters">
+                                <div class="price search-color">STYLE</div>
+                                <div class="toggle-btn-icon">
+                                    <div class="plus-icon icons-font"><i class="fa-solid fa-plus search-color"></i></div>
+                                    <div class="minus-icon icons-font"><i class="fa-solid fa-minus search-color"></i></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="search-object col-md-10">Hello</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        // ##################### Range-Slider ########################
+        let rangeMin = 100;
+        const range = document.querySelector(".range-selected");
+        const rangeInput = document.querySelectorAll(".range-input input");
+        const rangePrice = document.querySelectorAll(".range-price input");
+        rangeInput.forEach((input) => {
+            input.addEventListener("input", (e) => {
+                let minRange = parseInt(rangeInput[0].value);
+                let maxRange = parseInt(rangeInput[1].value);
+                if (maxRange - minRange < rangeMin) {
+                    if (e.target.className === "min") {
+                        rangeInput[0].value = maxRange - rangeMin;
+                    } else {
+                        rangeInput[1].value = minRange + rangeMin;
+                    }
+                } else {
+                    rangePrice[0].value = minRange;
+                    rangePrice[1].value = maxRange;
+                    range.style.left = (minRange / rangeInput[0].max) * 100 + "%";
+                    range.style.right = 100 - (maxRange / rangeInput[1].max) * 100 + "%";
+                }
+            });
+        });
+        rangePrice.forEach((input) => {
+            input.addEventListener("input", (e) => {
+                let minPrice = rangePrice[0].value;
+                let maxPrice = rangePrice[1].value;
+                if (maxPrice - minPrice >= rangeMin && maxPrice <= rangeInput[1].max) {
+                    if (e.target.className === "min") {
+                        rangeInput[0].value = minPrice;
+                        range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
+                    } else {
+                        rangeInput[1].value = maxPrice;
+                        range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+                    }
+                }
+            });
+        });
+        // ######################## Toggle-btn #################################
+        let k= document.getElementsByClassName('fa-solid')
+        console.log(k);
+
+    </script>
 </body>
+
 </html>
