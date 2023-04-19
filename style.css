@@ -207,7 +207,7 @@ h5{
 .all-department, .blog{
     padding: 15px;
     color: var(--colorblack);
-    background-color: yellow;
+    background-color: yellow
 }
 
 .multilevel,.megamenu,.fullwidth,.contact{
@@ -230,6 +230,7 @@ h5{
 }
 .all-department{
     position: relative;
+    width: 250px;
 }
 
 .all-departments-class{
@@ -766,6 +767,7 @@ input[type=text]::-webkit-outer-spin-button {
     /* width: 90%;
     margin: auto; */
     display: flex;
+    padding-bottom: 20px;
 }
 .box{
     width: 15%;
@@ -1047,6 +1049,11 @@ input[type=text]::-webkit-outer-spin-button {
 
 @media screen and (min-width: 2560px) {
     /* ################### Carousel-section ############################ */
+    .carousel-item-section img{
+        object-position: center;
+        
+    }
+    
     .link-desc{
         font-size: 25px;
         width: 200px;
@@ -1062,7 +1069,7 @@ input[type=text]::-webkit-outer-spin-button {
         height: 30vh;
     }
     .carousel-item-section{
-        height:15vh;
+        height:30vh;
         width:100%
     }
     .carousel-image-section{
