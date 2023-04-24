@@ -530,8 +530,11 @@ h5{
 .minus-icon{
     display: none;
 }
-.actived{
+/* .actived{
     display: block;
+} */
+.list-direction{
+    flex-direction: column;
 }
 #toggle-btn1{
     display: none;
@@ -617,6 +620,8 @@ h5{
     width: 300px;
     height: 300px;
     overflow: hidden;
+    background-color: var(--maincolorwhite);
+    position: relative;
 }
 .product-images{
     display: flex;
@@ -624,11 +629,21 @@ h5{
     flex-wrap: wrap;
     border-bottom: 1px solid lightgrey;
     padding-bottom: 30px;
+    /* flex-direction: column; */
 }
+.product-images-list{
+    flex-direction: column;
+}
+/* .product-image-list{
+
+} */
 .main-product-image{
-    /* border: 2px solid red; */
     width:  300px;
-    background-color: #fff;
+    /* background-color: #fff; */
+}
+.product-img-desc{
+    background-color: var(--maincolorwhite);
+    /* display: none; */
 }
 .product-price-main{
     display: flex;
@@ -696,17 +711,17 @@ h5{
     text-align: center;
 }
 .stars-rating{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* margin: 5px; */
+    position: absolute;
+    bottom: 0%;
+    left: 26%;
 }
-.main-image1{
+/* .main-image1{
     position: relative;;
-}
-.main-image2{
-    position: relative;;
-}
+} */
+/* .main-image2{
+    position: relative;
+    overflow: hidden;
+} */
 .main-image3{
     position: relative;
 }
@@ -741,6 +756,7 @@ h5{
     background: red;
     padding: 0px 5px;
     left: 0%;
+    color: #fff;
 }
 .hot2{
     position: absolute;
@@ -748,6 +764,284 @@ h5{
     left: 85%;
     background: yellow;
     padding: 5px;
+}
+.main-image-hr{
+    margin-top: 50px !important;
+    display: none;
+}
+/* ######################### List-View Image ##################### */
+.main-brands-models{
+    display: none;
+    padding-left: 40px;
+}
+.main-list-view{
+    display: flex;
+}
+.models{
+    padding-left: 20px;
+}
+.brands-models{
+    display: flex;
+}
+.price-rates{
+    display: flex;
+}
+.Add-cart{
+    display: flex;
+}
+.main-add-cart{
+    width: 5%;
+}
+.main-add-cart input[type="text"]{
+ width: 100%;
+ text-align: center;
+}
+.cart-button{
+    margin: 0px 5px;
+    background-color: var(--colorcode43);
+    cursor: pointer;
+    padding: 5px ;
+}
+.cart-button button{
+    background-color: var(--colorcode43);
+    color: var(--maincolorwhite);
+    border: none;
+}
+.cart-button i{
+    color: var(--maincolorwhite);
+    font-size: 18px;
+
+}
+.cart-icons{
+    display: flex;
+}
+.add-cart-heart-left{
+    display: flex;
+    border: 1px solid lightgray;
+    font-size: 20px;
+    height: 100%;
+    align-items: center;
+}
+.main-apple-brands{
+    font-weight: 600;
+    font-size: 18px;
+}
+.main-apple-txt-p{
+    color: gray;
+}
+.tax{
+    margin: 10px 0px;
+}
+.main-item-product-txt{
+    display: flex;
+}
+.buy-now-product,.question-product{
+    padding: 5px ;
+}
+.grid i{
+    color: var(--colorcode00ff);
+}
+/* ############################ Pic Section ################################ */
+
+.mostview{
+    background-color: rgb(71, 78, 85);
+    padding: 20px 0px;
+}
+/* .mostviews{
+    width: 90%;
+    margin: auto;
+} */
+.Mostview-tag{
+    font-size: 20px;
+    line-height: 0;
+    color: #e6dddd;
+    cursor: pointer;
+}
+.most-view-pic{
+    display: flex;
+}
+.Mostview-tag hr{
+    margin-top: 15px;
+    width: 40px;
+    border: 1px solid orangered;
+}
+.pic img{
+    width: 100%;
+    height: 100%;
+}
+.main-intro{
+    width: 100%;
+}
+.pic-icons{
+    margin: 10px;
+
+}
+.pic-icons i{
+    color: var(--colorRed);
+}
+.pic{
+    width: 20%;
+}
+
+
+
+.pic-tag1{
+    display: flex;
+    background-color: var(--maincolorwhite);
+    width: 80%;
+    align-items: center;
+    justify-content: space-around;
+}
+.pic-dollar{
+    text-align: center;
+}
+
+/* ###########################Sub-Pic-Section-Most-View ############################ */
+.main-mostview{
+    display: flex;
+}
+.recently-tag{
+    margin-right: 20px;
+}
+.most-view-pictures{
+    display: flex;
+    display: none;
+}
+.pic-tag-recent{
+    width: 30%;
+}
+.most-recent-change-color{
+    color: #878787;
+}
+.Mostview-tag1{
+    color: #878787;
+}
+/* ########################## Social-media ############################ */
+
+.social-media{
+    background-color: #eeeeee;
+}
+.sub-social-media{
+    /* width: 90%;
+    margin: auto; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-media-icons{
+    display: flex;
+}
+.social-medias{
+    padding: 30px 0px;
+}
+.social-media-icons1 i{
+    font-size: 40px;
+    color: var(--colorcode00ff);
+    cursor: pointer;
+}
+
+/* ############################ Contact Section ############################### */
+
+.contact-section{
+    background-color: var(--colorcodef8);
+}
+.main-contact1{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 0;
+}
+
+.main-contact1 hr{
+    margin-top: 15px;
+    width: 30px;
+    border: 1px solid orangered;
+}
+.send{
+    background: blue;
+    border: none;
+    color: aliceblue;
+    border-radius: 5px;
+}
+.main-contact{
+    color: var(--colorcode00ff);
+    cursor: pointer;
+}
+.sub-contact-section{
+    /* width: 90%;
+    margin: auto; */
+    padding: 30px 0px;
+}
+.contact-category{
+    display: flex;
+}
+
+.contact-category1{
+    width: 30%;
+    margin-left: 20px;
+    border-right: 1px solid lightgrey;
+}
+.input-contact{
+    margin-left: 20px;
+    border: none;
+}
+.privacy{
+    display: inline;
+    font-size: 12px;
+}
+.privacy a{
+    text-decoration-line: revert;
+    color: var(--colorcode00ff);
+    cursor: pointer;
+}
+.contact-categoryies{
+    width: 90%;
+    /* margin: auto; */
+}
+.main-input-contact-para{
+    color: lightslategrey;
+}
+.main-input-contact input[type="text"]{
+    width: 70%;
+}
+.send{
+    padding: 2px;
+}
+.send i{
+    color: var(--maincolorwhite);
+}
+.contact-section-1{
+    width: 90%;
+    margin: auto;
+}
+
+/* ###################################### Copyright #################### */
+.sub-copy-right{
+    display: flex;
+    /* width: 90%;
+    margin: auto; */
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.copyright{
+    background-color: rgb(71, 78, 85);
+}
+.main-copyright{
+    color: var(--colorcode80);
+}
+.copyright-icons i{
+    font-size: 30px;
+}
+.last-icons{
+    color: var(--maincolorwhite);
+    background-color: var(--colorcode00ff);
+    position: fixed;
+    top: 50%;
+    padding: 20px;
+    border-radius: 50%;
+    left: 95%;
+    z-index: 2;
+    cursor: pointer;
+    display: none;
 }
 /* ########################### Media-query ##################### */
 
