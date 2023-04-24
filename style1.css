@@ -365,6 +365,7 @@ h5{
     display: flex;
     width: 250px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .sort,.show{
     background-color: #eeeeee;
@@ -892,9 +893,9 @@ h5{
     align-items: center;
     justify-content: space-around;
 }
-.pic-dollar{
+/* .pic-dollar{
     text-align: center;
-}
+} */
 
 /* ###########################Sub-Pic-Section-Most-View ############################ */
 .main-mostview{
@@ -973,10 +974,12 @@ h5{
 }
 .contact-category{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .contact-category1{
-    width: 30%;
+    width: 45%;
     margin-left: 20px;
     border-right: 1px solid lightgrey;
 }
@@ -1012,6 +1015,12 @@ h5{
 .contact-section-1{
     width: 90%;
     margin: auto;
+}
+.main-contact-category1, .main-contact-category2{
+    display: flex;
+    width: 50%;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
 }
 
 /* ###################################### Copyright #################### */
@@ -1070,6 +1079,9 @@ h5{
         max-width: 1100px;
         margin: auto;
     }
+    .main-list-view3{
+        margin-top: 15px;
+    }
 }
 
 @media screen and (max-width:1150px) {
@@ -1077,6 +1089,7 @@ h5{
         max-width: 1000px;
         margin: auto;
     }
+
 }
 
 @media screen and (max-width:1050px) {
@@ -1101,6 +1114,19 @@ h5{
     .container1{
         max-width: 600px;
         margin: auto;
+    }
+
+    /* ######################## Grid-view ########################### */
+    .main-list-view2 {
+        margin-top: 15px;
+    }
+
+    /* ####################### Most-view Section ################### */
+    .pic-tag1{
+        flex-direction: column;
+    }
+    .pic{
+        width: 50%;
     }
 }
 @media screen and (max-width: 650px) {
@@ -1130,10 +1156,10 @@ h5{
 
 @media screen and (max-width: 992px) {
     /* ##################### Logo Section ######################### */
-    /* .container1{
-        max-width: 900px;
-        margin: auto;
-    } */
+    
+    .search-filter{
+        display: none;
+    }
     .logo-section1{
         background-color: var(--maincolorwhite);
     }
@@ -1160,5 +1186,126 @@ h5{
 
     .detail-section1{
         display: none;
+    }
+    /*############################ container col-2-col-10 ################ */
+
+    .searching{
+        display: block;
+    }
+    /* #################### Col-md-10 ############################ */
+    .search-object{
+        max-width: 100%;
+        padding-left: 0px;
+    }
+    /* ######################### Most-view Section ###################### */
+    .pic-tag-recent{
+        width: 50%;
+    }
+    .most-view-pictures{
+        flex-wrap: wrap;
+    }
+    .pic-tag{
+        width: 50%;
+        margin-bottom: 5px;
+    }
+
+    
+
+}
+/* * ######################## Contact-category ####################  */
+@media screen and (max-width: 850px) {
+    .main-contact-category1{
+        border-right: 1px solid lightgray;
+    }
+    .contact-category2{
+        margin-left: 0px;
+        /* margin-bottom: 30px; */
+    }
+    .contact-category3,.contact-category4{
+        border: none;
+        margin-left: 25px;
+        /* margin-bottom: 30px; */
+    }
+    .contact-category1{
+        border: none;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* #################### Most-view ########################## */
+    .pic-tag-recent{
+        width: 60%;
+    }
+    /* ################### List -view ############################# */
+    .main-list-view{
+        flex-direction: column;
+    }
+    .main-brands-models{
+        padding-top: 40px;
+        padding-left: 0px;
+    }
+    .sub-div{
+        display: none;
+    }
+    .sub-div1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .div1-icons1,.div1-icons2{
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* ######################## Header Text ######################## */
+    
+    /* ######################### Most-view Section ####################### */
+    .most-view-pictures{
+        flex-direction: column;
+    }
+    /* ############################ Contact-category ########################### */
+    .contact-category{
+        flex-direction: column;
+    }
+    .main-contact-category1{
+        border: none;
+    }
+    .contact-category3, .contact-category4{
+        margin-left: 0px;
+    }
+    .contact-category2{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 350px) {
+    /* ####################### Header -section ######################### */
+    .menus{
+        display: none;
+    }
+    /* ####################### Most-view Section ################### */
+    .Mostview-tag{
+        font-size: 16px;
+    }
+    /* ######################## Logo Section ################################ */
+    .logo-icons i, .logo-icons1 i{
+        font-size: 20px;
+    }
+    /* .product-image{
+        width: 250px;
+        height: 250px;
+    } */
+    /* ########################### container col-2 and col-10 ######################## */
+
+    .product-txt{
+        font-size: 16px;
+    }
+    .product-images{
+        align-items: center;
+        justify-content: center;
     }
 }
