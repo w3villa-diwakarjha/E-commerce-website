@@ -748,18 +748,18 @@
                     <div class="main-mostview">
                         <div class="Mostview-tag recently-tag" onclick="RecentlyView()" id="Recently">
                             Recently Viewed
-                            <hr>
+                            <hr id="recent-hr">
                         </div>
-                        <div class="Mostview-tag Mostview-tag1" onclick="MostlyView()" id="mostviewed">
+                        <div class="Mostview-tag most-recent-change-color" onclick="MostlyView()" id="mostviewed">
                             Most Viewed
-                            <hr>
+                            <hr id="most-hr">
                         </div>
                     </div>
                     <div class="most-view-pic">
                         <div class="pic-tag pic-tag-recent" id="sub-recently">
                             <div class="pic-tag1">
                                 <div class="pic">
-                                    <img src="./Assets/img/232288-middle.png" alt="">
+                                    <img src="./Assets/img/71D9ImsvEtL._UL1500_.jpg" alt="">
                                 </div>
                                 <div class="pic-icons">
                                     <div class="pic-intro">
@@ -1182,20 +1182,25 @@
         function MostlyView(){
             document.getElementById("sub-recently").classList.add("active-none")
             document.getElementById("Recently").classList.add("most-recent-change-color")
+            document.getElementById("recent-hr").classList.add("active-none");
 
-            document.getElementById("sub-mostview").classList.add("actived")
+            document.getElementById("sub-mostview").classList.add("activated")
             document.getElementById("mostviewed").classList.remove("most-recent-change-color")
+            document.getElementById("most-hr").classList.add("actived");
         }
+
+        
 
         // ########################### Recent View ###################################
         function RecentlyView(){
             document.getElementById("sub-recently").classList.remove("active-none")
             document.getElementById("Recently").classList.remove("most-recent-change-color")
+            document.getElementById("recent-hr").classList.remove("active-none");
 
 
-
-            document.getElementById("sub-mostview").classList.add("active-none")
+            document.getElementById("sub-mostview").classList.remove("activated")
             document.getElementById("mostviewed").classList.add("most-recent-change-color")
+            document.getElementById("most-hr").classList.remove("actived");
         }
     </script>
 </body>

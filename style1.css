@@ -908,13 +908,13 @@ h5{
     display: none;
 }
 .pic-tag-recent{
-    width: 30%;
+    width: 35%;
 }
 .most-recent-change-color{
     color: #878787;
 }
-.Mostview-tag1{
-    color: #878787;
+#most-hr{
+    display: none;
 }
 /* ########################## Social-media ############################ */
 
@@ -1045,7 +1045,88 @@ h5{
 }
 /* ########################### Media-query ##################### */
 
+@media screen and (max-width:1150px) {
+    .container1{
+        max-width: 1000px;
+        margin: auto;
+    }
+}
 
+@media screen and (max-width:1450px) {
+    .container1{
+        max-width: 1300px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    .container1{
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:1250px) {
+    .container1{
+        max-width: 1100px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .container1{
+        max-width: 1000px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .container1{
+        max-width: 900px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 950px){
+    .container1{
+        max-width: 800px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:850px) {
+    .container1{
+        max-width: 700px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 750px) {
+    .container1{
+        max-width: 600px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 650px) {
+    .container1{
+        max-width: 500px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:550px) {
+    .container1{
+        max-width: 400px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:450px) {
+    .container1{
+        max-width: 300px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:350px) {
+    .container1{
+        max-width: 260px;
+        margin: auto;
+    }
+}
 
 @media screen and (max-width: 992px) {
     /* ##################### Logo Section ######################### */
