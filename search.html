@@ -1208,6 +1208,18 @@
             document.getElementById("mostviewed").classList.add("most-recent-change-color")
             document.getElementById("most-hr").classList.remove("actived");
         }
+        // ########################### Scroll-top ###########################
+        window.addEventListener('scroll', () => {
+            let height = window.scrollY;
+            if (height < 500) {
+                document.getElementById("icon-scroll").style.display = 'none';
+            } else {
+                document.getElementById("icon-scroll").style.display = 'block';
+            }
+        },10000)
+        function scrollToTop() {
+            window.scrollTo(0, 0);
+        }
     </script>
 </body>
 
