@@ -1032,7 +1032,7 @@ input[type=text]::-webkit-outer-spin-button {
     color: var(--maincolorwhite);
     background-color: var(--colorcode00ff);
     position: fixed;
-    top: 50%;
+    top: 80%;
     padding: 20px;
     border-radius: 50%;
     left: 95%;
