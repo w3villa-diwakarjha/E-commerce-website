@@ -107,6 +107,7 @@ i{
 .sub-logo-section1{
     display: none;
 }
+
 .logo-icons i{
     font-size: 30px;
     color: var(--colorblack);
@@ -1237,6 +1238,10 @@ input[type=text]::-webkit-outer-spin-button {
     } */
 }
 @media  screen and (max-width: 767px) {
+    /* ######################## Header-txt ################# */
+    .menus i{
+        display: none;
+    }
     .carousel-image-section{
         display: flex;
         height: 40vh;
@@ -1412,6 +1417,9 @@ input[type=text]::-webkit-outer-spin-button {
     } */
     .fashion-hr{
         width: 10% !important;
+    }
+    .require-txt{
+        font-size: 18px;
     }
     /* ############################ Contact-section ######################### */
     .main-contact1{
