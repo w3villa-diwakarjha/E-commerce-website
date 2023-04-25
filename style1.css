@@ -368,6 +368,7 @@ h5{
     flex-wrap: wrap;
 }
 .sort,.show{
+    display: flex;
     background-color: #eeeeee;
     
 }
@@ -842,6 +843,9 @@ h5{
 .grid i{
     color: var(--colorcode00ff);
 }
+.grid-list{
+    display: flex;
+}
 /* ############################ Pic Section ################################ */
 
 .mostview{
@@ -1089,6 +1093,10 @@ h5{
         max-width: 1000px;
         margin: auto;
     }
+    /* ################## col-md-2 and col-md-10 ########################### */
+    .search-color{
+        font-size: 13px;
+    }
 
 }
 
@@ -1096,6 +1104,13 @@ h5{
     .container1{
         max-width: 900px;
         margin: auto;
+    }
+    /* ###################### Logo-Section ######################### */
+    .sub-logo-section{
+        margin-left: 0px;
+    }
+    .search-main{
+        width: 45%  ;
     }
 }
 @media screen and (max-width: 950px){
@@ -1179,6 +1194,7 @@ h5{
     .sub-logo-section1{
         display: flex;
         justify-content: end; 
+        align-items: center;
     }
     .logo-icons{
         width: 20%;
@@ -1260,8 +1276,16 @@ h5{
 }
 
 @media screen and (max-width: 576px) {
-    /* ######################## Header Text ######################## */
-    
+    /* ######################## container col-2 and col-10 ######################## */
+    .product-compare{
+        display: none;
+    }
+    .sort-txt, .show-txt{
+        display: none;
+    }
+    .sort-show{
+        justify-content: space-evenly;
+    }
     /* ######################### Most-view Section ####################### */
     .most-view-pictures{
         flex-direction: column;
@@ -1277,6 +1301,9 @@ h5{
         margin-left: 0px;
     }
     .contact-category2{
+        width: 100%;
+    }
+    .main-contact-category1, .main-contact-category2{
         width: 100%;
     }
     
@@ -1307,5 +1334,18 @@ h5{
     .product-images{
         align-items: center;
         justify-content: center;
+    }
+    .sort{
+        width: max-content;
+    }
+    .compare{
+        margin: 0px;
+        text-align: center;
+    }
+    .main-product-image{
+        width: 250px;
+    }
+    .product-image{
+        width: 250px;
     }
 }
