@@ -267,6 +267,7 @@ h5{
 
 .home-search-icons{
     display: flex;
+    align-items: baseline;
 }
 .search-elements{
     background-color: var(--colorcodef8);
@@ -692,7 +693,8 @@ h5{
     background-color: var(--colorcode00ff);
     color: var(--maincolorwhite);
     border: none;
-    outline: none
+    outline: none;
+    padding: 2px;
 }
 .inc-dec-btn{
     display: flex;

@@ -394,7 +394,7 @@
                     </div>
                     <div class="search-object col-md-10">
                         <div class="search-input-boxes">
-                            <div class="input-box1"><input type="text" placeholder="   Search here..."></div>
+                            <div class="input-box1"><input type="text" placeholder="   Search here..." id="demo"></div>
                             <div class="input-box2"><select name="" id="">
                                     <option value="Category"> All Category</option>
                                 </select></div>
@@ -430,12 +430,16 @@
                                 </div>
                             </div>
                             <div class="sort-show">
-                                <div class="sort"><div class="sort-txt">sort By:</div> <select name="" id="">
+                                <div class="sort">
+                                    <div class="sort-txt">sort By:</div> <select name="" id="">
                                         <option value="Default">Default</option>
-                                    </select></div>
-                                <div class="show"><div class="show-txt">show:</div> <select name="" id="">
+                                    </select>
+                                </div>
+                                <div class="show">
+                                    <div class="show-txt">show:</div> <select name="" id="">
                                         <option value="Default">12</option>
-                                    </select></div>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div class="sub-product-hr-tag">
@@ -1216,10 +1220,26 @@
             } else {
                 document.getElementById("icon-scroll").style.display = 'block';
             }
-        },10000)
+        }, 10000)
         function scrollToTop() {
             window.scrollTo(0, 0);
         }
+
+        // ####################### Typing-effect ################################
+
+        var i = 0;
+        var txt = 'Available all the Product in minimum Discount';
+        var speed = 50;
+        var place=""
+        function typeWriter() {
+            if (i < txt.length) {
+                place+=txt.charAt(i);
+                document.getElementById("demo").setAttribute("placeholder",place);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        typeWriter();
     </script>
 </body>
 
