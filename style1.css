@@ -373,10 +373,14 @@ h5{
     background-color: #eeeeee;
     
 }
+.sort-txt, .show-txt{
+    font-size: 14px;
+}
 .sort select,.show select{
     border: none;
     background: #fff;
     height: 100%;
+    margin-left: 8px;
 }
 .sub-product-hr-tag{
     margin: 15px 0px;
