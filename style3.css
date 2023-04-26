@@ -1,0 +1,593 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --maincolorwhite: #fff;
+    --coloraliceblue: aliceblue;
+    --colorgray: gray;
+    --colorcode80: #808080;
+    --colorcodef8: #f8f8f8;
+    --colorblack: #000;
+    --colorcode43: #4300da;
+    --colorRed: red;
+    --colorcode00ff: #0000ff;
+    --colorcodede5: #de5e08;
+    --colorgrey: grey;
+    --colorblue: blue;
+
+}
+
+/* ################################ Header-css ################################ */
+
+.container1{
+    max-width: 1400px;
+    margin: auto;
+}
+.sub-div{
+    display: flex;
+    justify-content: space-between;
+    /* width: 90%; */
+    font-size: 14px;
+    /* margin: auto; */
+    padding: 10px 0px;
+}
+.logo h1{
+    font-weight: 600;
+}
+.header-login i{
+    color: var(--coloraliceblue);
+}
+.header-login-txt{
+    color: var(--maincolorwhite);
+}
+.sub-div1{
+    display: none;
+}
+.nav-ul{
+    display: flex;
+    list-style-type: none ;
+}
+a{
+    text-decoration: none;
+    color: var(--colorgray);
+}
+.nav-ul .list-item{
+    padding: 0px 5px;
+}
+.selected{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: var(--colorcode80);
+    cursor: pointer;
+}
+.menus{
+    display: flex;
+    align-items: baseline;
+}
+i{
+    font-size: 12px;
+    color: var(--colorcode80);
+    padding: 0px 5px;
+}
+.icons2{
+    flex-direction: column;
+}
+.icons2 i{
+    color: var(--maincolorwhite);
+}
+
+/* ############################################ Logo-Section #################### */
+
+
+.logo-section1{
+    background-color: var(--colorcodef8);
+}
+
+.sub-logo{
+    display: flex;
+    justify-content: space-between;
+    /* width: 90%;
+    margin: auto; */
+    padding: 30px 0px;
+}
+.sub-logo-section{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    justify-content: space-between;
+}
+.sub-logo-section1{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.sub-logo-section1{
+    display: none;
+}
+.logo-icons i{
+    font-size: 30px;
+    color: var(--colorblack);
+}
+.logo-icons1 i{
+    font-size: 30px;
+    color: var(--colorblack);
+}
+
+.logo{
+    font-size: 22px;
+}
+.user-info{
+    display: flex;
+}
+
+.user{
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search-main{
+    display: inline-table;
+    width: 40%;
+}
+h5{
+    font-size: 13px;
+}
+
+.search-main input{
+    width: 70%;
+    padding: 5px 0px;
+    border: none;
+    outline: none;
+}
+
+.all{
+    padding: 8px;
+    background: var(--colorcode43);
+    color: var(--coloraliceblue);
+    outline: none;
+    border: none;
+}
+.search-main i{
+    font-size: 16px;
+    padding: 9px;
+}
+
+.user-info i{
+    font-size: 20px;
+    font-size: 23px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.delivery-txt{
+    display: flex;
+    align-items: baseline;
+}
+
+.delivery-txt i{
+    font-size: 25px;
+    background: var(--colorcode43);
+    color: var(--maincolorwhite);
+    padding: 10px;
+}
+.item{
+    padding: 0px 10px;
+    border-right: 1px solid var(--colorgray);
+    border-bottom: 1px solid var(--colorgray);
+}
+
+.sub-detail-section{
+    display: flex;
+    justify-content: space-between;
+    /* width: 90%;
+    margin: auto; */
+    height: 50px;
+}
+
+.sub-detail-section1{
+    display: flex;
+}
+.sub-detail-section1-padd{
+    padding: 0px 8px;
+}
+.sub-detail-section2{
+    display: flex;
+}
+.sub-detail-section2-padd{
+    padding: 0px 20px;
+}
+.detail-section1{
+    background-color: var(--colorcode43);
+    color: var(--coloraliceblue);
+}
+
+.all-department, .blog{
+    padding: 15px;
+    color: var(--colorblack);
+    background-color: yellow;
+}
+
+.multilevel,.megamenu,.fullwidth,.contact{
+    padding: 15px;
+}
+
+.sub-detail-section1 i{
+    font-size: 16px;
+    color: var(--colorblack);
+}
+
+.fa-phone-volume{
+    color: var(--coloraliceblue);
+    font-size: 16px;
+}
+
+.fa-message{
+    font-size: 16px;
+    color: var(--colorblack);
+}
+.all-department{
+    position: relative;
+    width: 250px;
+}
+
+.all-departments-class{
+    position: absolute;
+    font-size: 12px;
+    top: -8px;
+    right: 5px;
+    color: var(--coloraliceblue);
+    background: var(--colorRed);
+    padding: 0px 5px;
+}
+
+.megamenu{
+    position: relative;
+}
+
+.megamenu span{
+    position: absolute;
+    font-size: 12px;
+    top: -8px;
+    right: 5px;
+    color: var(--colorblack);
+    background: yellow;
+    padding: 0px 5px;
+}
+
+
+.home-search-icons{
+    display: flex;
+    margin: 15px 0px;
+}
+.search-elements{
+    background-color: var(--colorcodef8);
+}
+.search-color{
+    color: var(--colorcode00ff);
+    font-weight: 600;
+}
+.search-input-boxes{
+    display: flex;
+}
+.input-box1{
+    width: 60%;
+    margin-right: 10px;
+}
+
+.input-box1 input{
+    width: 100%;
+}
+.input-box2{
+    width: 40%;
+    /* margin-right: 10px; */
+}
+.input-box2 select{
+    width: 100%;
+    height: 100%;
+}
+.home-search-icon i{
+    color: var(--colorcode80)
+}
+.search-input-boxes{
+    margin: 15px 0px;
+}
+.check-box-search{
+    display: flex;
+}
+.checkbox1-txt{
+    margin-left: 10px;
+}
+.search-btn{
+    margin: 15px 0px;
+}
+.search-btn input{
+    width: 100%;
+    background-color: #2b0090;
+    color: var(--maincolorwhite);
+    outline: none;
+    border: none;
+    padding: 5px 0px;
+    border-radius: 5px;
+}
+.search-btn input:hover{
+    background-color: var(--colorcode00ff);
+    transition: background-color 1s ease-in-out;
+}
+
+.icon-search{
+    font-size: 14px;
+}
+.search-filter{
+    border-right: 1px solid lightgray;
+}
+
+/* ############################# Apple-Search ############################## */
+
+.apple-search-head{
+    font-size: 30px;
+    font-weight: 600;
+}
+.border-color{
+    width: 100px;
+    border: 1px solid orangered;
+}
+.apple-search hr{
+    margin-top: 0px;
+}
+.small-images{
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.small-image img{
+    width: 100%;
+    height: 100%;
+}
+.small-image{
+    margin-bottom: 10px;
+    background-color: var(--maincolorwhite);
+    border: 1px solid lightgrey;
+}
+.small-big-images{
+    display: flex;
+    margin: 15px 0px;
+}
+.main-apple-img-txt{
+    background-color: #f8f8f8;
+}
+.sub-big-image{
+    width: 450px;
+    position: relative;
+}
+.sub-big-image img{
+    width: 100%;
+    height: 100%;
+}
+.big-images{
+    margin-left: 10px; 
+    border: 1px solid lightgrey;
+    
+}
+.hot-discount{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1%;
+    left: 90%;
+}
+.hot{
+    background-color: yellow;
+    text-align: center;
+    padding: 0px 5px;
+}
+.discount{
+    background-color: red;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+/* ########################### Media-query ##################### */
+
+@media screen and (max-width:1150px) {
+    .container1{
+        max-width: 1000px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:1450px) {
+    .container1{
+        max-width: 1300px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    .container1{
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:1250px) {
+    .container1{
+        max-width: 1100px;
+        margin: auto;
+    }
+    .main-list-view3{
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .container1{
+        max-width: 1000px;
+        margin: auto;
+    }
+    /* ################## col-md-2 and col-md-10 ########################### */
+    .search-color{
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width:1050px) {
+    .container1{
+        max-width: 900px;
+        margin: auto;
+    }
+    /* ###################### Logo-Section ######################### */
+    .sub-logo-section{
+        margin-left: 0px;
+    }
+    .search-main{
+        width: 45%  ;
+    }
+}
+@media screen and (max-width: 950px){
+    .container1{
+        max-width: 800px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:850px) {
+    .container1{
+        max-width: 700px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 750px) {
+    .container1{
+        max-width: 600px;
+        margin: auto;
+    }
+
+    /* ######################## Grid-view ########################### */
+    .main-list-view2 {
+        margin-top: 15px;
+    }
+
+    /* ####################### Most-view Section ################### */
+    .pic-tag1{
+        flex-direction: column;
+    }
+    .pic{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .container1{
+        max-width: 500px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:550px) {
+    .container1{
+        max-width: 400px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:450px) {
+    .container1{
+        max-width: 300px;
+        margin: auto;
+    }
+}
+@media screen and (max-width:350px) {
+    .container1{
+        max-width: 260px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    /* ##################### Logo Section ######################### */
+    
+    .search-filter{
+        display: none;
+    }
+    .logo-section1{
+        background-color: var(--maincolorwhite);
+    }
+    .main-div{
+        background-color: var(--colorcode00ff);
+    }
+    .sub-logo{
+        padding: 5px;
+        margin-top: 10px;
+    }
+    .sub-div i,a,.selected{
+        color: var(--maincolorwhite);
+    }
+    .sub-logo-section{
+        display: none;  
+    }
+    .sub-logo-section1{
+        display: flex;
+        justify-content: end; 
+        align-items: center;
+    }
+    .logo-icons{
+        width: 20%;
+    }
+
+    .detail-section1{
+        display: none;
+    }
+    /*############################ container col-2-col-10 ################ */
+
+    .searching{
+        display: block;
+    }
+    /* #################### Col-md-10 ############################ */
+    .search-object{
+        max-width: 100%;
+        padding-left: 0px;
+    }
+    /* ######################### Most-view Section ###################### */
+    .pic-tag-recent{
+        width: 50%;
+    }
+    .most-view-pictures{
+        flex-wrap: wrap;
+    }
+    .pic-tag{
+        width: 50%;
+        margin-bottom: 5px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    /* #################### Most-view ########################## */
+    .pic-tag-recent{
+        width: 60%;
+    }
+    /* ################### List -view ############################# */
+    .main-list-view{
+        flex-direction: column;
+    }
+    .main-brands-models{
+        padding-top: 40px;
+        padding-left: 0px;
+    }
+    .sub-div{
+        display: none;
+    }
+    .sub-div1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .div1-icons1,.div1-icons2{
+        display: flex;
+        align-items: center;
+    }
+}
+
