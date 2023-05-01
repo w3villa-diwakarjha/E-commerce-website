@@ -1347,6 +1347,10 @@ input[type="number"]::-webkit-outer-spin-button {
    .big-images{
        margin: 0px;
    }
+
+   .last-icons{
+    left: 85%;
+   }
 }
 
 
