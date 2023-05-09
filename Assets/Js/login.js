@@ -111,11 +111,5 @@ function login(e){
     }else{
         alert('Please Enter Valid Email or Password')
     }
-
-<<<<<<< HEAD
 }
 
-// new comment
-=======
-}
->>>>>>> b4871f21c8dfe111e74f3c4c3c21f3b84964c361
