@@ -148,39 +148,41 @@
                 </div>
 
                 <div class="hiding-section-3">
+                    <!-- ###################### login page ################### -->
                     <div class="overlay-container">
                         <div class="overlay"></div>
                         <div class="loginform">
+                            <h4>SignIn</h4>
                             <span>&times;</span>
                             <form action="">
                                 <div>
-                                    <!-- <label for="">Username:</label> -->
-                                    <input type="text" placeholder="UserName" />
+                                    <input type="text" placeholder="Email" id="username"/>
                                 </div>
                                 <div>
-                                    <!-- <label for="">Password:</label> -->
-                                    <input type="password" placeholder="Password" />
+                                    <input type="password" placeholder="Password" id="password"/>
                                 </div>
-                                <button>Login</button>
+                                <button onclick="login()">Login</button>
                             </form>
                         </div>
                     </div>
-
+                    <!-- ###################### Register page ################### -->
                     <div class="overlay-container1">
-                        <div class="overlay1">Hi</div>
+                        <div class="overlay1"></div>
+                        
                         <div class="loginform1">
-                            <span class="cut">&times;</span>
+                            <h4>Signup</h4>
+                            <span class="cutt">&times;</span>
                             <form action="">
                                 <div>
-                                    <input type="text" placeholder="Email" />
+                                    <input type="text" placeholder="Email" id="email"/>
                                 </div>
                                 <div>
-                                    <input type="password" placeholder="Password" />
+                                    <input type="password" placeholder="Password" id="pass"/>
                                 </div>
                                 <div>
-                                    <input type="password" placeholder="Confirm Password" />
+                                    <input type="password" placeholder="Confirm Password" id="cpass"/>
                                 </div>
-                                <button>Login</button>
+                                <button onclick="signup()">sign up</button>
                             </form>
                         </div>
                     </div>
@@ -1723,6 +1725,15 @@
     </script>
 
     <script src="Assets/Js/login.js"></script>
+
+    <!-- <script>
+        function showModal(type) {
+            console.log("TYY", type)
+            document.querySelector(type === 'login' ? '.overlay' : type === 'register' && '.overlay1').classList.add('showoverlay');
+            document.querySelector(type === 'login' ? '.loginform' : type === 'register' ? '.loginform1' : null).classList.add('showloginform');
+        }
+
+    </script> -->
 </body>
 
 </html>
