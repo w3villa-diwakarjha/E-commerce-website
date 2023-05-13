@@ -384,8 +384,26 @@ h5{
 .main-owl-crausel{
     padding: 30px 0px;
 }
-
-
+/* 
+.btnsec{
+    position: relative;
+} */
+.actived{
+    background-color: #0000ff !important;
+    position: relative;
+}
+.actived::after{
+    content: "";
+    height: 15px;
+    width: 15px;
+    color: var(--colorcode00ff);
+    position: absolute;
+    background: var(--colorblue);
+    top: 80%;
+    left: 50%;
+    transform: rotate(45deg);
+    z-index: 2; 
+}
 
 .carousel-item-section{
     height:50vh;
@@ -613,6 +631,7 @@ h5{
     border: 2px solid var(--colorRed);
 }
 .demand-items{
+    display: flex;
     position: relative;
     height: 433px;
 }

@@ -1,0 +1,90 @@
+{
+    "topcategories": [
+        {
+            "id": 1,
+            "text": "Fashion",
+            "img": "./Assets/img/harrica-fashion-women-s-gown-dress-latest-georgette-long-ethnic-anarkali-gown-light-blue-product-images-rvmsk3jngz-0-202206081558.jpg"
+        },
+        {
+            "id": 2,
+            "text": "Bags",
+            "img": "./Assets/img/photo-1584917865442-de89df76afd3.jpeg"
+        },
+        {
+            "id": 3,
+            "text": "Health&Beauty",
+            "img": "./Assets/img/Heinens-Health-And-Beauty-products-800x550-1.jpg"
+        },
+        {
+            "id": 4,
+            "text": "Footwear",
+            "img": "./Assets/img/10-9436-10-world-wear-footwear-blue-original-imagfpktc6y4qfgs.webp"
+        }
+    ],
+    "Electronics": [
+        {
+            "id": 5,
+            "text": "Camera",
+            "img": "./Assets/img/69764619239a7fb8a5dcb5d21e44f06a.png"
+        },
+        {
+            "id": 6,
+            "text": "Digital Camera",
+            "img": "./Assets/img/Digital-Camera-PNG-Images-HD.png"
+        },
+        {
+            "id": 7,
+            "text": "HeadPhone",
+            "img": "./Assets/img/download1.jpeg"
+        },
+        {
+            "id": 8,
+            "text": "Ear Buds",
+            "img": "./Assets/img/Earbuds-Wireless-PNG-Free-Download.png"
+        }
+    ],
+    "Beauty": [
+        {
+            "id": 9,
+            "text": "Home Decor",
+            "img": "./Assets/img/61xZlWp+DVL._SX450_.jpg"
+        },
+        {
+            "id": 10,
+            "text": "Cosmetics",
+            "img": "./Assets/img/antique-necklace-antique-necklace-148218-34258977816732_1024x1024.webp"
+        },
+        {
+            "id": 11,
+            "text": "Home Decor",
+            "img": "./Assets/img/superbrands_2023_PR.jpg"
+        },
+        {
+            "id": 12,
+            "text": "Cosmetics",
+            "img": "./Assets/img/vans-palm-tree-logo-B55EF6B72B-seeklogo.com.png"
+        }
+    ],
+    "Fashions": [
+        {
+            "id": 13,
+            "text": "Stylish Bags",
+            "img": "./Assets/img/picco-massimo-genuine-leather-men-women-sling-bag-1000x1000.webp"
+        },
+        {
+            "id": 14,
+            "text": "Costume",
+            "img": "./Assets/img/8-9-years-plus-buti-baby-gown-blue-fashion-dream-original-imafxu7rqutbdzvq-bb.webp"
+        },
+        {
+            "id": 15,
+            "text": "T-shirts",
+            "img": "./Assets/img/marlon-alves-A0mSSCEVh9A-unsplash.jpg"
+        },
+        {
+            "id": 16,
+            "text": "Cosmetics",
+            "img": "./Assets/img/Heinens-Health-And-Beauty-products-800x550-1.jpg"
+        }
+    ]
+}

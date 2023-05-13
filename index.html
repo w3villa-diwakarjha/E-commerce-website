@@ -156,10 +156,10 @@
                             <span>&times;</span>
                             <form action="">
                                 <div>
-                                    <input type="text" placeholder="Email" id="username"/>
+                                    <input type="text" placeholder="Email" id="username" />
                                 </div>
                                 <div>
-                                    <input type="password" placeholder="Password" id="password"/>
+                                    <input type="password" placeholder="Password" id="password" />
                                 </div>
                                 <button onclick="login()">Login</button>
                             </form>
@@ -168,19 +168,19 @@
                     <!-- ###################### Register page ################### -->
                     <div class="overlay-container1">
                         <div class="overlay1"></div>
-                        
+
                         <div class="loginform1">
                             <h4>Signup</h4>
                             <span class="cutt">&times;</span>
                             <form action="">
                                 <div>
-                                    <input type="text" placeholder="Email" id="email"/>
+                                    <input type="text" placeholder="Email" id="email" />
                                 </div>
                                 <div>
-                                    <input type="password" placeholder="Password" id="pass"/>
+                                    <input type="password" placeholder="Password" id="pass" />
                                 </div>
                                 <div>
-                                    <input type="password" placeholder="Confirm Password" id="cpass"/>
+                                    <input type="password" placeholder="Confirm Password" id="cpass" />
                                 </div>
                                 <button onclick="signup()">sign up</button>
                             </form>
@@ -343,57 +343,18 @@
             </div>
             <div class="main-btn">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-blue btn-secondary">Top Category
-                        <div class="curve"></div>
+                    <button type="button" class="btn btn-secondary actived" onclick="showbutton(this)">Top Category
                     </button>
-                    <button type="button" class="btn btn-black btn-secondary">Electronics</button>
-                    <button type="button" class="btn btn-black btn-secondary">Beauty</button>
-                    <button type="button" class="btn btn-black btn-secondary">Fashion</button>
+                    <button type="button" class="btn btn-secondary" onclick="showbutton(this)">Electronics
+                    </button>
+                    <button type="button" class="btn btn-secondary" onclick="showbutton(this)">Beauty
+                    </button>
+                    <button type="button" class="btn btn-secondary" onclick="showbutton(this)">Fashion
+                    </button>
                 </div>
             </div>
 
-            <div class="main-owl-crausel">
-                <div id="owl-carousel-1" class="owl-carousel owl-theme">
-                    <div class="demand-items">
-                        <img src="./Assets/img/harrica-fashion-women-s-gown-dress-latest-georgette-long-ethnic-anarkali-gown-light-blue-product-images-rvmsk3jngz-0-202206081558.jpg"
-                            alt="">
-                        <div class="fashion">Fashion</div>
-                    </div>
-                    <div class="demand-items">
-                        <img src="./Assets/img/photo-1584917865442-de89df76afd3.jpeg" alt="">
-                        <div class="fashion fashion-bag">Bags</div>
-                    </div>
-                    <div class="demand-items">
-                        <img src="./Assets/img/Heinens-Health-And-Beauty-products-800x550-1.jpg" alt="">
-                        <div class="fashion">Health&Beauty</div>
-                    </div>
-                    <div class="demand-items">
-                        <img src="./Assets/img/10-9436-10-world-wear-footwear-blue-original-imagfpktc6y4qfgs.webp"
-                            alt="">
-                        <div class="fashion">Footwear</div>
-                    </div>
-                    <div class=" demand-items">
-                        <img src="./Assets/img/61xZlWp+DVL._SX450_.jpg" alt="">
-                        <div class="fashion">Home Decor</div>
-                    </div>
-                    <div class="demand-items">
-                        <img src="./Assets/img/Heinens-Health-And-Beauty-products-800x550-1.jpg" alt="">
-                        <div class="fashion">Fashion</div>
-                    </div>
-                    <div class="demand-items">
-                        <img src="./Assets/img/10-9436-10-world-wear-footwear-blue-original-imagfpktc6y4qfgs.webp"
-                            alt="">
-                        <div class="fashion">Fashion</div>
-                    </div>
-                    <div class="demand-items">
-                        <img src="./Assets/img/photo-1584917865442-de89df76afd3.jpeg" alt="">
-                        <div class="fashion">Fashion</div>
-                    </div>
-                    <div class="demand-items">
-                        <img src="./Assets/img/61xZlWp+DVL._SX450_.jpg" alt="">
-                        <div class="fashion">Fashion</div>
-                    </div>
-                </div>
+            <div class="main-owl-crausel" id="main-carousel">
             </div>
         </div>
     </section>
@@ -1579,25 +1540,25 @@
     <!-- ############################### owl-carousel ###################################### -->
     <script>
         // ######################## Demand-Section ######################
-        $('#owl-carousel-1').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: false,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                500: {
-                    items: 2
-                },
-                768: {
-                    items: 3
-                },
-                1000: {
-                    items: 4
-                }
-            }
-        });
+        // $('#owl-carousel-1').owlCarousel({
+        //     loop: true,
+        //     margin: 10,
+        //     nav: false,
+        //     responsive: {
+        //         0: {
+        //             items: 1
+        //         },
+        //         500: {
+        //             items: 2
+        //         },
+        //         768: {
+        //             items: 3
+        //         },
+        //         1000: {
+        //             items: 4
+        //         }
+        //     }
+        //});
         // ############################### Feature Section ########################
 
         $('#owl-carousel-2').owlCarousel({
@@ -1724,5 +1685,7 @@
     </script>
 
     <script src="Assets/Js/login.js"></script>
+    <script src="Assets/Js/Buy.js"></script>
 </body>
+
 </html>
