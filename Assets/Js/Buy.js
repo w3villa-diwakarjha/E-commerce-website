@@ -1,10 +1,19 @@
 // ############################## topcategories ########################
+let value1="topcategories";
 
-async function topcategories() {
+function showbutton(e){
+    let element=e.target;
+    value1=e.target.value;
+    let p=document.getElementsByClassName('actived')[0];
+    p.classList.remove('actived');
+    element.classList.add('actived');
+    Buy();
+}
+
+async function Buy() {
     let response = await fetch('Json/Buy.json');
     let data = await response.json();
-    console.log(data)
-    let arr = data.topcategories;
+    let arr = data[value1];
     let owl = document.getElementById('main-carousel')
     let html = `<div id="owl-carousel-1" class="owl-carousel owl-theme">`;
     arr.forEach(element => {
@@ -18,7 +27,7 @@ async function topcategories() {
     `
     });
     html+=`</div>`;
-    owl.innerHTML=html;
+    owl.innerHTML=html; 
 
     // ###################### owlCarousel ############################
 
@@ -43,4 +52,5 @@ async function topcategories() {
         }
     });
 }
-topcategories();
+
+Buy();

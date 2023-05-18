@@ -343,13 +343,13 @@
             </div>
             <div class="main-btn">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary actived" onclick="showbutton(this)">Top Category
+                    <button type="button" class="btn btn-secondary actived" value="topcategories" onclick="showbutton(event)">Top Category
                     </button>
-                    <button type="button" class="btn btn-secondary" onclick="showbutton(this)">Electronics
+                    <button type="button" class="btn btn-secondary" value="Electronics" onclick="showbutton(event)">Electronics
                     </button>
-                    <button type="button" class="btn btn-secondary" onclick="showbutton(this)">Beauty
+                    <button type="button" class="btn btn-secondary" value="Beauty" onclick="showbutton(event)">Beauty
                     </button>
-                    <button type="button" class="btn btn-secondary" onclick="showbutton(this)">Fashion
+                    <button type="button" class="btn btn-secondary" value="Fashions" onclick="showbutton(event)">Fashion
                     </button>
                 </div>
             </div>
@@ -378,12 +378,10 @@
             </div>
             <div class="main-btn">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-blue btn-secondary">Featured
-                        <div class="curve"></div>
-                    </button>
-                    <button type="button" class="btn btn-black btn-secondary">Latest</button>
-                    <button type="button" class="btn btn-black btn-secondary">BestSellers</button>
-                    <button type="button" class="btn btn-black btn-secondary">Specials</button>
+                    <button type="button" class="btn btn-secondary actived1" onclick="showbutton1(event)">Featured</button>
+                    <button type="button" class="btn btn-secondary" onclick="showbutton1(event)">Latest</button>
+                    <button type="button" class="btn btn-secondary" onclick="showbutton1(event)">BestSellers</button>
+                    <button type="button" class="btn btn-secondary" onclick="showbutton1(event)">Specials</button>
                 </div>
             </div>
 
@@ -439,7 +437,7 @@
                             </div>
                             <div class="main-quantity">
                                 <div class="input-box">
-                                    <input type="text" value="1" class="box">
+                                    <input type="number" value="1" class="box">
                                 </div>
                                 <div class="inc-dec-btn">
                                     <!-- <div class="inc-btn"><i class="fa-solid fa-chevron-up"></i></div>
@@ -1686,6 +1684,7 @@
 
     <script src="Assets/Js/login.js"></script>
     <script src="Assets/Js/Buy.js"></script>
+    <script src="Assets/Js/Featured_products.js"></script>
 </body>
 
 </html>

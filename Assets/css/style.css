@@ -388,11 +388,11 @@ h5{
 .btnsec{
     position: relative;
 } */
-.actived{
+.actived, .actived1{
     background-color: #0000ff !important;
     position: relative;
 }
-.actived::after{
+.actived::after, .actived1::after{
     content: "";
     height: 15px;
     width: 15px;

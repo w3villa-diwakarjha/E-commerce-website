@@ -90,10 +90,5 @@ function login(e){
 
 
 
-function showbutton(element){
-    console.log(element);
-    let p=document.getElementsByClassName('actived')[0];
-    p.classList.remove('actived');
-    element.classList.add('actived');
-}
+
 
