@@ -19,7 +19,7 @@ async function Buy() {
     arr.forEach(element => {
         html += `<div class="demand-items">
         <div class="carousel-image">
-            <img src="${element.img}"
+            <img src=${element.img}
                 alt="">
         </div>
         <div class="fashion">${element.text}</div>
@@ -27,7 +27,7 @@ async function Buy() {
     `
     });
     html+=`</div>`;
-    owl.innerHTML=html; 
+    owl.innerHTML=html;
 
     // ###################### owlCarousel ############################
 

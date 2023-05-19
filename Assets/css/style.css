@@ -726,6 +726,7 @@ input[type=text]::-webkit-outer-spin-button {
     color: var(--maincolorwhite);
     padding: 5px;
     border-radius: 5px;
+    margin-top: 20px;
 }
 .item1{
     background-color: var(--maincolorwhite);
