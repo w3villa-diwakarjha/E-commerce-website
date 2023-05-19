@@ -11,7 +11,7 @@ function showbutton2(e) {
 
 
 async function Blog() {
-    let response = await fetch('Json/Blog.json');
+    let response = await fetch('./Assets/Json/Blog.json');
     let data = await response.json();
     let owl = document.getElementsByClassName('Blog1')[0];
     let arr = data[value3];

@@ -12,7 +12,7 @@ function showbutton1(e) {
 }
 
 async function Featured_products() {
-    let response = await fetch('Json/Featured_products.json');
+    let response = await fetch('./Assets/Json/Featured_products.json');
     let data = await response.json();
     // console.log(data);
     let arr = data[value2];

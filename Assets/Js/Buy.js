@@ -11,7 +11,7 @@ function showbutton(e){
 }
 
 async function Buy() {
-    let response = await fetch('Json/Buy.json');
+    let response = await fetch('./Assets/Json/Buy.json');
     let data = await response.json();
     let arr = data[value1];
     let owl = document.getElementById('main-carousel')
