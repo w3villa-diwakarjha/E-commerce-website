@@ -138,7 +138,7 @@ h5{
 
 .search-main input{
     width: 70%;
-    padding: 5px 0px;
+    padding: 5px 5px;
     border: none;
     outline: none;
 }
@@ -388,11 +388,11 @@ h5{
 .btnsec{
     position: relative;
 } */
-.actived, .actived1{
+.actived, .actived1, .actived2{
     background-color: #0000ff !important;
     position: relative;
 }
-.actived::after, .actived1::after{
+.actived::after, .actived1::after, .actived2::after{
     content: "";
     height: 15px;
     width: 15px;
@@ -961,7 +961,12 @@ input[type=text]::-webkit-outer-spin-button {
 }
 .card{
     height: fit-content;
+    cursor: pointer;
     /* margin-right: 20px; */
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: .3s;
 }
 .card-image img{
     width: 100%;

@@ -17,6 +17,7 @@ async function Featured_products() {
     // console.log(data);
     let arr = data[value2];
     let owl = document.getElementById('main-carousel1');
+    // console.log(owl)
     let html = `<div id="owl-carousel-2" class="owl-carousel owl-theme">`
     // console.log(arr)
     arr.forEach(element => {

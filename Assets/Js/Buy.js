@@ -35,6 +35,7 @@ async function Buy() {
     $('#owl-carousel-1').owlCarousel({
         loop: true,
         margin: 10,
+        autoplay:true,
         nav: false,
         responsive: {
             0: {

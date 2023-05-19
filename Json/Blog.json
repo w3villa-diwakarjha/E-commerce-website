@@ -1,0 +1,61 @@
+{
+    "Latest Post": [
+        {
+            "img": "./Assets/img/picco-massimo-genuine-leather-men-women-sling-bag-1000x1000.webp",
+            "user": "admin",
+            "message": 17,
+            "views": 786,
+            "title": "card-title",
+            "desc": "This is a wider card with supporting text below as a natural lead-in toadditional content. This content is a little bit longer",
+            "updated": "Last updated 3 min ago"
+        },
+        {
+            "img": "./Assets/img/lovepik-young-female-reading-book-png-image_401661917_wh860.png",
+            "user": "admin",
+            "message": 17,
+            "views": 786,
+            "title": "card-title",
+            "desc": "This is a wider card with supporting text below as a natural lead-in toadditional content. This content is a little bit longer",
+            "updated": "Last updated 3 min ago"
+        },
+        {
+            "img": "./Assets/img/antique-necklace-antique-necklace-148218-34258977816732_1024x1024 (1).webp",
+            "user": "admin",
+            "message": 17,
+            "views": 786,
+            "title": "card-title",
+            "desc": "This is a wider card with supporting text below as a natural lead-in toadditional content. This content is a little bit longer",
+            "updated": "Last updated 3 min ago"
+        }
+    ],
+
+    "Most Read": [
+        {
+            "img": "./Assets/img/102-1025449_girl-reading-book-png-transparent-png.png",
+            "user": "admin",
+            "message": 17,
+            "views": 786,
+            "title": "card-title",
+            "desc": "This is a wider card with supporting text below as a natural lead-in toadditional content. This content is a little bit longer",
+            "updated": "Last updated 3 min ago"
+        },
+        {
+            "img": "./Assets/img/picco-massimo-genuine-leather-men-women-sling-bag-1000x1000.webp",
+            "user": "admin",
+            "message": 17,
+            "views": 786,
+            "title": "card-title",
+            "desc": "This is a wider card with supporting text below as a natural lead-in toadditional content. This content is a little bit longer",
+            "updated": "Last updated 3 min ago"
+        },
+        {
+            "img": "./Assets/img/lovepik-young-female-reading-book-png-image_401661917_wh860.png",
+            "user": "admin",
+            "message": 17,
+            "views": 786,
+            "title": "card-title",
+            "desc": "This is a wider card with supporting text below as a natural lead-in toadditional content. This content is a little bit longer",
+            "updated": "Last updated 3 min ago"
+        }
+    ]
+}

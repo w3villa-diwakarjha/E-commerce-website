@@ -40,7 +40,7 @@
 
     "Latest": [
         {
-            "id": 1,
+            "id": 5,
             "img": "./Assets/img/sofa.png",
             "brand": "Ericksson",
             "model": "Model-519",
@@ -49,7 +49,7 @@
             "original": "$1000.00"
         },
         {
-            "id": 2,
+            "id": 6,
             "img": "./Assets/img/chair.png",
             "brand": "Ericksson",
             "model": "Model-519",
@@ -58,7 +58,7 @@
             "original": "$1000.00"
         },
         {
-            "id": 3,
+            "id": 7,
             "img": "./Assets/img/lazychair.png",
             "brand": "Ericksson",
             "model": "Model-519",
@@ -67,7 +67,7 @@
             "original": "$1000.00"
         },
         {
-            "id": 4,
+            "id": 8,
             "img": "./Assets/img/comfortchair.png",
             "brand": "Ericksson",
             "model": "Model-519",
@@ -79,7 +79,7 @@
 
     "BestSellers": [
         {
-            "id": 1,
+            "id": 9,
             "img": "./Assets/img/smartLED.jpg",
             "brand": "Ericksson",
             "model": "Model-519",
@@ -88,7 +88,7 @@
             "original": "$1000.00"
         },
         {
-            "id": 2,
+            "id": 10,
             "img": "./Assets/img/smart Camera.jpg",
             "brand": "Ericksson",
             "model": "Model-519",
@@ -97,7 +97,7 @@
             "original": "$1000.00"
         },
         {
-            "id": 3,
+            "id": 11,
             "img": "./Assets/img/Smartwatch-PNG-Image.png",
             "brand": "Ericksson",
             "model": "Model-519",
@@ -106,7 +106,7 @@
             "original": "$1000.00"
         },
         {
-            "id": 4,
+            "id": 12,
             "img": "./Assets/img/85254-headset-airpods-apple-headphones-plus-iphone-earbuds.png",
             "brand": "Ericksson",
             "model": "Model-519",
@@ -118,7 +118,7 @@
 
     "Specials": [
         {
-            "id": 1,
+            "id": 13,
             "img": "./Assets/img/Earbuds-Wireless-PNG-Free-Download.png",
             "brand": "Ericksson",
             "model": "Model-519",
@@ -127,7 +127,7 @@
             "original": "$1000.00"
         },
         {
-            "id": 2,
+            "id": 14,
             "img": "./Assets/img/Smartwatch-PNG-Image.png",
             "brand": "Ericksson",
             "model": "Model-519",
@@ -136,7 +136,7 @@
             "original": "$1000.00"
         },
         {
-            "id": 3,
+            "id": 15,
             "img": "./Assets/img/smart Camera.jpg",
             "brand": "Ericksson",
             "model": "Model-519",
@@ -145,7 +145,7 @@
             "original": "$1000.00"
         },
         {
-            "id": 4,
+            "id": 16,
             "img": "./Assets/img/download1.jpeg",
             "brand": "Ericksson",
             "model": "Model-519",
