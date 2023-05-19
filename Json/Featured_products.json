@@ -1,0 +1,157 @@
+{
+    "Featured": [
+        {
+            "id": 1,
+            "img": "./Assets/img/smartLED.jpg",
+            "brand": "Ericksson",
+            "model": "Model-519",
+            "product": "Smart LED",
+            "discount": "$999.00",
+            "original": "$1000.00"
+        },
+        {
+            "id": 2,
+            "img": "./Assets/img/smart Camera.jpg",
+            "brand": "Ericksson",
+            "model": "Model-519",
+            "product": "Smart Camera",
+            "discount": "$999.00",
+            "original": "$1000.00"
+        },
+        {
+            "id": 3,
+            "img": "./Assets/img/Smartwatch-PNG-Image.png",
+            "brand": "Ericksson",
+            "model": "Model-519",
+            "product": "Smart Watch",
+            "discount": "$999.00",
+            "original": "$1000.00"
+        },
+        {
+            "id": 4,
+            "img": "./Assets/img/85254-headset-airpods-apple-headphones-plus-iphone-earbuds.png",
+            "brand": "Ericksson",
+            "model": "Model-519",
+            "product": "HeadPhone",
+            "discount": "$999.00",
+            "original": "$1000.00"
+        }
+    ],
+
+    "Latest": [
+        {
+            "id": 1,
+            "img": "./Assets/img/sofa.png",
+            "brand": "Ericksson",
+            "model": "Model-519",
+            "product": "Sofa",
+            "discount": "$999.00",
+            "original": "$1000.00"
+        },
+        {
+            "id": 2,
+            "img": "./Assets/img/chair.png",
+            "brand": "Ericksson",
+            "model": "Model-519",
+            "product": "Comfortable chair",
+            "discount": "$999.00",
+            "original": "$1000.00"
+        },
+        {
+            "id": 3,
+            "img": "./Assets/img/lazychair.png",
+            "brand": "Ericksson",
+            "model": "Model-519",
+            "product": "Lazy Chair",
+            "discount": "$999.00",
+            "original": "$1000.00"
+        },
+        {
+            "id": 4,
+            "img": "./Assets/img/comfortchair.png",
+            "brand": "Ericksson",
+            "model": "Model-519",
+            "product": "Comfortable chair",
+            "discount": "$999.00",
+            "original": "$1000.00"
+        }
+    ],
+
+    "BestSellers": [
+        {
+            "id": 1,
+            "img": "./Assets/img/smartLED.jpg",
+            "brand": "Ericksson",
+            "model": "Model-519",
+            "product": "Smart LED",
+            "discount": "$999.00",
+            "original": "$1000.00"
+        },
+        {
+            "id": 2,
+            "img": "./Assets/img/smart Camera.jpg",
+            "brand": "Ericksson",
+            "model": "Model-519",
+            "product": "Smart Camera",
+            "discount": "$999.00",
+            "original": "$1000.00"
+        },
+        {
+            "id": 3,
+            "img": "./Assets/img/Smartwatch-PNG-Image.png",
+            "brand": "Ericksson",
+            "model": "Model-519",
+            "product": "Smart Watch",
+            "discount": "$999.00",
+            "original": "$1000.00"
+        },
+        {
+            "id": 4,
+            "img": "./Assets/img/85254-headset-airpods-apple-headphones-plus-iphone-earbuds.png",
+            "brand": "Ericksson",
+            "model": "Model-519",
+            "product": "Ear pod",
+            "discount": "$999.00",
+            "original": "$1000.00"
+        }
+    ],
+
+    "Specials": [
+        {
+            "id": 1,
+            "img": "./Assets/img/Earbuds-Wireless-PNG-Free-Download.png",
+            "brand": "Ericksson",
+            "model": "Model-519",
+            "product":"Ear Bud",
+            "discount": "$999.00",
+            "original": "$1000.00"
+        },
+        {
+            "id": 2,
+            "img": "./Assets/img/Smartwatch-PNG-Image.png",
+            "brand": "Ericksson",
+            "model": "Model-519",
+            "product": "Smart Watch",
+            "discount": "$999.00",
+            "original": "$1000.00"
+        },
+        {
+            "id": 3,
+            "img": "./Assets/img/smart Camera.jpg",
+            "brand": "Ericksson",
+            "model": "Model-519",
+            "product": "Smart Camera",
+            "discount": "$999.00",
+            "original": "$1000.00"
+        },
+        {
+            "id": 4,
+            "img": "./Assets/img/download1.jpeg",
+            "brand": "Ericksson",
+            "model": "Model-519",
+            "product": "LCD",
+            "discount": "$999.00",
+            "original": "$1000.00"
+        }
+    ]
+}
