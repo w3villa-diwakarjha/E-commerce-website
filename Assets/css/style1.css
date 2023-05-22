@@ -800,7 +800,7 @@ h5{
 .main-add-cart{
     width: 5%;
 }
-.main-add-cart input[type="text"]{
+.main-add-cart input[type="number"]{
  width: 100%;
  text-align: center;
 }

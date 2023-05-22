@@ -443,6 +443,7 @@ textarea{
 
 .sub-big-image {
     width: 576px;
+    height: 100%;
     position: relative;
     box-shadow: 1px 1px 10px 1px lightgrey;
 }

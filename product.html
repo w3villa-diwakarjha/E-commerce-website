@@ -230,7 +230,7 @@
                                 </div>
                                 <div class="big-images">
                                     <div class="sub-big-image">
-                                        <img src="./Assets/img/download1.jpeg" alt="">
+                                        <img id="productImage" src="" alt="">
                                         <div class="hot-discount">
                                             <div class="hot">Hot</div>
                                             <div class="discount">-10%</div>
@@ -263,7 +263,7 @@
                                             sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer
                                             fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor
                                             porta.</span>
-                                    <div class="service-btn"><button onclick="myFunction()" id="myBtn">Read
+                                        <div class="service-btn"><button onclick="myFunction()" id="myBtn">Read
                                             more</button></div>
                                     </p>
                                     <div class="services-all-brands">
@@ -313,15 +313,13 @@
                                         <div class="Another-txt">Another Select <span style="color: red;">&#42;</span>
                                         </div>
                                         <select name="" id="">
-                                            <option value="">--Please Select-- <span style="color: red;">&#42;</span>
-                                            </option>
+                                            <option value="">--Please Select-- </option>
                                         </select>
                                     </div>
                                     <div class="select required-field">
                                         <div class="select-txt">Select list <span style="color: red;">&#42;</span></div>
                                         <select name="" id="">
-                                            <option value="">--Please Select-- <span style="color: red;">&#42;</span>
-                                            </option>
+                                            <option value="">--Please Select--</option>
                                         </select>
                                     </div>
                                 </div>
@@ -360,15 +358,15 @@
                                     <input type="button" value="Upload File">
                                 </div>
                                 <div class="date required-field">
-                                    <label for="">Date</label><br>
+                                    <label for="">Date <span style="color: red;">&#42;</span></label><br>
                                     <input type="date">
                                 </div>
                                 <div class="time required-field">
-                                    <label for="">Time</label><br>
+                                    <label for="">Time <span style="color: red;">&#42;</span></label><br>
                                     <input type="time">
                                 </div>
                                 <div class="time required-field">
-                                    <label for="">Date & Time</label><br>
+                                    <label for="">Date & Time <span style="color: red;">&#42;</span></label><br>
                                     <input type="datetime-local">
                                 </div>
                                 <hr>
@@ -757,9 +755,23 @@
             } else {
                 document.getElementById("icon-scroll").style.display = 'block';
             }
-        },10000)
+        }, 10000)
         function scrollToTop() {
             window.scrollTo(0, 0);
+        }
+
+
+        window.onload = displayProduct()
+        async function displayProduct() {
+            const urlParams = new URLSearchParams(window.location.search);
+            let productId = urlParams.get("product");
+            let response = await fetch('./Assets/Json/Featured.json');
+            let data = await response.json();
+            const product = data["Product"].find(function (product) {
+                return product.id == productId
+            })
+            document.getElementById("productImage").src = product.img;
+
         }
     </script>
 </body>

@@ -2,11 +2,8 @@ async function Comment()
 {
     let response= await fetch('./Assets/Json/Feedback.json');
     let data= await response.json();
-    console.log(data);
     let owl=document.getElementById('comment');
-    console.log(owl);
     let arr=data.Feedback;
-    console.log(arr);
     let html=`<div id="owl-carousel-5" class="owl-carousel owl-theme">`;
     arr.forEach(element => {
         html+=`<div class="Blog-1">

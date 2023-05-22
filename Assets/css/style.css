@@ -384,10 +384,7 @@ h5{
 .main-owl-crausel{
     padding: 30px 0px;
 }
-/* 
-.btnsec{
-    position: relative;
-} */
+
 .actived, .actived1, .actived2{
     background-color: #0000ff !important;
     position: relative;
@@ -600,6 +597,9 @@ h5{
     border: none;
     position: relative;
 }
+.carousel-image{
+   overflow:hidden ;
+}
 .demand-items::after{
     content: "";
     display: block;
@@ -610,16 +610,27 @@ h5{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.603);
     z-index: 1;
-    /* opacity: 0; */
+    cursor: pointer;
     transform: scaleY(0);
     transform-origin: 100%,100%;
     transition: all 0.3 ease-in-out ;
-}
+} 
 
+.category-fashion img:hover, .carousel-imagesss img:hover, .demand-items:hover .carousel-image img {
+    transform: scale(1.08);
+    transition: .3s ease-in-out;
+}
+.category-fashion{
+    overflow: hidden;
+}
+.carousel-imagesss{
+    overflow: hidden;
+}
 .demand-items:hover::after{
     opacity: 1;
     transform: scaleY(1);
 }
+
 
 .btn-black{
     background-color: var(--colorgrey);
@@ -732,6 +743,11 @@ input[type=text]::-webkit-outer-spin-button {
     background-color: var(--maincolorwhite);
     border: 1px solid var(--colorgray);
     box-shadow: 1px 1px 1px var(--colorgray);
+    overflow: hidden;
+}
+.item1-img{
+    overflow: hidden;
+    cursor: pointer;
 }
 .buy-now{
     margin-left: 10px;
@@ -964,9 +980,9 @@ input[type=text]::-webkit-outer-spin-button {
     cursor: pointer;
     /* margin-right: 20px; */
 }
-.card:hover {
-    transform: scale(1.05);
-    transition: .3s;
+.item1 img:hover,.card-image img:hover {
+    transform: scale(1.08);
+    transition: .3s ease-in-out;    
 }
 .card-image img{
     width: 100%;
@@ -974,6 +990,7 @@ input[type=text]::-webkit-outer-spin-button {
     object-fit: cover;
 }
 .card-image{
+    overflow: hidden;
     height: 300px;
     position: relative;
 }

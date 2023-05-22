@@ -1,9 +1,9 @@
-let value2= "Featured";
+let value2 = "Featured";
 // console.log(value2)
 
 function showbutton1(e) {
     let element = e.target;
-    value2=e.target.textContent;
+    value2 = e.target.textContent;
     console.log(value2)
     let p = document.getElementsByClassName('actived1')[0];
     p.classList.remove('actived1');
@@ -23,7 +23,9 @@ async function Featured_products() {
     arr.forEach(element => {
 
         html += `<div class="item1">
+        <div class="item1-img">
         <img src="${element.img}" alt="">
+        </div>
         <div class="text-main-owl">
             <div class="main-item-txt">
                 <div class="ericksson">${element.brand}</div>
@@ -59,7 +61,7 @@ async function Featured_products() {
     </div>`
     });
     html += `</div>`;
-    html+=`<div class="all-product main-btn"><button class="btn-blue all-product-btn">See All Product-></button></div>`
+    html += `<div class="all-product main-btn"><button class="btn-blue all-product-btn">See All Product-></button></div>`
     owl.innerHTML = html;
 
     // ############################### Feature Section ########################

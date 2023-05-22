@@ -448,8 +448,8 @@
 
                         <div class="product-images-main">
                             <div class="product-images" id="product-images1">
-                                <!-- ######################### List-view ##################### -->
-                                <div class="main-list-view">
+                                <!-- ######################### List-view #####################  -->
+                                <!-- <div class="main-list-view">
                                     <div class="main-product-image main-image1">
                                         <div class="product-image">
                                             <a href="./product.html"><img src="./Assets/img/download1.jpeg" alt=""></a>
@@ -558,12 +558,12 @@
                                 <div class="main-list-view main-list-view2">
                                     <div class="main-product-image main-image2">
                                         <div class="product-image">
-                                            <img src="./Assets/img/Digital-Camera-PNG-Images-HD.png" alt="">
+                                            <img src="./Assets/img/Digital-Camera-PNG-Images-HD.png " alt="">
                                             <div class="pre-order">pre-order</div>
                                             <div class="hot2">Hot</div>
                                         </div>
 
-                                        <div class="product-img-desc" id="product-img-description2">
+                                        <div class="product-img-desc" id="product-img-description1">
                                             <div class="apple-product">
                                                 <div class="apple-brand">Ericksson</div>
                                                 <div class="product-brand">Model 994</div>
@@ -597,7 +597,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="main-brands-models" id="main-brands-models2">
+                                    <div class="main-brands-models" id="main-brands-models1">
                                         <div class="brands-models">
                                             <div class="brands"> Brands: <span
                                                     style="color: blue; cursor: pointer; text-decoration: underline;">Apple</span>
@@ -647,7 +647,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <hr class="main-image-hr" id="main-image-hr2">
+                                <hr class="main-image-hr" id="main-image-hr1">
+
                                 <div class="main-list-view main-list-view3">
                                     <div class="main-product-image main-image3">
                                         <div class="product-image">
@@ -655,7 +656,7 @@
                                                 alt="">
                                         </div>
                                         <div class="dis">-15%</div>
-                                        <div class="product-img-desc" id="product-img-description3">
+                                        <div class="product-img-desc" id="product-img-description1">
                                             <div class="apple-product">
                                                 <div class="apple-brand">Canon</div>
                                                 <div class="product-brand">Model 998</div>
@@ -689,7 +690,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="main-brands-models" id="main-brands-models3">
+                                    <div class="main-brands-models" id="main-brands-models1">
                                         <div class="brands-models">
                                             <div class="brands"> Brands: <span
                                                     style="color: blue; cursor: pointer; text-decoration: underline;">Apple</span>
@@ -739,9 +740,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <hr class="main-image-hr" id="main-image-hr3">
-                            </div>
-                            <div class="end-txt">You Have Reached End of The List</div>
+                                <hr class="main-image-hr abc" id="main-image-hr2">
+                            </div> -->
+                            <!-- <div class="end-txt">You Have Reached End of The List</div> -->
                         </div>
                     </div>
                 </div>
@@ -1150,44 +1151,89 @@
         }
 
         // ##################### Grid-value ###################
-        function gridvalue() {
-            // ######################### Grid-product-image1 ################
+        // function gridvalue() {
+        //     // ######################### Grid-product-image1 ################
 
+        //     document.getElementById("product-images1").classList.remove("list-direction")
+        //     document.getElementById("main-image-hr1").classList.remove("actived")
+        //     document.getElementById("main-brands-models1").classList.remove("actived")
+        //     document.getElementById("product-img-description1").classList.remove("active-none")
+
+        //     // ######################### Grid-product-image2 ################
+        //     document.getElementById("main-image-hr2").classList.remove("actived")
+        //     document.getElementById("main-brands-models2").classList.remove("actived")
+        //     document.getElementById("product-img-description2").classList.remove("active-none")
+
+        //     // ######################### Grid-product-image3 ################
+        //     document.getElementById("main-image-hr3").classList.remove("actived")
+        //     document.getElementById("main-brands-models3").classList.remove("actived")
+        //     document.getElementById("product-img-description3").classList.remove("active-none")
+        // }
+        // // ##################### List-value ###################
+        // function listvalue() {
+        //     // ###################### List-Product-image1 ######################
+        //     document.getElementById("product-images1").classList.add("list-direction")
+        //     document.getElementById("main-image-hr1").classList.add("actived")
+        //     document.getElementById("main-brands-models1").classList.add("actived")
+        //     document.getElementById("product-img-description1").classList.add("active-none")
+
+        //     // ###################### List-Product-image2 ######################
+
+        //     document.getElementById("main-image-hr2").classList.add("actived")
+        //     document.getElementById("main-brands-models2").classList.add("actived")
+        //     document.getElementById("product-img-description2").classList.add("active-none")
+
+        //     // ###################### List-Product-image3 ######################
+
+        //     document.getElementById("main-brands-models3").classList.add("actived")
+        //     document.getElementById("product-img-description3").classList.add("active-none")
+        // }
+
+        function gridvalue(e){
             document.getElementById("product-images1").classList.remove("list-direction")
-            document.getElementById("main-image-hr1").classList.remove("actived")
-            document.getElementById("main-brands-models1").classList.remove("actived")
-            document.getElementById("product-img-description1").classList.remove("active-none")
+            let a=document.querySelectorAll('#main-image-hr1');
+            let b=document.querySelectorAll('#main-brands-models1')
+            let c=document.querySelectorAll('#product-img-description1')
+            a.forEach(element=>{
+                element.classList.remove("actived");
+            });
+            b.forEach(element=>{
+                element.classList.remove("actived");
+            });
+            c.forEach(element=>{
+                element.classList.remove("acitve-none");
+            })
+            
+            // document.getElementById("main-image-hr1").classList.remove("actived")
+            // document.getElementById("main-brands-models1").classList.remove("actived")
+            // document.getElementById("product-img-description1").classList.remove("active-none")
 
-            // ######################### Grid-product-image2 ################
-            document.getElementById("main-image-hr2").classList.remove("actived")
-            document.getElementById("main-brands-models2").classList.remove("actived")
-            document.getElementById("product-img-description2").classList.remove("active-none")
-
-            // ######################### Grid-product-image3 ################
-            document.getElementById("main-image-hr3").classList.remove("actived")
-            document.getElementById("main-brands-models3").classList.remove("actived")
-            document.getElementById("product-img-description3").classList.remove("active-none")
+            
         }
-        // ##################### List-value ###################
-        function listvalue() {
-            // ###################### List-Product-image1 ######################
-            document.getElementById("product-images1").classList.add("list-direction")
-            document.getElementById("main-image-hr1").classList.add("actived")
-            document.getElementById("main-brands-models1").classList.add("actived")
-            document.getElementById("product-img-description1").classList.add("active-none")
+        function listvalue(e){
+            //console.log("Hello");
+            // console.log(e.target);
+            document.getElementById("product-images1").classList.add("list-direction");
+            let a=document.querySelectorAll('#main-image-hr1');
+            let b=document.querySelectorAll('#main-brands-models1')
+            let c=document.querySelectorAll('#product-img-description1')
 
-            // ###################### List-Product-image2 ######################
+            a.forEach(element=>{
+                element.classList.add("actived");
+            });
+            b.forEach(element=>{
+                element.classList.add("actived");
+            });
+            c.forEach(element=>{
+                element.classList.add("acitve-none");
+            })
 
-            document.getElementById("main-image-hr2").classList.add("actived")
-            document.getElementById("main-brands-models2").classList.add("actived")
-            document.getElementById("product-img-description2").classList.add("active-none")
+            // document.getElementById("product-images1").classList.add("list-direction")
+            // document.getElementById("main-image-hr1").classList.add("actived")
+            // document.getElementById("main-brands-models1").classList.add("actived")
+            // document.getElementById("product-img-description1").classList.add("active-none")
 
-            // ###################### List-Product-image3 ######################
-
-            document.getElementById("main-brands-models3").classList.add("actived")
-            document.getElementById("product-img-description3").classList.add("active-none")
         }
-
         // ########################### Most View ###################################
         function MostlyView() {
             document.getElementById("sub-recently").classList.add("active-none")
@@ -1227,20 +1273,26 @@
 
         // ####################### Typing-effect ################################
 
-        // var i = 0;
-        // var txt = 'Available all the Product in minimum Discount';
-        // var speed = 50;
-        // var place=""
-        // function typeWriter() {
-        //     if (i < txt.length) {
-        //         place+=txt.charAt(i);
-        //         document.getElementById("demo").setAttribute("placeholder",place);
-        //         i++;
-        //         setTimeout(typeWriter, speed);
-        //     }
+        var i = 0;
+        var txt = 'Available all the Product in minimum Discount';
+        var speed = 50;
+        var place=""
+        function typeWriter() {
+            if (i < txt.length) {
+                place+=txt.charAt(i);
+                document.getElementById("demo").setAttribute("placeholder",place);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        // while(true)
+        // {
+        //     typeWriter();
         // }
-        // typeWriter();
+        typeWriter();
     </script>
+    
+    <script src="Assets/Js/Featured.js"></script>
 </body>
 
 </html>

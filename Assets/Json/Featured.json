@@ -1,0 +1,40 @@
+{
+    "Product": [
+        {
+            "id": 1,
+            "img": "./Assets/img/download1.jpeg",
+            "brand": "Apple",
+            "productId": "product15",
+            "producttext": "Apple Text 30''",
+            "oldprice": "$70.61",
+            "newprice": "$78.61",
+            "type": "product1",
+            "name": "LCD",
+            "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac.."
+        },
+        {
+            "id": 2,
+            "img": "./Assets/img/Digital-Camera-PNG-Images-HD.png",
+            "brand": "CAMERA",
+            "productId": "product15",
+            "producttext": "Apple Text 31''",
+            "oldprice": "$70.61",
+            "newprice": "$78.61",
+            "type": "product1",
+            "name": "Camera",
+            "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac.."
+        },
+        {
+            "id": 3,
+            "img": "./Assets/img/purepng.com-digital-photo-cameracameraphotodigital-cameravideophoto-machinephoto-maker-231519335323xrynz.png",
+            "brand": "Digital Camera",
+            "productId": "product15",
+            "producttext": "Apple Text 32''",
+            "oldprice": "$70.61",
+            "newprice": "$78.61",
+            "type": "product1",
+            "name": "Digital Camera",
+            "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac.."
+        }
+    ]
+}
