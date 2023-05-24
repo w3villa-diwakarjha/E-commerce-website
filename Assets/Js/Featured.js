@@ -5,6 +5,7 @@ async function Featured() {
     // console.log(data);
     // console.log(data["Product"]);
     let arr = data["Product"];
+    //function(arr2[innerHtml-1])
     let main = document.getElementById('product-images1')
     // console.log(main);
     let html = ""
@@ -63,6 +64,7 @@ async function Featured() {
                 </div>
             </div>
         </div>
+
         <div class="main-brands-models" id="main-brands-models1">
             <div class="brands-models">
                 <div class="brands"> Brands: <span

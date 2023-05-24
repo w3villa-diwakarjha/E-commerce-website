@@ -6,35 +6,40 @@
             "brand": "Apple",
             "productId": "product15",
             "producttext": "Apple Text 30''",
-            "oldprice": "$70.61",
-            "newprice": "$78.61",
+            "oldprice": "$170.61",
+            "newprice": "$178.61",
             "type": "product1",
             "name": "LCD",
-            "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac.."
+            "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac..",
+            "productdesc":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis obcaecati animi, nulla voluptate exercitationem porro cum ipsam!erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta."
         },
         {
             "id": 2,
             "img": "./Assets/img/Digital-Camera-PNG-Images-HD.png",
             "brand": "CAMERA",
             "productId": "product15",
-            "producttext": "Apple Text 31''",
-            "oldprice": "$70.61",
-            "newprice": "$78.61",
+            "producttext": "Smart Camera",
+            "oldprice": "$99.61",
+            "newprice": "$95.61",
             "type": "product1",
             "name": "Camera",
-            "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac.."
+            "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac..",
+            "productdesc":  "Hello This Product is Amazing, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis obcaecati animi, nulla voluptate exercitationem porro cum ipsam!erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta."
+
         },
         {
             "id": 3,
             "img": "./Assets/img/purepng.com-digital-photo-cameracameraphotodigital-cameravideophoto-machinephoto-maker-231519335323xrynz.png",
             "brand": "Digital Camera",
             "productId": "product15",
-            "producttext": "Apple Text 32''",
-            "oldprice": "$70.61",
-            "newprice": "$78.61",
+            "producttext": "Digital Camera",
+            "oldprice": "$98.61",
+            "newprice": "$90.61",
             "type": "product1",
             "name": "Digital Camera",
-            "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac.."
+            "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac..",
+            "productdesc":  "Welcome for The Amazing Product Desc, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis obcaecati animi, nulla voluptate exercitationem porro cum ipsam!erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta."
+
         }
     ]
 }

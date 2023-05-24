@@ -704,10 +704,10 @@ h5{
     width: 15%;
     padding: 2px;
 }
-input[type=text]::-webkit-inner-spin-button,
+/* input[type=text]::-webkit-inner-spin-button,
 input[type=text]::-webkit-outer-spin-button {
   opacity: 1;
-}
+} */
 .quantity-btn{
     width: 50%;
     margin: auto;

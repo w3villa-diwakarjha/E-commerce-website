@@ -64,7 +64,7 @@
                 <div class="sub-div container1">
                     <div class="nav_link">
                         <ul class="nav-ul">
-                            <li class="list-item list-item1"><i class="fa-solid fa-house"></i><a href="">Home</a></li>
+                            <li class="list-item list-item1"><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
                             <li class="list-item list-item2"><i class="fa-solid fa-star"></i><a href="">About</a></li>
                             <li class="list-item list-item3"><i class="fa-solid fa-envelope"></i><a href="">Contact</a>
                             </li>
@@ -230,6 +230,7 @@
                                 </div>
                                 <div class="big-images">
                                     <div class="sub-big-image">
+                                        <!-- Json Image -->
                                         <img id="productImage" src="" alt="">
                                         <div class="hot-discount">
                                             <div class="hot">Hot</div>
@@ -251,20 +252,10 @@
                                     <div class="custom service">Custom</div>
                                 </div>
                                 <div class="services-txt">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet,
-                                        nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit
-                                        amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet
-                                        deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis
-                                        obcaecati animi, nulla voluptate exercitationem porro cum ipsam!<span
-                                            id="dots">...</span><span id="more">erisque enim ligula venenatis dolor.
-                                            Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce
-                                            luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed
-                                            ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet
-                                            sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer
-                                            fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor
-                                            porta.</span>
-                                        <div class="service-btn"><button onclick="myFunction()" id="myBtn">Read
-                                            more</button></div>
+                                    <p id="show-more-data">
+                                        <!-- json Data -->
+                                        <div class="service-btn"><button onclick="myFunction(event)" value="1" id="myBtn">Read
+                                            More</button></div>
                                     </p>
                                     <div class="services-all-brands">
                                         <div class="stars-rating">
@@ -280,8 +271,8 @@
                                     <hr>
                                     <div class="price-discount">
                                         <div class="prices">
-                                            <div class="old-price">$78.46</div>
-                                            <div class="new-price">$70.61</div>
+                                            <div class="old-price"></div>
+                                            <div class="new-price"></div>
                                             <div class="Ex-Tax prices1">Ex Tax:- $70.61</div>
                                             <div class="price-point prices1">Price in reward points: 400</div>
                                             <div class="more-10 prices1">10 or more $ 69.04</div>
@@ -706,19 +697,18 @@
         </div>
     </section>
     <script>
-        function myFunction() {
-            var dots = document.getElementById("dots");
-            var moreText = document.getElementById("more");
+        function myFunction(e) {
             var btnText = document.getElementById("myBtn");
-
-            if (dots.style.display === "none") {
-                dots.style.display = "inline";
-                btnText.innerHTML = "Read more";
-                moreText.style.display = "none";
-            } else {
-                dots.style.display = "none";
-                btnText.innerHTML = "Read less";
-                moreText.style.display = "inline";
+            var showMoretext = document.getElementById("show-more-data");
+            showMoretext.classList.toggle("showMore");
+            var k=e.target.value;
+            if(k==1){
+                btnText.innerHTML="Read Less";
+                e.target.value=0;
+            }
+            else{
+                btnText.innerHTML="Read More"
+                e.target.value=1;
             }
         }
 
@@ -761,18 +751,27 @@
         }
 
 
-        window.onload = displayProduct()
+        // window.onload = displayProduct()
+
         async function displayProduct() {
+            console.log(window.location.search)
             const urlParams = new URLSearchParams(window.location.search);
+
             let productId = urlParams.get("product");
             let response = await fetch('./Assets/Json/Featured.json');
             let data = await response.json();
+            console.log(data)
             const product = data["Product"].find(function (product) {
                 return product.id == productId
             })
+            console.log(product)
             document.getElementById("productImage").src = product.img;
+            document.getElementById("show-more-data").innerHTML=product.productdesc;
+            document.getElementsByClassName('old-price')[0].innerHTML=product.oldprice;
+            document.getElementsByClassName('new-price')[0].innerHTML=product.newprice;
 
         }
+        displayProduct();
     </script>
 </body>
 

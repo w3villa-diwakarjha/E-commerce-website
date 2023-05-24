@@ -39,7 +39,7 @@ async function Featured_products() {
             </div>
             <div class="main-quantity">
                 <div class="input-box">
-                    <input type="text" value="1" class="box">
+                    <input type="number" value="1" class="box">
                 </div>
                 <div class="inc-dec-btn">
                     <i class="fa-solid fa-chevron-up"></i>
