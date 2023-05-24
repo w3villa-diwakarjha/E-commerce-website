@@ -508,11 +508,11 @@ textarea {
 }
 
 #show-more-data {
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 4; /*Display only 4 line */
     overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
+    text-overflow: ellipsis; /* Display for 4 Dot */
+    display: -webkit-box; /* These Property show only webkit Box*/
+    -webkit-box-orient: vertical; /* DIsplay in vertical Manner */
 }
 
 #show-more-data.showMore {

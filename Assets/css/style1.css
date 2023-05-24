@@ -858,6 +858,50 @@ h5{
 .grid-list{
     display: flex;
 }
+
+/* ############################## Pagination ################################ */
+.pagination-btn{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.left-button{
+    border-radius: 5px;
+    width: 50px;
+    font-size: 20px;
+    margin: 5px;
+    border: none;
+    color: #e6dddd;
+    background-color: var(--colorcode00ff);
+    font-weight: bold;
+} 
+
+.right-button{
+    border-radius: 5px;
+    width: 50px;
+    font-size: 20px;
+    margin: 5px;
+    border: none;
+    color: #e6dddd;
+    background-color: var(--colorcode00ff);
+    font-weight: bold;
+}
+
+.number{
+    width: 50px;
+    font-size: 20px;
+    margin: 5px;
+    border: none;
+    color: #e6dddd;
+    background-color: var(--colorcode00ff);
+    border-radius: 5px;
+    font-weight: bold;
+}
+.activepage{
+    background-color: #000;
+}
+
 /* ############################ Pic Section ################################ */
 
 .mostview{

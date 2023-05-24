@@ -6,6 +6,7 @@ function showbutton1(e) {
     value2 = e.target.textContent;
     console.log(value2)
     let p = document.getElementsByClassName('actived1')[0];
+    console.log(p)
     p.classList.remove('actived1');
     element.classList.add('actived1');
     Featured_products();

@@ -1,14 +1,11 @@
 //console.log("hi");
-async function Featured() {
-    let response = await fetch('./Assets/Json/Featured.json');
-    let data = await response.json();
-    // console.log(data);
-    // console.log(data["Product"]);
-    let arr = data["Product"];
+  function Featured(arr) {
+   
+    // console.log(arr)
     //function(arr2[innerHtml-1])
     let main = document.getElementById('product-images1')
     // console.log(main);
-    let html = ""
+    let html = "";
     arr.forEach(element => {
         if (element.type === 'product1') {
             html += `<div class="main-list-view">
@@ -113,15 +110,110 @@ async function Featured() {
 
     </div>
     <hr class="main-image-hr" id="main-image-hr1">`
-    }
+        }
     });
     html += `<div class="end-txt">You Have Reached End of The List</div>`
     // console.log(html)
     main.innerHTML = html
 }
-function showProduct(productId){
+function showProduct(productId) {
     // console.log(productId);
-    let k=location.href='product.html'+'?'+'product='+productId;
+    let k = location.href = 'product.html' + '?' + 'product=' + productId;
     console.log(k)
 }
-Featured();
+
+// ######################### Pagination ###########################
+
+function pagination(length) {
+    let n=Math.ceil(length/3);
+    console.log(length);
+    console.log("Hello")
+    j = 2;
+    for (let i = 0; i < n; i++) {
+        let p = document.getElementsByClassName('pagination-number')[0];
+        // let p= document.getElementById('paginated')
+        let k = document.createElement('button')
+        k.classList.add('number');
+        k.setAttribute("onclick", "activepage()")
+        k.innerHTML = j;
+        p.append(k);
+        // console.log(k)
+        // console.log(p)
+        j++;
+    }
+}
+
+let num = document.getElementsByClassName('number');
+let currentvalue = 1;
+console.log(num[0])
+
+function activepage() {
+    // let paginationlength=document.querySelectorAll('.pagination-number .number').length;
+    // console.log(paginationlength)
+    // console.log("Hey")
+    for (i of num) {
+        i.classList.remove('activepage')
+    }
+    event.target.classList.add('activepage');
+    console.log(event)
+    currentvalue = parseInt(event.target.textContent);
+    showpage(currentvalue-1)
+}
+async function showpage(currentvalue){
+    let response = await fetch('./Assets/Json/Featured.json');
+    let data = await response.json();
+   
+    let arr = data["Product"];
+    
+    var n=arr.length;
+    // console.log(arr)
+    let arr2=[];
+    // arr2.push(arr);
+    for(let i=0;i<arr.length;i+=3){
+        let arr3=[];
+        let k=0;
+        for(let j=i;j<(i+3);j++){
+            arr3[k]=arr[j];
+            k++;
+        }
+        arr2.push(arr3);
+    }
+    // for(let i=0;i<arr.length;i+=3){
+    //     let arr3=[];
+    //     arr2.push(arr[i]);
+    // }
+    console.log(arr2)
+    Featured(arr2[currentvalue-1])
+    console.log(currentvalue)
+}
+
+function prev() {
+    // console.log(currentvalue)
+    if (currentvalue > 1) {
+        for (i of num) {
+            i.classList.remove('activepage');
+        }
+        currentvalue--;
+        num[currentvalue-1].classList.add("activepage");
+    }
+
+    console.log(currentvalue);
+}
+
+// let paginationlength=document.querySelectorAll('.pagination-number .number');
+// console.log(paginationlength)
+function next() {
+    let paginationlength = document.querySelectorAll('.pagination-number .number').length;
+    if(currentvalue<paginationlength){
+        for (i of num) {
+            i.classList.remove('activepage')
+        }
+        currentvalue++;
+        num[currentvalue-1].classList.add("activepage");
+    }
+    
+    
+}
+showpage(1);
+pagination(n);
+// Featured();
