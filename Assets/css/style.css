@@ -305,12 +305,14 @@ h5{
 
 .sub-detail-section1{
     display: flex;
+    cursor: pointer;
 }
 .sub-detail-section1-padd{
     padding: 0px 8px;
 }
 .sub-detail-section2{
     display: flex;
+    cursor: pointer;
 }
 .sub-detail-section2-padd{
     padding: 0px 20px;
@@ -348,6 +350,10 @@ h5{
     position: relative;
     width: 250px;
 }
+.all-department:hover .all-departments-box{
+    display: block;
+}
+
 
 .all-departments-class{
     position: absolute;
@@ -358,7 +364,28 @@ h5{
     background: var(--colorRed);
     padding: 0px 5px;
 }
-.megamenu{
+.all-departments-box{
+    background: rgba(248,248,248,1);
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    width: 95%;
+    color: dimgray;
+    display: none;
+}
+.multilevel:hover .multilevel-box{
+    display: block;
+}
+.multilevel-box{
+    background: rgba(248,248,248,1);
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    width: 95%;
+    color: dimgray;
+    display: none;
+}
+.megamenu,.multilevel,.fullwidth{
     position: relative;
 }
 

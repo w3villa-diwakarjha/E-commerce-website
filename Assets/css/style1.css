@@ -688,14 +688,14 @@ h5{
     padding: 10px;
 }
 .input-box{
-    width: 10%;
+    width: 20%;
 }
 .input-box input{
     width: 100%;
     text-align: center;
 }
 .quantity-btn{
-    width: 50%;
+    width: 60%;
     margin: auto;
 }
 .quantity-btn button{

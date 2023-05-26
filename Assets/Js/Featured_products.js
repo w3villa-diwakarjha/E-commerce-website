@@ -42,10 +42,6 @@ async function Featured_products() {
                 <div class="input-box">
                     <input type="number" value="1" class="box">
                 </div>
-                <div class="inc-dec-btn">
-                    <i class="fa-solid fa-chevron-up"></i>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
                 <div class="quantity-btn"><button>Add To Cart</button></div>
                 <div class="quantity-icons">
                     <i class="fa-regular fa-heart"></i>

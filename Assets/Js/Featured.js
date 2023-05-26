@@ -1,7 +1,6 @@
-//console.log("hi");
-  function Featured(arr) {
+function Featured(arr) {
    
-    // console.log(arr)
+    console.log(arr)
     //function(arr2[innerHtml-1])
     let main = document.getElementById('product-images1')
     // console.log(main);
@@ -41,10 +40,6 @@
                 <div class="main-quantity">
                     <div class="input-box">
                         <input type="number" value="1" class="box">
-                    </div>
-                    <div class="inc-dec-btn">
-                        <i class="fa-solid fa-chevron-up"></i>
-                        <i class="fa-solid fa-chevron-down"></i>
                     </div>
                     <div class="quantity-btn"><button>Add To Cart</button></div>
                     <div class="quantity-icons">
@@ -87,10 +82,7 @@
                     <input type="number" value="2">
                 </div>
 
-                <div class="inc-dec-btn">
-                    <i class="fa-solid fa-chevron-up"></i>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
+               
                 <div class="cart-button"><i
                         class="fa-solid fa-cart-shopping"></i><button>Add To Cart</button>
                 </div>
@@ -116,6 +108,7 @@
     // console.log(html)
     main.innerHTML = html
 }
+
 function showProduct(productId) {
     // console.log(productId);
     let k = location.href = 'product.html' + '?' + 'product=' + productId;
@@ -123,68 +116,86 @@ function showProduct(productId) {
 }
 
 // ######################### Pagination ###########################
+var n=1;
 
 function pagination(length) {
     let n=Math.ceil(length/3);
-    console.log(length);
-    console.log("Hello")
     j = 2;
-    for (let i = 0; i < n; i++) {
-        let p = document.getElementsByClassName('pagination-number')[0];
-        // let p= document.getElementById('paginated')
-        let k = document.createElement('button')
-        k.classList.add('number');
-        k.setAttribute("onclick", "activepage()")
-        k.innerHTML = j;
-        p.append(k);
-        // console.log(k)
-        // console.log(p)
+    for (let i = 0; i < n-1; i++) {
+        let page = document.getElementsByClassName('pagination-number')[0];
+        let button= document.createElement('button')
+        button.classList.add('number');
+        button.setAttribute("onclick", "activepage(event)")
+        button.innerHTML = j;
+        page.append(button);
         j++;
     }
 }
 
 let num = document.getElementsByClassName('number');
 let currentvalue = 1;
-console.log(num[0])
 
-function activepage() {
-    // let paginationlength=document.querySelectorAll('.pagination-number .number').length;
-    // console.log(paginationlength)
-    // console.log("Hey")
-    for (i of num) {
-        i.classList.remove('activepage')
+function activepage(e) {
+    if(typeof(e) === "object"){
+        for (i of num) {
+            i.classList.remove('activepage')
+        }
+        console.log(e)
+        e.target.classList.add('activepage');
+        // currentvalue = parseInt(e.target.textContent);
+        currentvalue=e.target.textContent;
+    }else{
+        currentvalue = e;
     }
-    event.target.classList.add('activepage');
-    console.log(event)
-    currentvalue = parseInt(event.target.textContent);
-    showpage(currentvalue-1)
+    // console.log(currentvalue);
+    showpage(currentvalue);
 }
+
+
+
+// function activepage(e){
+//     console.log(e.target.textContent)
+// }
 async function showpage(currentvalue){
     let response = await fetch('./Assets/Json/Featured.json');
     let data = await response.json();
-   
+
     let arr = data["Product"];
-    
-    var n=arr.length;
-    // console.log(arr)
+    n=arr.length;
+    let a=n%3;
+    console.log(a)
     let arr2=[];
-    // arr2.push(arr);
-    for(let i=0;i<arr.length;i+=3){
+    // for(let i=0;i<n;i+=3){
+    //     let arr3=[];
+    //     let k=0;
+    //     for(let j=i;j<(i+3);j++){
+    //         arr3[k]=arr[j];
+    //         k++;
+    //     }
+    //     arr2.push(arr3);
+    //     // console.log(arr3);
+    // }
+    for(let i=0;i<n;i+=3){
         let arr3=[];
         let k=0;
-        for(let j=i;j<(i+3);j++){
-            arr3[k]=arr[j];
-            k++;
+        let l=n;
+        if(l>=3){
+            for(let j=i;j<(i+3);j++){
+                arr3[k++]=arr[j];
+            }
         }
+        else{
+            for(let j=i;j<(i+l);j++){
+                arr3[k++]=arr[j];
+            }
+        }
+        
         arr2.push(arr3);
+        l=l-3;
+        console.log(l)
     }
-    // for(let i=0;i<arr.length;i+=3){
-    //     let arr3=[];
-    //     arr2.push(arr[i]);
-    // }
     console.log(arr2)
     Featured(arr2[currentvalue-1])
-    console.log(currentvalue)
 }
 
 function prev() {
@@ -198,10 +209,10 @@ function prev() {
     }
 
     console.log(currentvalue);
+    activepage(currentvalue);
 }
 
-// let paginationlength=document.querySelectorAll('.pagination-number .number');
-// console.log(paginationlength)
+
 function next() {
     let paginationlength = document.querySelectorAll('.pagination-number .number').length;
     if(currentvalue<paginationlength){
@@ -209,11 +220,18 @@ function next() {
             i.classList.remove('activepage')
         }
         currentvalue++;
+        console.log(num[currentvalue-1])
         num[currentvalue-1].classList.add("activepage");
     }
+    // console.log(event.target.textContent)
+    // console.log(currentvalue);
+    activepage(currentvalue)
     
     
 }
-showpage(1);
-pagination(n);
-// Featured();
+
+async function main(){
+    await showpage(1);
+    pagination(n);
+}
+main();
