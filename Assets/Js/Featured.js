@@ -112,11 +112,10 @@ function Featured(arr) {
 function showProduct(productId) {
     // console.log(productId);
     let k = location.href = 'product.html' + '?' + 'product=' + productId;
-    console.log(k)
+    // console.log(k)
 }
 
 // ######################### Pagination ###########################
-var n=1;
 
 function pagination(length) {
     let n=Math.ceil(length/3);
@@ -135,12 +134,11 @@ function pagination(length) {
 let num = document.getElementsByClassName('number');
 let currentvalue = 1;
 
-function activepage(e) {
+async function activepage(e) {
     if(typeof(e) === "object"){
         for (i of num) {
             i.classList.remove('activepage')
         }
-        console.log(e)
         e.target.classList.add('activepage');
         // currentvalue = parseInt(e.target.textContent);
         currentvalue=e.target.textContent;
@@ -148,58 +146,109 @@ function activepage(e) {
         currentvalue = e;
     }
     // console.log(currentvalue);
-    showpage(currentvalue);
+    let cartData = await pagenationData(currentvalue);
+    console.log(cartData.cartItem);
+    console.log(cartData.productCount);
+    showpage(cartData.cartItem[currentvalue-1]);
 }
-
-
-
 // function activepage(e){
 //     console.log(e.target.textContent)
 // }
-async function showpage(currentvalue){
+// async function showpage(currentvalue){
+//     let response = await fetch('./Assets/Json/Featured.json');
+//     let data = await response.json();
+//     let arr = data["Product"];
+//     // n=arr.length;
+//     let a=n%3;
+//     // console.log(a)
+//     let arr2=[];
+//     // for(let i=0;i<n;i+=3){
+//     //     let arr3=[];
+//     //     let k=0;
+//     //     for(let j=i;j<(i+3);j++){
+//     //         arr3[k]=arr[j];
+//     //         k++;
+//     //     }
+//     //     arr2.push(arr3);
+//     //     // console.log(arr3);
+//     // }
+//     let l=n;
+//     for(let i=0;i<n;i+=3){
+//         let arr3=[];
+//         let k=0;
+//         if(l>=3){
+//             for(let j=i;j<(i+3);j++){
+//                 arr3[k++]=arr[j];
+//             }
+//             l=l-3;
+//         }
+//         else{
+//             for(let j=i;j<(i+l);j++){
+//                 arr3[k++]=arr[j];
+//             }
+//         }
+        
+//         arr2.push(arr3);
+//         // console.log(l)
+//     }
+//     // console.log(arr2)
+//     //Featured(arr2[currentvalue-1])
+// }
+
+// ################################# Card Data #############################
+async function cardItem() {
+    let cartData = await pagenationData(1);
+    showpage(cartData.cartItem[1-1]);
+    pagination(cartData.productCount);
+    // console.log(product)
+}
+cardItem();
+
+function showpage(cartData){
+    Featured(cartData);
+    
+}
+
+async function pagenationData(currentvalue){
+    const urlparams = new URLSearchParams(window.location.search);
+    let text = urlparams.get('search');
     let response = await fetch('./Assets/Json/Featured.json');
     let data = await response.json();
+    const product = data["Product"].filter(function (user) {
+        return (user.name.toLowerCase().includes(text.toLowerCase()))
+    })
 
-    let arr = data["Product"];
-    n=arr.length;
-    let a=n%3;
-    console.log(a)
+    let n = product.length;
     let arr2=[];
-    // for(let i=0;i<n;i+=3){
-    //     let arr3=[];
-    //     let k=0;
-    //     for(let j=i;j<(i+3);j++){
-    //         arr3[k]=arr[j];
-    //         k++;
-    //     }
-    //     arr2.push(arr3);
-    //     // console.log(arr3);
-    // }
+    let l=n;
     for(let i=0;i<n;i+=3){
         let arr3=[];
         let k=0;
-        let l=n;
         if(l>=3){
             for(let j=i;j<(i+3);j++){
-                arr3[k++]=arr[j];
+                arr3[k++]=product[j];
             }
+            l=l-3;
         }
         else{
             for(let j=i;j<(i+l);j++){
-                arr3[k++]=arr[j];
+                arr3[k++]=product[j];
             }
         }
         
         arr2.push(arr3);
-        l=l-3;
-        console.log(l)
     }
-    console.log(arr2)
-    Featured(arr2[currentvalue-1])
+    console.log(currentvalue)
+    // console.log(arr2)
+
+    return {
+        "cartItem" : arr2,
+        "productCount" : product.length,
+    };
+    
 }
 
 function prev() {
-    // console.log(currentvalue)
     if (currentvalue > 1) {
         for (i of num) {
             i.classList.remove('activepage');
@@ -207,8 +256,6 @@ function prev() {
         currentvalue--;
         num[currentvalue-1].classList.add("activepage");
     }
-
-    console.log(currentvalue);
     activepage(currentvalue);
 }
 
@@ -220,18 +267,10 @@ function next() {
             i.classList.remove('activepage')
         }
         currentvalue++;
-        console.log(num[currentvalue-1])
+        // console.log(num[currentvalue-1])
         num[currentvalue-1].classList.add("activepage");
     }
-    // console.log(event.target.textContent)
-    // console.log(currentvalue);
     activepage(currentvalue)
     
     
 }
-
-async function main(){
-    await showpage(1);
-    pagination(n);
-}
-main();

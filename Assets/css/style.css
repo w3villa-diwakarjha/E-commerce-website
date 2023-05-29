@@ -350,6 +350,9 @@ h5{
     position: relative;
     width: 250px;
 }
+.all-department:hover{
+    background-color: #e6dddd;
+}
 .all-department:hover .all-departments-box{
     display: block;
 }
@@ -372,6 +375,10 @@ h5{
     width: 95%;
     color: dimgray;
     display: none;
+}
+.multilevel:hover{
+    background-color: #e6dddd;
+    color: #000;
 }
 .multilevel:hover .multilevel-box{
     display: block;
@@ -397,6 +404,13 @@ h5{
     color: var(--colorblack);
     background: yellow;
     padding: 0px 5px;
+}
+.megamenu-main-box{
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    background-color: #e6dddd;
+    display: none;
 }
 
 /* ##################### Carousel-section ########################### */

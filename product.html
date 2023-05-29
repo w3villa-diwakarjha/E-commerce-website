@@ -756,15 +756,16 @@
         async function displayProduct() {
             console.log(window.location.search)
             const urlParams = new URLSearchParams(window.location.search);
-
+            console.log(urlParams)
             let productId = urlParams.get("product");
+            console.log(productId)
             let response = await fetch('./Assets/Json/Featured.json');
             let data = await response.json();
             console.log(data)
             const product = data["Product"].find(function (product) {
                 return product.id == productId
             })
-            console.log(product)
+            console.log(product);
             document.getElementById("productImage").src = product.img;
             document.getElementById("show-more-data").innerHTML=product.productdesc;
             document.getElementsByClassName('old-price')[0].innerHTML=product.oldprice;

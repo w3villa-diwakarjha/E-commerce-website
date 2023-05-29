@@ -5,7 +5,7 @@
             "img": "./Assets/img/download1.jpeg",
             "brand": "Apple",
             "productId": "product15",
-            "producttext": "Apple Text 30''",
+            "producttext": "Lcd",
             "oldprice": "$170.61",
             "newprice": "$178.61",
             "type": "product1",
@@ -36,7 +36,7 @@
             "oldprice": "$98.61",
             "newprice": "$90.61",
             "type": "product1",
-            "name": "Digital Camera",
+            "name": "Camera",
             "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac..",
             "productdesc":  "Welcome for The Amazing Product Desc, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis obcaecati animi, nulla voluptate exercitationem porro cum ipsam!erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta."
 
@@ -50,7 +50,7 @@
             "oldprice": "$190.61",
             "newprice": "$178.61",
             "type": "product1",
-            "name": "LCD",
+            "name": "Ear Buds",
             "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac..",
             "productdesc":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis obcaecati animi, nulla voluptate exercitationem porro cum ipsam!erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta."
         },
@@ -63,7 +63,7 @@
             "oldprice": "$180.61",
             "newprice": "$178.61",
             "type": "product1",
-            "name": "LCD",
+            "name": "chair",
             "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac..",
             "productdesc":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis obcaecati animi, nulla voluptate exercitationem porro cum ipsam!erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta."
         },
@@ -76,7 +76,7 @@
             "oldprice": "$270.61",
             "newprice": "$178.61",
             "type": "product1",
-            "name": "LCD",
+            "name": "chair",
             "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac..",
             "productdesc":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis obcaecati animi, nulla voluptate exercitationem porro cum ipsam!erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta."
         },
@@ -89,7 +89,7 @@
             "oldprice": "$370.61",
             "newprice": "$178.61",
             "type": "product1",
-            "name": "LCD",
+            "name": "Sweater",
             "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac..",
             "productdesc":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis obcaecati animi, nulla voluptate exercitationem porro cum ipsam!erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta."
         },
@@ -102,7 +102,7 @@
             "oldprice": "$470.61",
             "newprice": "$178.61",
             "type": "product1",
-            "name": "LCD",
+            "name": "T-shirt",
             "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac..",
             "productdesc":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis obcaecati animi, nulla voluptate exercitationem porro cum ipsam!erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta."
         },
@@ -115,33 +115,20 @@
             "oldprice": "$570.61",
             "newprice": "$178.61",
             "type": "product1",
-            "name": "LCD",
+            "name": "HeadPhone",
             "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac..",
             "productdesc":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis obcaecati animi, nulla voluptate exercitationem porro cum ipsam!erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta."
         },
         {
-            "id": 1,
-            "img": "./Assets/img/download1.jpeg",
-            "brand": "Apple",
+            "id": 10,
+            "img": "./Assets/img/watch-png-transparent-image-png-transparent-best-6.png",
+            "brand": "sonata",
             "productId": "product15",
-            "producttext": "Apple Text 30''",
-            "oldprice": "$170.61",
-            "newprice": "$178.61",
+            "producttext": "Beautiful Watch",
+            "oldprice": "$190.61",
+            "newprice": "$158.61",
             "type": "product1",
-            "name": "LCD",
-            "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac..",
-            "productdesc":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis obcaecati animi, nulla voluptate exercitationem porro cum ipsam!erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta."
-        },
-        {
-            "id": 1,
-            "img": "./Assets/img/download1.jpeg",
-            "brand": "Apple",
-            "productId": "product15",
-            "producttext": "Apple Text 30''",
-            "oldprice": "$170.61",
-            "newprice": "$178.61",
-            "type": "product1",
-            "name": "LCD",
+            "name": "Watch",
             "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac..",
             "productdesc":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis obcaecati animi, nulla voluptate exercitationem porro cum ipsam!erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta."
         }

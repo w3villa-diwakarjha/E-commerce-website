@@ -85,4 +85,24 @@ async function Featured_products() {
     });
 }
 
+// ######################### Search-Bar #########################################
+const input_bar = document.querySelector('.search-bar')
+const search_icon = document.querySelector('.search-icon')
+let text;
+
+input_bar.addEventListener('input', function() {
+    text = this.value
+})
+
+search_icon.addEventListener('click', searchbar)
+
+
+function searchbar(){
+    if((typeof(text)!=='undefined')&&(text!=='')){
+        location.href='search.html'+'?'+'search='+text;
+    }
+    // console.log(text)
+}
+
+
 Featured_products();
