@@ -9,7 +9,6 @@ function showbutton2(e) {
     Blog();
 }
 
-
 async function Blog() {
     let response = await fetch('./Assets/Json/Blog.json');
     let data = await response.json();
