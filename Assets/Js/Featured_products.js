@@ -105,4 +105,17 @@ function searchbar(){
 }
 
 
+
+// document.querySelector('.fullwidth').addEventListener("mouseover", mouseOver);
+// document.querySelector('.fullwidth').addEventListener("mouseout", mouseOut);
+// console.log(document.querySelector('.megamenu'))
+
+function mouseOver(){
+    document.querySelector('.overlay-layer').style.display='block';
+}
+function mouseOut(){
+    document.querySelector('.overlay-layer').style.display='none';
+}
+
+
 Featured_products();

@@ -351,7 +351,7 @@ h5{
     width: 250px;
 }
 .all-department:hover{
-    background-color: #e6dddd;
+    background-color: #fff;
 }
 .all-department:hover .all-departments-box{
     display: block;
@@ -368,35 +368,62 @@ h5{
     padding: 0px 5px;
 }
 .all-departments-box{
-    background: rgba(248,248,248,1);
+    background: #fff;
     position: absolute;
-    z-index: 2;
+    z-index: 17;
     top: 100%;
-    width: 95%;
+    width: 100%;
+    left: 0%;
     color: dimgray;
     display: none;
+    padding: 20px 40px;
+
 }
 .multilevel:hover{
-    background-color: #e6dddd;
+    background-color: #fff;
     color: #000;
 }
 .multilevel:hover .multilevel-box{
     display: block;
 }
 .multilevel-box{
-    background: rgba(248,248,248,1);
+    background: #fff;
     position: absolute;
-    z-index: 2;
+    z-index: 17;
+    padding: 10px;
+    left: 0%;
     top: 100%;
-    width: 95%;
+    width: 100%;
     color: dimgray;
     display: none;
 }
 .megamenu,.multilevel,.fullwidth{
     position: relative;
 }
+.overlay-layer{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    top: 29.2%;
+    left: 0%;
+    position: fixed;
+    z-index: 16;
+    transition: .81s;
+    /* opacity: 0; */
+    display: none;
+}
+.megamenu:hover .megamenu-box{
+    display: block;
+}
+.fullwidth:hover .fullwidth-box{
+    display: block;
+}
+.megamenu:hover,.fullwidth:hover{
+    background-color: #fff;
+    color: #000;
+}
 
-.megamenu span{
+.megamenu span, .fullwidth span{
     position: absolute;
     font-size: 12px;
     top: -8px;
@@ -405,12 +432,52 @@ h5{
     background: yellow;
     padding: 0px 5px;
 }
-.megamenu-main-box{
-    display: flex;
-    z-index: 2;
+.megamenu-box{
+
+    background-color: #fff;
+    z-index: 17;
+    color: #000;
     position: absolute;
-    background-color: #e6dddd;
+    top: 100%;
+    width: 1126.5%;
     display: none;
+    padding: 15px;
+    left: -302%;
+}
+
+.fullwidth-box{
+    background-color: #fff;
+    z-index: 17;
+    color: #000;
+    position: absolute;
+    top: 100%;
+    width: 1163.5%;
+    display: none;
+    padding: 15px;
+    left: -417%;
+}
+.megamenu-list, .fullwidth-list{
+    display: flex;
+}
+.megamenu-main, .fullwidth-main{
+    width: 25%;
+}
+.sub-accessories{
+    position: relative;;
+}
+.accessories-box{
+    position: absolute;
+    top: 15%;
+    left: 100%;
+    width: 140px;
+    text-align: center;
+    padding: 3px 2px;
+    background-color: #fff;
+    display: none;
+}
+.sub-accessories:hover .accessories-box{
+
+    display: block;
 }
 
 /* ##################### Carousel-section ########################### */
