@@ -1,5 +1,4 @@
 let value2 = "Featured";
-// console.log(value2)
 
 function showbutton1(e) {
     let element = e.target;
@@ -15,15 +14,13 @@ function showbutton1(e) {
 async function Featured_products() {
     let response = await fetch('./Assets/Json/Featured_products.json');
     let data = await response.json();
-    // console.log(data);
     let arr = data[value2];
     let owl = document.getElementById('main-carousel1');
-    // console.log(owl)
     let html = `<div id="owl-carousel-2" class="owl-carousel owl-theme">`
-    // console.log(arr)
-    arr.forEach(element => {
 
-        html += `<div class="item1">
+    arr.forEach(element => {
+        if (element.brand == 'Ericksson') {
+            html += `<div class="item1">
         <div class="item1-img">
         <img src="${element.img}" alt="">
         </div>
@@ -44,7 +41,7 @@ async function Featured_products() {
                 </div>
                 <div class="quantity-btn"><button>Add To Cart</button></div>
                 <div class="quantity-icons">
-                    <i class="fa-regular fa-heart"></i>
+                    <i id=${element.id} class="fa-regular fa-heart"onclick=count(this)></i>
                     <i class="fa-solid fa-right-left"></i>
                 </div>
             </div>
@@ -56,6 +53,7 @@ async function Featured_products() {
             </div>
         </div>
     </div>`
+        }
     });
     html += `</div>`;
     html += `<div class="all-product main-btn"><button class="btn-blue all-product-btn">See All Product-></button></div>`
@@ -66,7 +64,7 @@ async function Featured_products() {
     $('#owl-carousel-2').owlCarousel({
         loop: true,
         margin: 10,
-        autoplay: true,
+        // autoplay: false,
         nav: false,
         responsive: {
             0: {
@@ -90,32 +88,77 @@ const input_bar = document.querySelector('.search-bar')
 const search_icon = document.querySelector('.search-icon')
 let text;
 
-input_bar.addEventListener('input', function() {
+input_bar.addEventListener('input', function () {
     text = this.value
 })
 
 search_icon.addEventListener('click', searchbar)
 
 
-function searchbar(){
-    if((typeof(text)!=='undefined')&&(text!=='')){
-        location.href='search.html'+'?'+'search='+text;
+function searchbar() {
+    if ((typeof (text) !== 'undefined') && (text !== '')) {
+        location.href = 'search.html' + '?' + 'search=' + text;
     }
-    // console.log(text)
 }
 
-
-
-// document.querySelector('.fullwidth').addEventListener("mouseover", mouseOver);
-// document.querySelector('.fullwidth').addEventListener("mouseout", mouseOut);
-// console.log(document.querySelector('.megamenu'))
-
-function mouseOver(){
-    document.querySelector('.overlay-layer').style.display='block';
+function mouseOver() {
+    document.querySelector('.overlay-layer').style.display = 'block';
 }
-function mouseOut(){
-    document.querySelector('.overlay-layer').style.display='none';
+function mouseOut() {
+    document.querySelector('.overlay-layer').style.display = 'none';
+}
+// ################################# whishlist-section ############################
+
+let k = 1;
+function count(e) {
+    var userinfo = JSON.parse(localStorage.getItem("username")) || [];
+    let arr = JSON.parse(localStorage.getItem("username"))
+    if(arr==null){
+        document.querySelector('.counting').innerHTML = 1;
+    }
+    else{
+    
+        let length = arr.length
+        document.querySelector('.counting').innerHTML = length+1;
+    }
+    
+    let id = e.id;
+    console.log(id)
+    let present = 0;
+    if (arr && arr.length > 0) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == id) {
+                present = 1;
+            }
+        }
+        if (present == 1) {
+            alert('Already Exist');
+        }
+        else {
+            userinfo.push(id);
+            let json = JSON.stringify(userinfo);
+            localStorage.setItem("username", json);
+        }
+    }
+    else {
+        console.log("hello")
+        userinfo.push(id);
+        let json = JSON.stringify(userinfo);
+        localStorage.setItem("username", json);
+    }
+}
+let arr = JSON.parse(localStorage.getItem("username"))
+if(arr==null){
+    document.querySelector('.counting').innerHTML = 0;
+}
+else{
+
+    let length = arr.length
+    document.querySelector('.counting').innerHTML = length;
 }
 
+function showWishlist() {
+    window.location.href = "wishlist.html"
+}
 
 Featured_products();

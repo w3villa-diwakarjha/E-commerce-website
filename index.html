@@ -122,9 +122,10 @@
                             <i class="fa-solid fa-pen-to-square"></i>
                             <h5 class="register-txt">Register</h5>
                         </div>
-                        <div class="wishlist-main user">
-                            <i class="fa-regular fa-heart"></i>
-                            <h5 class="wishlist-txt">Whishlist</h5>
+                        <div class="wishlist-main user" onclick="showWishlist()">
+                            <i class="fa-regular fa-heart"></i><span class="counting"
+                                style="color: red; font-size: 14px;">0</span>
+                            <h5 class="wishlist-txt">Whishlist </h5>
                         </div>
                         <div class="compare-main user">
                             <i class="fa-solid fa-arrow-right-arrow-left"></i>
@@ -909,19 +910,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="Blog">
-            <div id="owl" class="loop owl-theme">
-                <div class="item"><h4>1</h4></div>
-                <div class="item"><h4>2</h4></div>
-                <div class="item"><h4>3</h4></div>
-                <div class="item"><h4>4</h4></div>
-                <div class="item"><h4>5</h4></div>
-                <div class="item"><h4>6</h4></div>
-                <div class="item"><h4>7</h4></div>
-                <div class="item"><h4>8</h4></div>
-                <div class="item"><h4>9</h4></div>
-            </div>
-        </div> -->
         <div class="Blog Blog1 container1">
             <!-- Json Data -->
         </div>
@@ -1159,7 +1147,7 @@
         $('#owl-carousel-2').owlCarousel({
             loop: true,
             margin: 10,
-            // autoplay: true,
+            // autoplay: false,
             nav: false,
             responsive: {
                 0: {
@@ -1250,6 +1238,7 @@
     <script src="Assets/Js/Featured_products.js"></script>
     <script src="Assets/Js/Blog.js"></script>
     <script src="Assets/Js/Feedback.js"></script>
+    <!-- <script src="Assets/Js/wishlist.js"></script> -->
 
 </body>
 

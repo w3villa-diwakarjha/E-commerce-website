@@ -132,6 +132,11 @@ i{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+.user span{
+    position: absolute;
+    left: 70%;
 }
 .search-main{
     display: inline-table;
@@ -384,6 +389,9 @@ h5{
 }
 .sub-product-hr-tag{
     margin: 15px 0px;
+}
+.quantity-icons{
+    cursor: pointer;
 }
 /* ##################### Range-slider ######################### */
 .range-slider {

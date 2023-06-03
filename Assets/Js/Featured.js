@@ -1,9 +1,5 @@
 function Featured(arr) {
-   
-    console.log(arr)
-    //function(arr2[innerHtml-1])
     let main = document.getElementById('product-images1')
-    // console.log(main);
     let html = "";
     arr.forEach(element => {
         if (element.type === 'product1') {
@@ -43,7 +39,7 @@ function Featured(arr) {
                     </div>
                     <div class="quantity-btn"><button>Add To Cart</button></div>
                     <div class="quantity-icons">
-                        <i class="fa-regular fa-heart"></i>
+                        <i id="${element.id}"class="fa-regular fa-heart" onclick="count(this)"></i>
                         <i class="fa-solid fa-right-left"></i>
                     </div>
                 </div>
@@ -87,8 +83,7 @@ function Featured(arr) {
                         class="fa-solid fa-cart-shopping"></i><button>Add To Cart</button>
                 </div>
                 <div class="quantity-icons cart-icons">
-                    <i class="fa-regular fa-heart add-cart-heart-left"
-                        style="margin-right: 5px;"></i>
+                    <i id="${element.id}"class="fa-regular fa-heart add-cart-heart-left" onclick="count(this)"style="margin-right: 5px;"></i>
                     <i class="fa-solid fa-right-left add-cart-heart-left"></i>
                 </div>
             </div>
@@ -105,24 +100,21 @@ function Featured(arr) {
         }
     });
     html += `<div class="end-txt">You Have Reached End of The List</div>`
-    // console.log(html)
     main.innerHTML = html
 }
 
 function showProduct(productId) {
-    // console.log(productId);
-    let k = location.href = 'product.html' + '?' + 'product=' + productId;
-    // console.log(k)
+    location.href = 'product.html' + '?' + 'product=' + productId;
 }
 
 // ######################### Pagination ###########################
 
 function pagination(length) {
-    let n=Math.ceil(length/3);
+    let n = Math.ceil(length / 3);
     j = 2;
-    for (let i = 0; i < n-1; i++) {
+    for (let i = 0; i < n - 1; i++) {
         let page = document.getElementsByClassName('pagination-number')[0];
-        let button= document.createElement('button')
+        let button = document.createElement('button')
         button.classList.add('number');
         button.setAttribute("onclick", "activepage(event)")
         button.innerHTML = j;
@@ -135,81 +127,36 @@ let num = document.getElementsByClassName('number');
 let currentvalue = 1;
 
 async function activepage(e) {
-    if(typeof(e) === "object"){
+    if (typeof (e) === "object") {
         for (i of num) {
             i.classList.remove('activepage')
         }
         e.target.classList.add('activepage');
         // currentvalue = parseInt(e.target.textContent);
-        currentvalue=e.target.textContent;
-    }else{
+        currentvalue = e.target.textContent;
+    } else {
         currentvalue = e;
     }
-    // console.log(currentvalue);
     let cartData = await pagenationData(currentvalue);
     console.log(cartData.cartItem);
     console.log(cartData.productCount);
-    showpage(cartData.cartItem[currentvalue-1]);
+    showpage(cartData.cartItem[currentvalue - 1]);
 }
-// function activepage(e){
-//     console.log(e.target.textContent)
-// }
-// async function showpage(currentvalue){
-//     let response = await fetch('./Assets/Json/Featured.json');
-//     let data = await response.json();
-//     let arr = data["Product"];
-//     // n=arr.length;
-//     let a=n%3;
-//     // console.log(a)
-//     let arr2=[];
-//     // for(let i=0;i<n;i+=3){
-//     //     let arr3=[];
-//     //     let k=0;
-//     //     for(let j=i;j<(i+3);j++){
-//     //         arr3[k]=arr[j];
-//     //         k++;
-//     //     }
-//     //     arr2.push(arr3);
-//     //     // console.log(arr3);
-//     // }
-//     let l=n;
-//     for(let i=0;i<n;i+=3){
-//         let arr3=[];
-//         let k=0;
-//         if(l>=3){
-//             for(let j=i;j<(i+3);j++){
-//                 arr3[k++]=arr[j];
-//             }
-//             l=l-3;
-//         }
-//         else{
-//             for(let j=i;j<(i+l);j++){
-//                 arr3[k++]=arr[j];
-//             }
-//         }
-        
-//         arr2.push(arr3);
-//         // console.log(l)
-//     }
-//     // console.log(arr2)
-//     //Featured(arr2[currentvalue-1])
-// }
 
 // ################################# Card Data #############################
 async function cardItem() {
     let cartData = await pagenationData(1);
-    showpage(cartData.cartItem[1-1]);
+    showpage(cartData.cartItem[1 - 1]);
     pagination(cartData.productCount);
-    // console.log(product)
 }
 cardItem();
 
-function showpage(cartData){
+function showpage(cartData) {
     Featured(cartData);
-    
+
 }
 
-async function pagenationData(currentvalue){
+async function pagenationData(currentvalue) {
     const urlparams = new URLSearchParams(window.location.search);
     let text = urlparams.get('search');
     let response = await fetch('./Assets/Json/Featured.json');
@@ -219,33 +166,31 @@ async function pagenationData(currentvalue){
     })
 
     let n = product.length;
-    let arr2=[];
-    let l=n;
-    for(let i=0;i<n;i+=3){
-        let arr3=[];
-        let k=0;
-        if(l>=3){
-            for(let j=i;j<(i+3);j++){
-                arr3[k++]=product[j];
+    let arr2 = [];
+    let l = n;
+    for (let i = 0; i < n; i += 3) {
+        let arr3 = [];
+        let k = 0;
+        if (l >= 3) {
+            for (let j = i; j < (i + 3); j++) {
+                arr3[k++] = product[j];
             }
-            l=l-3;
+            l = l - 3;
         }
-        else{
-            for(let j=i;j<(i+l);j++){
-                arr3[k++]=product[j];
+        else {
+            for (let j = i; j < (i + l); j++) {
+                arr3[k++] = product[j];
             }
         }
-        
+
         arr2.push(arr3);
     }
-    console.log(currentvalue)
-    // console.log(arr2)
 
     return {
-        "cartItem" : arr2,
-        "productCount" : product.length,
+        "cartItem": arr2,
+        "productCount": product.length,
     };
-    
+
 }
 
 function prev() {
@@ -254,7 +199,7 @@ function prev() {
             i.classList.remove('activepage');
         }
         currentvalue--;
-        num[currentvalue-1].classList.add("activepage");
+        num[currentvalue - 1].classList.add("activepage");
     }
     activepage(currentvalue);
 }
@@ -262,15 +207,68 @@ function prev() {
 
 function next() {
     let paginationlength = document.querySelectorAll('.pagination-number .number').length;
-    if(currentvalue<paginationlength){
+    if (currentvalue < paginationlength) {
         for (i of num) {
             i.classList.remove('activepage')
         }
         currentvalue++;
         // console.log(num[currentvalue-1])
-        num[currentvalue-1].classList.add("activepage");
+        num[currentvalue - 1].classList.add("activepage");
     }
     activepage(currentvalue)
+
+
+}
+
+// ################################# whishlist-section ############################
+
+let k = 1;
+function count(e) {
+    var userinfo = JSON.parse(localStorage.getItem("username")) || [];
+    let arr = JSON.parse(localStorage.getItem("username"))
+    if(arr==null){
+        document.querySelector('.counting').innerHTML = 1;
+    }
+    else{
     
-    
+        let length = arr.length
+        document.querySelector('.counting').innerHTML = length+1;
+    }
+    // document.querySelector('.counting').innerHTML = length;
+    let id = e.id;
+    console.log(id)
+    let present = 0;
+    if (arr && arr.length > 0) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == id) {
+                present = 1;
+            }
+        }
+        if (present == 1) {
+            alert('Already Exist');
+        }
+        else {
+            userinfo.push(id);
+            let json = JSON.stringify(userinfo);
+            localStorage.setItem("username", json);
+        }
+    }
+    else {
+        console.log("hello")
+        userinfo.push(id);
+        let json = JSON.stringify(userinfo);
+        localStorage.setItem("username", json);
+    }
+}
+let arr = JSON.parse(localStorage.getItem("username"))
+if(arr==null){
+    document.querySelector('.counting').innerHTML = 0;
+}
+else{
+
+    let length = arr.length
+    document.querySelector('.counting').innerHTML = length;
+}
+function showWishlist() {
+    window.location.href = "wishlist.html"
 }

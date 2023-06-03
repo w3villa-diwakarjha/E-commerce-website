@@ -124,9 +124,10 @@
                             <i class="fa-solid fa-pen-to-square"></i>
                             <h5 class="register-txt">Register</h5>
                         </div>
-                        <div class="wishlist-main user">
-                            <i class="fa-regular fa-heart"></i>
-                            <h5 class="wishlist-txt">Whishlist</h5>
+                        <div class="wishlist-main user" onclick="showWishlist()">
+                            <i class="fa-regular fa-heart"></i><span class="counting"
+                                style="color: red; font-size: 14px;">0</span>
+                            <h5 class="wishlist-txt">Whishlist </h5>
                         </div>
                         <div class="compare-main user">
                             <i class="fa-solid fa-arrow-right-arrow-left"></i>
@@ -449,301 +450,6 @@
 
                         <div class="product-images-main">
                             <div class="product-images" id="product-images1">
-                                <!-- ######################### List-view #####################  -->
-                                <!-- <div class="main-list-view">
-                                    <div class="main-product-image main-image1">
-                                        <div class="product-image">
-                                            <a href="./product.html"><img src="./Assets/img/download1.jpeg" alt=""></a>
-                                            <div class="stars-rating">
-                                                <i class="fa-solid fa-star" style="color: yellow;"></i>
-                                                <i class="fa-solid fa-star" style="color: yellow;"></i>
-                                                <i class="fa-solid fa-star" style="color: yellow;"></i>
-                                                <i class="fa-solid fa-star" style="color: yellow;"></i>
-                                                <i class="fa-regular fa-star"></i>
-                                            </div>
-                                            <div class="discount">
-                                                <div class="mrp">-10%</div>
-                                                <div class="hot">Hot</div>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="product-img-desc" id="product-img-description1">
-                                            <div class="apple-product">
-                                                <div class="apple-brand">Apple</div>
-                                                <div class="product-brand">product15</div>
-                                            </div>
-                                            <div class="product-desc">
-                                                <div class="apple-txt">Apple Cinema30''</div>
-                                            </div>
-                                            <div class="product-price-main">
-                                                <div class="product-price1">$70.61</div>
-                                                <div class="product-price2">$78.61</div>
-                                            </div>
-                                            <div class="main-quantity">
-                                                <div class="input-box">
-                                                    <input type="text" value="1" class="box">
-                                                </div>
-                                                <div class="inc-dec-btn">
-                                                    <i class="fa-solid fa-chevron-up"></i>
-                                                    <i class="fa-solid fa-chevron-down"></i>
-                                                </div>
-                                                <div class="quantity-btn"><button>Add To Cart</button></div>
-                                                <div class="quantity-icons">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                    <i class="fa-solid fa-right-left"></i>
-                                                </div>
-                                            </div>
-                                            <div class="main-item-txt">
-                                                <div class="buy-now"><i class="fa-solid fa-dollar-sign"
-                                                        style="color: #7ed290;"></i>Buy-Now</div>
-                                                <div class="question"><i class="fa-regular fa-circle-question"
-                                                        style="color:brown"></i>question
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="main-brands-models" id="main-brands-models1">
-                                        <div class="brands-models">
-                                            <div class="brands"> Brands: <span
-                                                    style="color: blue; cursor: pointer; text-decoration: underline;">Apple</span>
-                                            </div>
-                                            <div class="models">Model: Product 15</div>
-                                        </div>
-                                        <div class="main-apple-brands">
-                                            Apple Cinema 30"
-                                        </div>
-                                        <div class="main-apple-txt-p">
-                                            The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600
-                                            pixel resolution. Designed specifically for the creative professional,
-                                            this display providers more space for easier access to all the tools and
-                                            palettes needed to edit, format and composite your work. Combine this
-                                            Display with a mac..
-                                        </div>
-                                        <div class="price-rates">
-                                            <div class="new-price" style="color: red; font-size: 20px;">$70.61</div>
-                                            <div class="new-price"
-                                                style=" color: gray; font-size: 20px; padding-left: 5px; text-decoration: line-through;">
-                                                $78.46</div>
-                                        </div>
-                                        <div class="tax">Ex-Tax :- $70.61</div>
-                                        <div class="Add-cart">
-                                            <div class="main-add-cart">
-                                                <input type="text" value="2">
-                                            </div>
-
-                                            <div class="inc-dec-btn">
-                                                <i class="fa-solid fa-chevron-up"></i>
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </div>
-                                            <div class="cart-button"><i
-                                                    class="fa-solid fa-cart-shopping"></i><button>Add To Cart</button>
-                                            </div>
-                                            <div class="quantity-icons cart-icons">
-                                                <i class="fa-regular fa-heart add-cart-heart-left"
-                                                    style="margin-right: 5px;"></i>
-                                                <i class="fa-solid fa-right-left add-cart-heart-left"></i>
-                                            </div>
-                                        </div>
-                                        <div class="main-item-product-txt">
-                                            <div class="buy-now-product"><i class="fa-solid fa-dollar-sign"
-                                                    style="color: #7ed290;"></i>Buy-Now</div>
-                                            <div class="question-product"><i class="fa-regular fa-circle-question"
-                                                    style="color:brown"></i>question</div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <hr class="main-image-hr" id="main-image-hr1">
-
-                                <div class="main-list-view main-list-view2">
-                                    <div class="main-product-image main-image2">
-                                        <div class="product-image">
-                                            <img src="./Assets/img/Digital-Camera-PNG-Images-HD.png " alt="">
-                                            <div class="pre-order">pre-order</div>
-                                            <div class="hot2">Hot</div>
-                                        </div>
-
-                                        <div class="product-img-desc" id="product-img-description1">
-                                            <div class="apple-product">
-                                                <div class="apple-brand">Ericksson</div>
-                                                <div class="product-brand">Model 994</div>
-                                            </div>
-                                            <div class="product-desc">
-                                                <div class="apple-txt">Lexical digital Camera</div>
-                                            </div>
-                                            <div class="product-price-main">
-                                                <div class="product-price1">$1770.61</div>
-                                                <div class="product-price2">$1778.61</div>
-                                            </div>
-                                            <div class="main-quantity">
-                                                <div class="input-box">
-                                                    <input type="text" value="2" class="box">
-                                                </div>
-                                                <div class="inc-dec-btn">
-                                                    <i class="fa-solid fa-chevron-up"></i>
-                                                    <i class="fa-solid fa-chevron-down"></i>
-                                                </div>
-                                                <div class="quantity-btn"><button>Add To Cart</button></div>
-                                                <div class="quantity-icons">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                    <i class="fa-solid fa-right-left"></i>
-                                                </div>
-                                            </div>
-                                            <div class="main-item-txt">
-                                                <div class="buy-now"><i class="fa-solid fa-dollar-sign"
-                                                        style="color: #7ed290;"></i>Buy-Now</div>
-                                                <div class="question"><i class="fa-regular fa-circle-question"
-                                                        style="color:brown"></i>question</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="main-brands-models" id="main-brands-models1">
-                                        <div class="brands-models">
-                                            <div class="brands"> Brands: <span
-                                                    style="color: blue; cursor: pointer; text-decoration: underline;">Apple</span>
-                                            </div>
-                                            <div class="models">Model: Product 15</div>
-                                        </div>
-                                        <div class="main-apple-brands">
-                                            Apple Cinema 30"
-                                        </div>
-                                        <div class="main-apple-txt-p">
-                                            The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600
-                                            pixel resolution. Designed specifically for the creative professional,
-                                            this display providers more space for easier access to all the tools and
-                                            palettes needed to edit, format and composite your work. Combine this
-                                            Display with a mac..
-                                        </div>
-                                        <div class="price-rates">
-                                            <div class="new-price" style="color: red; font-size: 20px;">$70.61</div>
-                                            <div class="new-price"
-                                                style=" color: gray; font-size: 20px; padding-left: 5px; text-decoration: line-through;">
-                                                $78.46</div>
-                                        </div>
-                                        <div class="tax">Ex-Tax :- $70.61</div>
-                                        <div class="Add-cart">
-                                            <div class="main-add-cart">
-                                                <input type="text" value="2">
-                                            </div>
-
-                                            <div class="inc-dec-btn">
-                                                <i class="fa-solid fa-chevron-up"></i>
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </div>
-                                            <div class="cart-button"><i
-                                                    class="fa-solid fa-cart-shopping"></i><button>Add To Cart</button>
-                                            </div>
-                                            <div class="quantity-icons cart-icons">
-                                                <i class="fa-regular fa-heart add-cart-heart-left"
-                                                    style="margin-right: 5px;"></i>
-                                                <i class="fa-solid fa-right-left add-cart-heart-left"></i>
-                                            </div>
-                                        </div>
-                                        <div class="main-item-product-txt">
-                                            <div class="buy-now-product"><i class="fa-solid fa-dollar-sign"
-                                                    style="color: #7ed290;"></i>Buy-Now</div>
-                                            <div class="question-product"><i class="fa-regular fa-circle-question"
-                                                    style="color:brown"></i>question</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr class="main-image-hr" id="main-image-hr1">
-
-                                <div class="main-list-view main-list-view3">
-                                    <div class="main-product-image main-image3">
-                                        <div class="product-image">
-                                            <img src="./Assets/img/purepng.com-digital-photo-cameracameraphotodigital-cameravideophoto-machinephoto-maker-231519335323xrynz.png"
-                                                alt="">
-                                        </div>
-                                        <div class="dis">-15%</div>
-                                        <div class="product-img-desc" id="product-img-description1">
-                                            <div class="apple-product">
-                                                <div class="apple-brand">Canon</div>
-                                                <div class="product-brand">Model 998</div>
-                                            </div>
-                                            <div class="product-desc">
-                                                <div class="apple-txt">Power Shot Digital Camera</div>
-                                            </div>
-                                            <div class="product-price-main">
-                                                <div class="product-price1">$234.61</div>
-                                                <div class="product-price2">$278.61</div>
-                                            </div>
-                                            <div class="main-quantity">
-                                                <div class="input-box">
-                                                    <input type="text" value="1" class="box">
-                                                </div>
-                                                <div class="inc-dec-btn">
-                                                    <i class="fa-solid fa-chevron-up"></i>
-                                                    <i class="fa-solid fa-chevron-down"></i>
-                                                </div>
-                                                <div class="quantity-btn"><button>Add To Cart</button></div>
-                                                <div class="quantity-icons">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                    <i class="fa-solid fa-right-left"></i>
-                                                </div>
-                                            </div>
-                                            <div class="main-item-txt">
-                                                <div class="buy-now"><i class="fa-solid fa-dollar-sign"
-                                                        style="color: #7ed290;"></i>Buy-Now</div>
-                                                <div class="question"><i class="fa-regular fa-circle-question"
-                                                        style="color:brown"></i>question</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="main-brands-models" id="main-brands-models1">
-                                        <div class="brands-models">
-                                            <div class="brands"> Brands: <span
-                                                    style="color: blue; cursor: pointer; text-decoration: underline;">Apple</span>
-                                            </div>
-                                            <div class="models">Model: Product 15</div>
-                                        </div>
-                                        <div class="main-apple-brands">
-                                            Apple Cinema 30"
-                                        </div>
-                                        <div class="main-apple-txt-p">
-                                            The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600
-                                            pixel resolution. Designed specifically for the creative professional,
-                                            this display providers more space for easier access to all the tools and
-                                            palettes needed to edit, format and composite your work. Combine this
-                                            Display with a mac..
-                                        </div>
-                                        <div class="price-rates">
-                                            <div class="new-price" style="color: red; font-size: 20px;">$70.61</div>
-                                            <div class="new-price"
-                                                style=" color: gray; font-size: 20px; padding-left: 5px; text-decoration: line-through;">
-                                                $78.46</div>
-                                        </div>
-                                        <div class="tax">Ex-Tax :- $70.61</div>
-                                        <div class="Add-cart">
-                                            <div class="main-add-cart">
-                                                <input type="text" value="2">
-                                            </div>
-
-                                            <div class="inc-dec-btn">
-                                                <i class="fa-solid fa-chevron-up"></i>
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </div>
-                                            <div class="cart-button"><i
-                                                    class="fa-solid fa-cart-shopping"></i><button>Add To Cart</button>
-                                            </div>
-                                            <div class="quantity-icons cart-icons">
-                                                <i class="fa-regular fa-heart add-cart-heart-left"
-                                                    style="margin-right: 5px;"></i>
-                                                <i class="fa-solid fa-right-left add-cart-heart-left"></i>
-                                            </div>
-                                        </div>
-                                        <div class="main-item-product-txt">
-                                            <div class="buy-now-product"><i class="fa-solid fa-dollar-sign"
-                                                    style="color: #7ed290;"></i>Buy-Now</div>
-                                            <div class="question-product"><i class="fa-regular fa-circle-question"
-                                                    style="color:brown"></i>question</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr class="main-image-hr abc" id="main-image-hr2">
-                            </div> -->
-                                <!-- <div class="end-txt">You Have Reached End of The List</div> -->
                                 <!-- json Data -->
                             </div>
 
@@ -1163,45 +869,6 @@
             document.getElementById("plus-bar10").classList.remove("active-none")
         }
 
-        // ##################### Grid-value ###################
-        // function gridvalue() {
-        //     // ######################### Grid-product-image1 ################
-
-        //     document.getElementById("product-images1").classList.remove("list-direction")
-        //     document.getElementById("main-image-hr1").classList.remove("actived")
-        //     document.getElementById("main-brands-models1").classList.remove("actived")
-        //     document.getElementById("product-img-description1").classList.remove("active-none")
-
-        //     // ######################### Grid-product-image2 ################
-        //     document.getElementById("main-image-hr2").classList.remove("actived")
-        //     document.getElementById("main-brands-models2").classList.remove("actived")
-        //     document.getElementById("product-img-description2").classList.remove("active-none")
-
-        //     // ######################### Grid-product-image3 ################
-        //     document.getElementById("main-image-hr3").classList.remove("actived")
-        //     document.getElementById("main-brands-models3").classList.remove("actived")
-        //     document.getElementById("product-img-description3").classList.remove("active-none")
-        // }
-        // // ##################### List-value ###################
-        // function listvalue() {
-        //     // ###################### List-Product-image1 ######################
-        //     document.getElementById("product-images1").classList.add("list-direction")
-        //     document.getElementById("main-image-hr1").classList.add("actived")
-        //     document.getElementById("main-brands-models1").classList.add("actived")
-        //     document.getElementById("product-img-description1").classList.add("active-none")
-
-        //     // ###################### List-Product-image2 ######################
-
-        //     document.getElementById("main-image-hr2").classList.add("actived")
-        //     document.getElementById("main-brands-models2").classList.add("actived")
-        //     document.getElementById("product-img-description2").classList.add("active-none")
-
-        //     // ###################### List-Product-image3 ######################
-
-        //     document.getElementById("main-brands-models3").classList.add("actived")
-        //     document.getElementById("product-img-description3").classList.add("active-none")
-        // }
-
         function gridvalue(e) {
             document.getElementById("product-images1").classList.remove("list-direction")
             let a = document.querySelectorAll('#main-image-hr1');
@@ -1217,15 +884,8 @@
                 element.classList.remove("acitve-none");
             })
 
-            // document.getElementById("main-image-hr1").classList.remove("actived")
-            // document.getElementById("main-brands-models1").classList.remove("actived")
-            // document.getElementById("product-img-description1").classList.remove("active-none")
-
-
         }
         function listvalue(e) {
-            //console.log("Hello");
-            // console.log(e.target);
             document.getElementById("product-images1").classList.add("list-direction");
             let a = document.querySelectorAll('#main-image-hr1');
             let b = document.querySelectorAll('#main-brands-models1')
@@ -1240,11 +900,6 @@
             c.forEach(element => {
                 element.classList.add("acitve-none");
             })
-
-            // document.getElementById("product-images1").classList.add("list-direction")
-            // document.getElementById("main-image-hr1").classList.add("actived")
-            // document.getElementById("main-brands-models1").classList.add("actived")
-            // document.getElementById("product-img-description1").classList.add("active-none")
 
         }
         // ########################### Most View ###################################
@@ -1298,15 +953,9 @@
                 setTimeout(typeWriter, speed);
             }
         }
-        // while(true)
-        // {
-        //     typeWriter();
-        // }
         typeWriter();
-
-        
     </script>
-
+    <!-- <script src="Assets/Js/wishlist.js"></script> -->
     <script src="Assets/Js/Featured.js"></script>
 </body>
 

@@ -4,7 +4,7 @@
             "id": 1,
             "img": "./Assets/img/smartLED.jpg",
             "brand": "Ericksson",
-            "model": "Model-519",
+            "model": "Model-219",
             "product": "Smart LED",
             "discount": "$999.00",
             "original": "$1000.00"
@@ -13,7 +13,7 @@
             "id": 2,
             "img": "./Assets/img/smart Camera.jpg",
             "brand": "Ericksson",
-            "model": "Model-519",
+            "model": "Model-569",
             "product": "Smart Camera",
             "discount": "$999.00",
             "original": "$1000.00"
@@ -22,7 +22,7 @@
             "id": 3,
             "img": "./Assets/img/Smartwatch-PNG-Image.png",
             "brand": "Ericksson",
-            "model": "Model-519",
+            "model": "Model-819",
             "product": "Smart Watch",
             "discount": "$999.00",
             "original": "$1000.00"
@@ -31,7 +31,7 @@
             "id": 4,
             "img": "./Assets/img/85254-headset-airpods-apple-headphones-plus-iphone-earbuds.png",
             "brand": "Ericksson",
-            "model": "Model-519",
+            "model": "Model-549",
             "product": "HeadPhone",
             "discount": "$999.00",
             "original": "$1000.00"
@@ -43,7 +43,7 @@
             "id": 5,
             "img": "./Assets/img/sofa.png",
             "brand": "Ericksson",
-            "model": "Model-519",
+            "model": "Model-512",
             "product": "Sofa",
             "discount": "$999.00",
             "original": "$1000.00"
@@ -52,7 +52,7 @@
             "id": 6,
             "img": "./Assets/img/chair.png",
             "brand": "Ericksson",
-            "model": "Model-519",
+            "model": "Model-511",
             "product": "Comfortable chair",
             "discount": "$999.00",
             "original": "$1000.00"
@@ -61,7 +61,7 @@
             "id": 7,
             "img": "./Assets/img/lazychair.png",
             "brand": "Ericksson",
-            "model": "Model-519",
+            "model": "Model-319",
             "product": "Lazy Chair",
             "discount": "$999.00",
             "original": "$1000.00"
@@ -70,7 +70,7 @@
             "id": 8,
             "img": "./Assets/img/comfortchair.png",
             "brand": "Ericksson",
-            "model": "Model-519",
+            "model": "Model-819",
             "product": "Comfortable chair",
             "discount": "$999.00",
             "original": "$1000.00"
@@ -82,7 +82,7 @@
             "id": 9,
             "img": "./Assets/img/smartLED.jpg",
             "brand": "Ericksson",
-            "model": "Model-519",
+            "model": "Model-279",
             "product": "Smart LED",
             "discount": "$999.00",
             "original": "$1000.00"
@@ -91,7 +91,7 @@
             "id": 10,
             "img": "./Assets/img/smart Camera.jpg",
             "brand": "Ericksson",
-            "model": "Model-519",
+            "model": "Model-514",
             "product": "Smart Camera",
             "discount": "$999.00",
             "original": "$1000.00"
@@ -100,7 +100,7 @@
             "id": 11,
             "img": "./Assets/img/Smartwatch-PNG-Image.png",
             "brand": "Ericksson",
-            "model": "Model-519",
+            "model": "Model-510",
             "product": "Smart Watch",
             "discount": "$999.00",
             "original": "$1000.00"
@@ -121,7 +121,7 @@
             "id": 13,
             "img": "./Assets/img/Earbuds-Wireless-PNG-Free-Download.png",
             "brand": "Ericksson",
-            "model": "Model-519",
+            "model": "Model-412",
             "product":"Ear Bud",
             "discount": "$999.00",
             "original": "$1000.00"
@@ -130,7 +130,7 @@
             "id": 14,
             "img": "./Assets/img/Smartwatch-PNG-Image.png",
             "brand": "Ericksson",
-            "model": "Model-519",
+            "model": "Model-214",
             "product": "Smart Watch",
             "discount": "$999.00",
             "original": "$1000.00"
@@ -139,7 +139,7 @@
             "id": 15,
             "img": "./Assets/img/smart Camera.jpg",
             "brand": "Ericksson",
-            "model": "Model-519",
+            "model": "Model-142",
             "product": "Smart Camera",
             "discount": "$999.00",
             "original": "$1000.00"
@@ -148,10 +148,155 @@
             "id": 16,
             "img": "./Assets/img/download1.jpeg",
             "brand": "Ericksson",
-            "model": "Model-519",
+            "model": "Model-110",
             "product": "LCD",
             "discount": "$999.00",
             "original": "$1000.00"
+        }
+    ],
+
+    "Product": [
+        {
+            "id": 17,
+            "img": "./Assets/img/download1.jpeg",
+            "brand": "Apple",
+            "productId": "product15",
+            "product": "Lcd",
+            "model": "Model-210",
+            "oldprice": "$170.61",
+            "newprice": "$178.61",
+            "type": "product1",
+            "name": "LCD",
+            "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac..",
+            "productdesc":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis obcaecati animi, nulla voluptate exercitationem porro cum ipsam!erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta."
+        },
+        {
+            "id": 18,
+            "img": "./Assets/img/Digital-Camera-PNG-Images-HD.png",
+            "brand": "CAMERA",
+            "productId": "product15",
+            "product": "Smart Camera",
+            "model": "Model-118",
+            "oldprice": "$99.61",
+            "newprice": "$95.61",
+            "type": "product1",
+            "name": "Camera",
+            "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac..",
+            "productdesc":  "Hello This Product is Amazing, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis obcaecati animi, nulla voluptate exercitationem porro cum ipsam!erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta."
+
+        },
+        {
+            "id": 19,
+            "img": "./Assets/img/purepng.com-digital-photo-cameracameraphotodigital-cameravideophoto-machinephoto-maker-231519335323xrynz.png",
+            "brand": "Digital Camera",
+            "productId": "product15",
+            "product": "Digital Camera",
+            "model": "Model-180",
+            "oldprice": "$98.61",
+            "newprice": "$90.61",
+            "type": "product1",
+            "name": "Camera",
+            "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac..",
+            "productdesc":  "Welcome for The Amazing Product Desc, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis obcaecati animi, nulla voluptate exercitationem porro cum ipsam!erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta."
+
+        },
+        {
+            "id": 20,
+            "img": "./Assets/img/Earbuds-Wireless-PNG-Free-Download.png",
+            "brand": "Apple",
+            "productId": "product15",
+            "product": "Ear buds",
+            "model": "Model-115",
+            "oldprice": "$190.61",
+            "newprice": "$178.61",
+            "type": "product1",
+            "name": "Ear Buds",
+            "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac..",
+            "productdesc":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis obcaecati animi, nulla voluptate exercitationem porro cum ipsam!erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta."
+        },
+        {
+            "id": 21,
+            "img": "./Assets/img/chair.png",
+            "brand": "Apple",
+            "productId": "product15",
+            "product": "chair",
+            "model": "Model-121",
+            "oldprice": "$180.61",
+            "newprice": "$178.61",
+            "type": "product1",
+            "name": "chair",
+            "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac..",
+            "productdesc":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis obcaecati animi, nulla voluptate exercitationem porro cum ipsam!erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta."
+        },
+        {
+            "id": 22,
+            "img": "./Assets/img/comfortchair.png",
+            "brand": "Apple",
+            "productId": "product15",
+            "product": "Comfortable chair",
+            "model": "Model-112",
+            "oldprice": "$270.61",
+            "newprice": "$178.61",
+            "type": "product1",
+            "name": "chair",
+            "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac..",
+            "productdesc":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis obcaecati animi, nulla voluptate exercitationem porro cum ipsam!erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta."
+        },
+        {
+            "id": 23,
+            "img": "./Assets/img/Man-Wearing-Gray-Winter-Coat.jpg",
+            "brand": "Apple",
+            "productId": "product15",
+            "product": "Winter Sweater",
+            "model": "Model-158",
+            "oldprice": "$370.61",
+            "newprice": "$178.61",
+            "type": "product1",
+            "name": "Sweater",
+            "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac..",
+            "productdesc":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis obcaecati animi, nulla voluptate exercitationem porro cum ipsam!erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta."
+        },
+        {
+            "id": 24,
+            "img": "./Assets/img/marlon-alves-A0mSSCEVh9A-unsplash.jpg",
+            "brand": "Apple",
+            "productId": "product15",
+            "product": "T-shirt",
+            "model": "Model-680",
+            "oldprice": "$470.61",
+            "newprice": "$178.61",
+            "type": "product1",
+            "name": "T-shirt",
+            "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac..",
+            "productdesc":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis obcaecati animi, nulla voluptate exercitationem porro cum ipsam!erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta."
+        },
+        {
+            "id": 25,
+            "img": "./Assets/img/og-airpods-max-202011.jpeg",
+            "brand": "Apple",
+            "productId": "product15",
+            "product": "Headphone",
+            "model": "Model-510",
+            "oldprice": "$570.61",
+            "newprice": "$178.61",
+            "type": "product1",
+            "name": "HeadPhone",
+            "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac..",
+            "productdesc":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis obcaecati animi, nulla voluptate exercitationem porro cum ipsam!erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta."
+        },
+        {
+            "id": 26,
+            "img": "./Assets/img/watch-png-transparent-image-png-transparent-best-6.png",
+            "brand": "sonata",
+            "productId": "product15",
+            "product": "Beautiful Watch",
+            "model": "Model-410",
+            "oldprice": "$190.61",
+            "newprice": "$158.61",
+            "type": "product1",
+            "name": "Watch",
+            "desc": "The 30-inch Apple Cinema HD Display delivers an amazing 2560 and 1600 pixel resolution. Designed specifically for the creative professional, this display providers more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this Display with a mac..",
+            "productdesc":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vitae molestias aperiam amet deleniti dolorem possimus, harum sint fugiat incidunt, repellat blanditiis obcaecati animi, nulla voluptate exercitationem porro cum ipsam!erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta."
         }
     ]
 }
