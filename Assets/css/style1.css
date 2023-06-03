@@ -125,6 +125,7 @@ i{
 }
 .user-info{
     display: flex;
+    cursor: pointer;
 }
 
 .user{

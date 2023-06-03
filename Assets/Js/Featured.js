@@ -39,7 +39,7 @@ function Featured(arr) {
                     </div>
                     <div class="quantity-btn"><button>Add To Cart</button></div>
                     <div class="quantity-icons">
-                        <i id="${element.id}"class="fa-regular fa-heart" onclick="count(this)"></i>
+                        <i id="${element.id}"class="fa-regular fa-heart" onclick="count(this)" ></i>
                         <i class="fa-solid fa-right-left"></i>
                     </div>
                 </div>

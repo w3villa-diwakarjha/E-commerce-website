@@ -24,7 +24,8 @@ else {
 
                 arr.forEach(element => {
                     if (element.id == id[i]) {
-                        html += `<div id=${element.id} class="wishlist-product-main">
+                        html+=`<div id=${element.id}>`
+                        html += `<div class="wishlist-product-main">
                         <div class="wishlist-images wishlist-production">
                             <div class="wishlist-image">
                                 <img src="${element.img}" alt="">
@@ -51,6 +52,7 @@ else {
                         </div>
                     </div>
                     <hr>`
+                    html+=`</div>`
                     }
                 });
             }
@@ -70,12 +72,27 @@ else {
         window.location = 'wishlist.html'
     }
 
-    function removeItems(e)
-    {
+    function removeItems(e) {
         // console.log(e.id)
-        let k=e.id;
-        console.log(k)
-        localStorage.removeItem('username');
+        let id = e.id;
+        console.log(id)
+        let value=document.getElementById(id)
+        // let value = document.querySelectorAll('#id')
+        console.log(value)
+        value.remove()
+        // username.filter(item=>{
+        //     console.log(item)
+        // })
+        let arr1=[]
+        let local=JSON.parse(localStorage.getItem("username"))
+        local.filter(item=>{
+            if(item!==id){
+                arr1.push(item)
+            }
+        })
+        // console.log(arr1.length)
+        localStorage.setItem("username",JSON.stringify(arr1))
+        document.querySelector('.counting').innerHTML = arr1.length;
     }
     getdata();
 }
