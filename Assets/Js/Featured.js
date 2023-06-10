@@ -37,9 +37,9 @@ function Featured(arr) {
                     <div class="input-box">
                         <input type="number" value="1" class="box">
                     </div>
-                    <div class="quantity-btn"><button>Add To Cart</button></div>
+                    <div id="${element.id}" class="quantity-btn" onclick=count1(this)><button>Add To Cart</button></div>
                     <div class="quantity-icons">
-                        <i id="${element.id}"class="fa-regular fa-heart" onclick="count(this)" ></i>
+                        <i id="${element.id}" class="fa-regular fa-heart" onclick="count(this)" ></i>
                         <i class="fa-solid fa-right-left"></i>
                     </div>
                 </div>
@@ -79,8 +79,7 @@ function Featured(arr) {
                 </div>
 
                
-                <div class="cart-button"><i
-                        class="fa-solid fa-cart-shopping"></i><button>Add To Cart</button>
+                <div class="cart-button" onclick=count1(this)><i id="${element.id}" class="fa-solid fa-cart-shopping"></i><button>Add To Cart</button>
                 </div>
                 <div class="quantity-icons cart-icons">
                     <i id="${element.id}"class="fa-regular fa-heart add-cart-heart-left" onclick="count(this)"style="margin-right: 5px;"></i>
@@ -266,9 +265,66 @@ if(arr==null){
 }
 else{
 
-    let length = arr.length
-    document.querySelector('.counting').innerHTML = length;
+    let length1 = arr.length
+    document.querySelector('.counting').innerHTML = length1;
 }
 function showWishlist() {
     window.location.href = "wishlist.html"
+}
+
+
+// ################################# Add to cart -section ############################
+
+let k1= 1;
+function count1(e) {
+    console.log("Hello")
+    var userinfo = JSON.parse(localStorage.getItem("username1")) || [];
+    let arr1 = JSON.parse(localStorage.getItem("username1"))
+    if(arr1==null){
+        document.querySelector('.cart-items').innerHTML = 1;
+    }
+    else{
+    
+        let length1 = arr1.length
+        document.querySelector('.cart-items').innerHTML = length1+1;
+    }
+    // document.querySelector('.counting').innerHTML = length;
+    let id = e.id;
+    console.log(id)
+    let present1 = 0;
+    if (arr1 && arr1.length > 0) {
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] == id) {
+                present1 = 1;
+            }
+        }
+        if (present1 == 1) {
+            alert('Already Exist');
+        }
+        else {
+            userinfo.push(id);
+            let json = JSON.stringify(userinfo);
+            localStorage.setItem("username1", json);
+        }
+    }
+    else {
+        console.log("hello")
+        userinfo.push(id);
+        let json = JSON.stringify(userinfo);
+        localStorage.setItem("username1", json);
+    }
+}
+let arr1 = JSON.parse(localStorage.getItem("username1"))
+
+if(arr1==null){
+    document.querySelector('.cart-items').innerHTML = 0;
+}
+else{
+
+    let length1 = arr1.length;
+    document.querySelector('.cart-items').innerHTML = length1;
+}
+
+function showaddtoCart() {
+    window.location.href = "addtocart.html"
 }

@@ -132,8 +132,9 @@
                             <h5 class="compare-txt">Compare</h5>
                         </div>
                     </div>
-                    <div class="delivery-txt">
-                        <h5 style="padding-right: 8px;">0 item(s)-$0.00</h5>
+                    <div class="delivery-txt" onclick="showaddtoCart()">
+                        <h5 style="padding-right: 8px;"> <span class="cart-items">0</span> item(s)-$ <span
+                                class="cart-price">0.00</span></h5>
                         <i class="fa-solid fa-cart-shopping"></i>
                     </div>
                 </div>
@@ -905,7 +906,8 @@
             </div>
             <div class="main-btn">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary actived2" onclick="showbutton2(event)">Latest Post</button>
+                    <button type="button" class="btn btn-secondary actived2" onclick="showbutton2(event)">Latest
+                        Post</button>
                     <button type="button" class="btn btn-secondary" onclick="showbutton2(event)">Most Read</button>
                 </div>
             </div>

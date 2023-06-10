@@ -39,7 +39,7 @@ async function Featured_products() {
                 <div class="input-box">
                     <input type="number" value="1" class="box">
                 </div>
-                <div class="quantity-btn"><button>Add To Cart</button></div>
+                <div id=${element.id} class="quantity-btn" onclick=count1(this)><button>Add To Cart</button></div>
                 <div class="quantity-icons">
                     <i id=${element.id} class="fa-regular fa-heart"onclick=count(this)></i>
                     <i class="fa-solid fa-right-left"></i>
@@ -157,8 +157,63 @@ else{
     document.querySelector('.counting').innerHTML = length;
 }
 
+
+// ################################# Addtocart-section ############################
+
+let k1 = 1;
+function count1(e) {
+    var userinfo = JSON.parse(localStorage.getItem("username1")) || [];
+    let arr1 = JSON.parse(localStorage.getItem("username1"))
+    if(arr1==null){
+        document.querySelector('.cart-items').innerHTML = 1;
+    }
+    else{
+    
+        let length = arr1.length
+        document.querySelector('.cart-items').innerHTML = length+1;
+    }
+    
+    let id = e.id;
+    console.log(id)
+    let present1 = 0;
+    if (arr1 && arr1.length > 0) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr1[i] == id) {
+                present1 = 1;
+            }
+        }
+        if (present1 == 1) {
+            alert('Already Exist');
+        }
+        else {
+            userinfo.push(id);
+            let json = JSON.stringify(userinfo);
+            localStorage.setItem("username1", json);
+        }
+    }
+    else {
+        console.log("hello")
+        userinfo.push(id);
+        let json = JSON.stringify(userinfo);
+        localStorage.setItem("username1", json);
+    }
+}
+let arr1 = JSON.parse(localStorage.getItem("username1"))
+if(arr1==null){
+    document.querySelector('.cart-items').innerHTML = 0;
+}
+else{
+
+    let length = arr1.length;
+    document.querySelector('.cart-items').innerHTML = length;
+}
+
 function showWishlist() {
     window.location.href = "wishlist.html"
+}
+
+function showaddtoCart() {
+    window.location.href = "addtocart.html"
 }
 
 Featured_products();

@@ -176,6 +176,7 @@ h5{
 .delivery-txt{
     display: flex;
     align-items: baseline;
+    cursor: pointer;    
 }
 
 .delivery-txt i{

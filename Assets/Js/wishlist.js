@@ -43,7 +43,7 @@ else {
                         </div>
                         <div class="wishlist-production">
                             <div class="wishlist-production1">
-                                <div id=${element.id} class="remove" onclick="removeItems(this)"><i class="fa-solid fa-x"></i></div>
+                                <div id=${element.id} class="remove" onclick="removeItems(this)"><i class="fa-sharp fa-solid fa-trash"></i></div>
                                 <div class="wishlist-item">
                                     <input type="number" value="1">
                                 </div>
@@ -95,5 +95,10 @@ else {
         document.querySelector('.counting').innerHTML = arr1.length;
     }
     getdata();
+}
+
+
+function showaddtoCart() {
+    window.location.href = "addtocart.html"
 }
 

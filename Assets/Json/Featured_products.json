@@ -6,7 +6,7 @@
             "brand": "Ericksson",
             "model": "Model-219",
             "product": "Smart LED",
-            "discount": "$999.00",
+            "newprice": "$999.00",
             "original": "$1000.00"
         },
         {   
@@ -15,7 +15,7 @@
             "brand": "Ericksson",
             "model": "Model-569",
             "product": "Smart Camera",
-            "discount": "$999.00",
+            "newprice": "$999.00",
             "original": "$1000.00"
         },
         {
@@ -24,7 +24,7 @@
             "brand": "Ericksson",
             "model": "Model-819",
             "product": "Smart Watch",
-            "discount": "$999.00",
+            "newprice": "$999.00",
             "original": "$1000.00"
         },
         {
@@ -33,7 +33,7 @@
             "brand": "Ericksson",
             "model": "Model-549",
             "product": "HeadPhone",
-            "discount": "$999.00",
+            "newprice": "$999.00",
             "original": "$1000.00"
         }
     ],
@@ -45,7 +45,7 @@
             "brand": "Ericksson",
             "model": "Model-512",
             "product": "Sofa",
-            "discount": "$999.00",
+            "newprice": "$999.00",
             "original": "$1000.00"
         },
         {
@@ -54,7 +54,7 @@
             "brand": "Ericksson",
             "model": "Model-511",
             "product": "Comfortable chair",
-            "discount": "$999.00",
+            "newprice": "$999.00",
             "original": "$1000.00"
         },
         {
@@ -63,7 +63,7 @@
             "brand": "Ericksson",
             "model": "Model-319",
             "product": "Lazy Chair",
-            "discount": "$999.00",
+            "newprice": "$999.00",
             "original": "$1000.00"
         },
         {
@@ -72,7 +72,7 @@
             "brand": "Ericksson",
             "model": "Model-819",
             "product": "Comfortable chair",
-            "discount": "$999.00",
+            "newprice": "$999.00",
             "original": "$1000.00"
         }
     ],
@@ -84,7 +84,7 @@
             "brand": "Ericksson",
             "model": "Model-279",
             "product": "Smart LED",
-            "discount": "$999.00",
+            "newprice": "$999.00",
             "original": "$1000.00"
         },
         {
@@ -93,7 +93,7 @@
             "brand": "Ericksson",
             "model": "Model-514",
             "product": "Smart Camera",
-            "discount": "$999.00",
+            "newprice": "$999.00",
             "original": "$1000.00"
         },
         {
@@ -102,7 +102,7 @@
             "brand": "Ericksson",
             "model": "Model-510",
             "product": "Smart Watch",
-            "discount": "$999.00",
+            "newprice": "$999.00",
             "original": "$1000.00"
         },
         {
@@ -111,7 +111,7 @@
             "brand": "Ericksson",
             "model": "Model-519",
             "product": "Ear pod",
-            "discount": "$999.00",
+            "newprice": "$999.00",
             "original": "$1000.00"
         }
     ],
@@ -123,7 +123,7 @@
             "brand": "Ericksson",
             "model": "Model-412",
             "product":"Ear Bud",
-            "discount": "$999.00",
+            "newprice": "$999.00",
             "original": "$1000.00"
         },
         {
@@ -132,7 +132,7 @@
             "brand": "Ericksson",
             "model": "Model-214",
             "product": "Smart Watch",
-            "discount": "$999.00",
+            "newprice": "$999.00",
             "original": "$1000.00"
         },
         {
@@ -141,7 +141,7 @@
             "brand": "Ericksson",
             "model": "Model-142",
             "product": "Smart Camera",
-            "discount": "$999.00",
+            "newprice": "$999.00",
             "original": "$1000.00"
         },
         {
@@ -150,7 +150,7 @@
             "brand": "Ericksson",
             "model": "Model-110",
             "product": "LCD",
-            "discount": "$999.00",
+            "newprice": "$999.00",
             "original": "$1000.00"
         }
     ],
