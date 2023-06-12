@@ -86,9 +86,6 @@ else {
         // let value = document.querySelectorAll('#id')
         console.log(value)
         value.remove()
-        // username.filter(item=>{
-        //     console.log(item)
-        // })
         let arr1=[]
         let local=JSON.parse(localStorage.getItem("username1"))
         local.filter(item=>{
@@ -99,6 +96,9 @@ else {
         // console.log(arr1.length)
         localStorage.setItem("username1",JSON.stringify(arr1))
         document.querySelector('.cart-items').innerHTML = arr1.length;
+    }
+    function showaddtoCart() {
+        window.location.href = "addtocart.html"
     }
     getdata1();
 }

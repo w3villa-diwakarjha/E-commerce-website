@@ -160,7 +160,7 @@ else{
 
 // ################################# Addtocart-section ############################
 
-let k1 = 1;
+// let k1 = 1;
 function count1(e) {
     var userinfo = JSON.parse(localStorage.getItem("username1")) || [];
     let arr1 = JSON.parse(localStorage.getItem("username1"))
@@ -177,12 +177,14 @@ function count1(e) {
     console.log(id)
     let present1 = 0;
     if (arr1 && arr1.length > 0) {
-        for (let i = 0; i < arr.length; i++) {
+        console.log(arr1.length)
+        for (let i = 0; i < arr1.length; i++) {
             if (arr1[i] == id) {
                 present1 = 1;
             }
         }
         if (present1 == 1) {
+            // console.log("hi")
             alert('Already Exist');
         }
         else {

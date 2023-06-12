@@ -13,7 +13,8 @@ var btnlogin = document.querySelector('.login-persons')
 btnlogin.addEventListener('click', showModal)
 
 
-var close = document.querySelector('span')
+var close = document.querySelector('.cut')
+console.log(close)
 close.addEventListener('click', closeModal)
 
 // ######################## Register #############################

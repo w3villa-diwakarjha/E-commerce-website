@@ -273,7 +273,7 @@ function showWishlist() {
 }
 
 
-// ################################# Add to cart -section ############################
+// ################################# Add to cart section ############################
 
 let k1= 1;
 function count1(e) {
