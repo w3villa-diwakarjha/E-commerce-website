@@ -47,7 +47,7 @@ else {
                                 <div class="wishlist-item">
                                     <input type="number" value="1">
                                 </div>
-                                <div class="add-to-cart"><i class="fa-solid fa-cart-shopping"></i></div>
+                                <div id=${element.id} class="add-to-cart" onclick=count1(this)><i class="fa-solid fa-cart-shopping"></i></div>
                             </div>
                         </div>
                     </div>
@@ -102,3 +102,58 @@ function showaddtoCart() {
     window.location.href = "addtocart.html"
 }
 
+// ################################# Add to cart section ############################
+
+let k1= 1;
+function count1(e) {
+    console.log("Hello")
+    var userinfo = JSON.parse(localStorage.getItem("username1")) || [];
+    let arr1 = JSON.parse(localStorage.getItem("username1"))
+    if(arr1==null){
+        document.querySelector('.cart-items').innerHTML = 1;
+    }
+    else{
+    
+        let length1 = arr1.length
+        document.querySelector('.cart-items').innerHTML = length1+1;
+    }
+    // document.querySelector('.counting').innerHTML = length;
+    let id = e.id;
+    console.log(id)
+    let present1 = 0;
+    if (arr1 && arr1.length > 0) {
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] == id) {
+                present1 = 1;
+            }
+        }
+        if (present1 == 1) {
+            alert('Already Exist');
+        }
+        else {
+            userinfo.push(id);
+            let json = JSON.stringify(userinfo);
+            localStorage.setItem("username1", json);
+        }
+    }
+    else {
+        console.log("hello")
+        userinfo.push(id);
+        let json = JSON.stringify(userinfo);
+        localStorage.setItem("username1", json);
+    }
+}
+let arr1 = JSON.parse(localStorage.getItem("username1"))
+
+if(arr1==null){
+    document.querySelector('.cart-items').innerHTML = 0;
+}
+else{
+
+    let length1 = arr1.length;
+    document.querySelector('.cart-items').innerHTML = length1;
+}
+
+function showaddtoCart() {
+    window.location.href = "addtocart.html"
+}

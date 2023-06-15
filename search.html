@@ -112,8 +112,8 @@
                         <select name="" id="" class="all">
                             <option value="All">All</option>
                         </select>
-                        <input type="text" placeholder="  Search here..." class="search-bar">
-                        <i class="fa-solid fa-magnifying-glass all"></i>
+                        <input type="text" placeholder="Search here..." class="search-bar">
+                        <a class="search-icon"><i class="fa-solid fa-magnifying-glass all"></i></a>
                     </div>
                     <div class="user-info">
                         <div class="login-person user">
@@ -869,40 +869,7 @@
             document.getElementById("minus-bar10").classList.remove("actived")
             document.getElementById("plus-bar10").classList.remove("active-none")
         }
-
-        function gridvalue(e) {
-            document.getElementById("product-images1").classList.remove("list-direction")
-            let a = document.querySelectorAll('#main-image-hr1');
-            let b = document.querySelectorAll('#main-brands-models1')
-            let c = document.querySelectorAll('#product-img-description1')
-            a.forEach(element => {
-                element.classList.remove("actived");
-            });
-            b.forEach(element => {
-                element.classList.remove("actived");
-            });
-            c.forEach(element => {
-                element.classList.remove("acitve-none");
-            })
-
-        }
-        function listvalue(e) {
-            document.getElementById("product-images1").classList.add("list-direction");
-            let a = document.querySelectorAll('#main-image-hr1');
-            let b = document.querySelectorAll('#main-brands-models1')
-            let c = document.querySelectorAll('#product-img-description1')
-
-            a.forEach(element => {
-                element.classList.add("actived");
-            });
-            b.forEach(element => {
-                element.classList.add("actived");
-            });
-            c.forEach(element => {
-                element.classList.add("acitve-none");
-            })
-
-        }
+        
         // ########################### Most View ###################################
         function MostlyView() {
             document.getElementById("sub-recently").classList.add("active-none")

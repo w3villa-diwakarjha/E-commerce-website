@@ -95,7 +95,7 @@ function Featured(arr) {
         </div>
 
     </div>
-    <hr class="main-image-hr" id="main-image-hr1">`
+    <hr class="main-image-hr actived" id="main-image-hr1">`
         }
     });
     html += `<div class="end-txt">You Have Reached End of The List</div>`
@@ -124,10 +124,10 @@ function pagination(length) {
 
 let num = document.getElementsByClassName('number');
 let currentvalue = 1;
-
 async function activepage(e) {
     if (typeof (e) === "object") {
         for (i of num) {
+            console.log("remove")
             i.classList.remove('activepage')
         }
         e.target.classList.add('activepage');
@@ -137,10 +137,11 @@ async function activepage(e) {
         currentvalue = e;
     }
     let cartData = await pagenationData(currentvalue);
-    console.log(cartData.cartItem);
-    console.log(cartData.productCount);
+    // console.log(cartData.cartItem);
+    // console.log(cartData.productCount);
     showpage(cartData.cartItem[currentvalue - 1]);
 }
+
 
 // ################################# Card Data #############################
 async function cardItem() {
@@ -208,6 +209,7 @@ function next() {
     let paginationlength = document.querySelectorAll('.pagination-number .number').length;
     if (currentvalue < paginationlength) {
         for (i of num) {
+            // console.log(i)
             i.classList.remove('activepage')
         }
         currentvalue++;
@@ -327,4 +329,51 @@ else{
 
 function showaddtoCart() {
     window.location.href = "addtocart.html"
+}
+// ############################# Grid-list View ###################################
+function gridvalue() {
+    document.getElementById("product-images1").classList.remove("list-direction")
+    let a = document.querySelectorAll('#main-image-hr1');
+    let b = document.querySelectorAll('#main-brands-models1')
+    let c = document.querySelectorAll('#product-img-description1')
+    a.forEach(element => {
+        element.classList.remove("actived");
+    });
+    b.forEach(element => {
+        element.classList.remove("actived");
+    });
+    c.forEach(element => {
+        element.classList.remove("acitve-none");
+    })
+
+}
+
+function listvalue() {
+    document.getElementById("product-images1").classList.add("list-direction");
+    let a = document.querySelectorAll('#main-brands-models1')
+    a.forEach(element => {
+        element.classList.add("actived");
+        console.log(element)
+        // console.log("hi")
+    });
+}
+
+
+
+// ######################### Search-Bar #########################################
+const input_bar = document.querySelector('.search-bar')
+const search_icon = document.querySelector('.search-icon')
+let text;
+
+input_bar.addEventListener('input', function () {
+    text = this.value
+})
+
+search_icon.addEventListener('click', searchbar)
+
+
+function searchbar() {
+    if ((typeof (text) !== 'undefined') && (text !== '')) {
+        location.href = 'search.html' + '?' + 'search=' + text;
+    }
 }
