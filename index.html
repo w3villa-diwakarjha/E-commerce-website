@@ -111,17 +111,30 @@
                             <option value="All">All</option>
                         </select>
                         <input type="text" placeholder="Search here..." class="search-bar">
-                        <a class="search-icon"><i class="fa-solid fa-magnifying-glass all"></i></a>
+                        <a class="search-icon"><i class="fa-solid fa-magnifying-glass all" style="cursor: pointer;"></i></a>
                     </div>
                     <div class="user-info">
-                        <div class="login-person user login-persons">
-                            <i class="fa-solid fa-circle-user"></i>
-                            <h5 class="user-txt">Login</h5>
+                        <div style="display: flex;" id="logoutstatus">
+                            <div class="login-person user account-persons">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <h5 class="user-txt">Account</h5>
+                            </div>
+                            <div class="login-person user logout-persons" onclick="logout()">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <h5 class="user-txt">Log Out</h5>
+                            </div>
                         </div>
-                        <div class="register-main user register-mains">
-                            <i class="fa-solid fa-pen-to-square"></i>
-                            <h5 class="register-txt">Register</h5>
+                        <div style="display: flex;" id="loginstatus">
+                            <div class="login-person user login-persons">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <h5 class="user-txt">Login</h5>
+                            </div>
+                            <div class="register-main user register-mains">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <h5 class="register-txt">Register</h5>
+                            </div>
                         </div>
+
                         <div class="wishlist-main user" onclick="showWishlist()">
                             <i class="fa-regular fa-heart"></i><span class="counting"
                                 style="color: red; font-size: 14px;">0</span>
@@ -906,7 +919,8 @@
             </div>
             <div class="main-btn">
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-secondary actived2" onclick="showbutton2(event)">Latest Post</button>
+                    <button type="button" class="btn btn-secondary actived2" onclick="showbutton2(event)">Latest
+                        Post</button>
                     <button type="button" class="btn btn-secondary" onclick="showbutton2(event)">Most Read</button>
                 </div>
             </div>
@@ -1239,6 +1253,7 @@
     <script src="Assets/Js/Featured_products.js"></script>
     <script src="Assets/Js/Blog.js"></script>
     <script src="Assets/Js/Feedback.js"></script>
+    <script src="Assets/Js/modal.js"></script>
     <!-- <script src="Assets/Js/wishlist.js"></script> -->
 
 </body>

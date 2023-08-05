@@ -112,28 +112,42 @@
                             <option value="All">All</option>
                         </select>
                         <input type="text" placeholder="  Search here..." class="search-bar">
-                        <i class="fa-solid fa-magnifying-glass all"></i>
+                        <i class="fa-solid fa-magnifying-glass all" style="cursor: pointer;"></i>
                     </div>
                     <div class="user-info">
-                        <div class="login-person user">
-                            <i class="fa-solid fa-circle-user"></i>
-                            <h5 class="user-txt">Login </h5>
+                        <div style="display: flex;" id="logoutstatus">
+                            <div class="login-person user account-persons">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <h5 class="user-txt">Account</h5>
+                            </div>
+                            <div class="login-person user logout-persons" onclick="logout()">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <h5 class="user-txt">Log Out</h5>
+                            </div>
                         </div>
-                        <div class="register-main user">
-                            <i class="fa-solid fa-pen-to-square"></i>
-                            <h5 class="register-txt">Register</h5>
+                        <div style="display: flex;" id="loginstatus">
+                            <div class="login-person user login-persons">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <h5 class="user-txt">Login</h5>
+                            </div>
+                            <div class="register-main user register-mains">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <h5 class="register-txt">Register</h5>
+                            </div>
                         </div>
-                        <div class="wishlist-main user">
-                            <i class="fa-regular fa-heart"></i>
-                            <h5 class="wishlist-txt">Whishlist</h5>
+                        <div class="wishlist-main user" onclick="showWishlist()">
+                            <i class="fa-regular fa-heart"></i><span class="counting"
+                                style="color: red; font-size: 14px;">0</span>
+                            <h5 class="wishlist-txt">Whishlist </h5>
                         </div>
                         <div class="compare-main user">
                             <i class="fa-solid fa-arrow-right-arrow-left"></i>
                             <h5 class="compare-txt">Compare</h5>
                         </div>
                     </div>
-                    <div class="delivery-txt">
-                        <h5 style="padding-right: 8px;">0 item(s)-$0.00</h5>
+                    <div class="delivery-txt" onclick="showaddtoCart()">
+                        <h5 style="padding-right: 8px;"> <span class="cart-items">0</span> item(s)-$ <span
+                                class="cart-price">0.00</span></h5>
                         <i class="fa-solid fa-cart-shopping"></i>
                     </div>
                 </div>
@@ -240,7 +254,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- #############################image-text-overview##################### -->
+                        <!-- #############################image-text-overview ##################### -->
                         <div class="image-view col-md-6">
                             <div class="services-brief">
                                 <div class="services">
@@ -364,7 +378,7 @@
                                 <div class="final-submit-btn">
                                     <div class="inc-dec-btn"><input type="number" name="" value="2" id=""></div>
                                     <div class="add-cart"><button>
-                                            <div class="add-cart-text">Add To Cart<i
+                                            <div class="add-cart-text" >Add To Cart<i
                                                     class="fa-solid fa-cart-shopping"></i></div>
                                         </button></div>
                                     <div class="buy-now"><button>
@@ -754,18 +768,18 @@
         // window.onload = displayProduct()
 
         async function displayProduct() {
-            console.log(window.location.search)
+            // console.log(window.location.search)
             const urlParams = new URLSearchParams(window.location.search);
-            console.log(urlParams)
+            // console.log(urlParams)
             let productId = urlParams.get("product");
-            console.log(productId)
+            // console.log(productId)
             let response = await fetch('./Assets/Json/Featured.json');
             let data = await response.json();
-            console.log(data)
+            // console.log(data)
             const product = data["Product"].find(function (product) {
                 return product.id == productId
             })
-            console.log(product);
+            // console.log(product);
             document.getElementById("productImage").src = product.img;
             document.getElementById("show-more-data").innerHTML=product.productdesc;
             document.getElementsByClassName('old-price')[0].innerHTML=product.oldprice;
@@ -773,7 +787,10 @@
 
         }
         displayProduct();
-    </script>
+        </script>
+        <script src="Assets/Js/login.js"></script>
+        <script src="Assets/Js/Featured.js"></script>
+
 </body>
 
 </html>
