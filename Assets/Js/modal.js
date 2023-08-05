@@ -33,3 +33,19 @@ btnlogin1.addEventListener('click', showModal1)
 
 var closedd = document.querySelector('.cutt')
 closedd.addEventListener('click', closeModal1)
+
+
+// close register and show login form
+
+function show_closeregister(){
+    showModal()
+    closeModal1()
+}
+
+
+// close login and show register form
+
+function show_closelogin(){
+    closeModal()
+    showModal1()
+}

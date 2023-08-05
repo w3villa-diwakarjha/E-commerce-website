@@ -167,7 +167,7 @@
                     <!-- ###################### login page ################### -->
                     <div class="overlay-container">
                         <div class="overlay"></div>
-                        <div class="loginform">
+                        <div class="loginform" id="login-page">
                             <h4>SignIn</h4>
                             <span class="cut">&times;</span>
                             <form action="">
@@ -177,6 +177,7 @@
                                 <div>
                                     <input type="password" placeholder="Password" id="password" />
                                 </div>
+                                <p>Create an account?<a onclick="show_closelogin()" style="color: brown;">Register</a></p>
                                 <button onclick="login()">Login</button>
                             </form>
                         </div>
@@ -185,7 +186,7 @@
                     <div class="overlay-container1">
                         <div class="overlay1"></div>
 
-                        <div class="loginform1">
+                        <div class="loginform1" id="register-page">
                             <h4>Signup</h4>
                             <span class="cutt">&times;</span>
                             <form action="">
@@ -198,6 +199,7 @@
                                 <div>
                                     <input type="password" placeholder="Confirm Password" id="cpass" />
                                 </div>
+                                <p>Already have an account?<a onclick="show_closeregister()" style="color: brown;">Login</a></p>
                                 <button onclick="signup()">sign up</button>
                             </form>
                         </div>

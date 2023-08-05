@@ -31,6 +31,12 @@ function signup(e) {
             userinfo.push(user)
             let json = JSON.stringify(userinfo);
             localStorage.setItem("login", json);
+            alert("Registered Successfully")
+            document.querySelector('.overlay1').classList.remove('showoverlay');
+            document.querySelector('.loginform1').classList.remove('showloginform');
+            console.log("hi");
+            document.querySelector('.overlay').classList.add('showoverlay');
+            document.querySelector('.loginform').classList.add('showloginform');
         }
     }
 
@@ -51,7 +57,7 @@ function login(e) {
         window.location = "https://w3villa-diwakarjha.github.io/E-commerce-website/ "
         localStorage.setItem('loginStatus', 'true');
         const loginregister = document.getElementById('loginstatus').style.display = "none";
-        document.getElementById('logoutstatus').style.display="flex";
+        document.getElementById('logoutstatus').style.display = "flex";
 
         console.log(loginregister)
     } else {
@@ -60,27 +66,21 @@ function login(e) {
 }
 
 
-function logout(){
+function logout() {
     localStorage.setItem('loginStatus', false);
-    const logoutbutton=document.getElementById('logoutstatus').style.display="none";
+    const logoutbutton = document.getElementById('logoutstatus').style.display = "none";
     document.getElementById('loginstatus').style.display = "flex";
 
     console.log(logoutbutton)
-    
+
 }
 
-const loginStatus= localStorage.getItem('loginStatus')
-if(loginStatus==='true')
-{
+const loginStatus = localStorage.getItem('loginStatus')
+if (loginStatus === 'true') {
     document.getElementById('loginstatus').style.display = "none";
-    document.getElementById('logoutstatus').style.display="flex";
+    document.getElementById('logoutstatus').style.display = "flex";
 }
-else{
-    document.getElementById('logoutstatus').style.display="none";
+else {
+    document.getElementById('logoutstatus').style.display = "none";
     document.getElementById('loginstatus').style.display = "flex";
 }
-
-
-
-
-console.log("Hi")
