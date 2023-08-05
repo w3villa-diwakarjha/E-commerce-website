@@ -48,7 +48,7 @@ function login(e) {
         }
     });
     if (m == 1) {
-        // window.location = "https://w3villa-diwakarjha.github.io/E-commerce-website/ "
+        window.location = "https://w3villa-diwakarjha.github.io/E-commerce-website/ "
         localStorage.setItem('loginStatus', 'true');
         const loginregister = document.getElementById('loginstatus').style.display = "none";
         document.getElementById('logoutstatus').style.display="flex";
